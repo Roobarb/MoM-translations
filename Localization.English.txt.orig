@@ -1,0 +1,1045 @@
+.,English
+quest.name,Curse of Set (v2.23)
+quest.authors_short,Nicola Zee
+quest.description,"Kathleen Ross was investigating rumors that exhibits at the Miskatonic Museum are coming to life.  She witnessed Professor Smith standing in the Lecture Hall chanting in a guttural alien language.  The next day, Kathleen was arrested for the theft of a citrine snake statue.  She needs your help to clear her name.\n\n<b>There is translation of basic Hieroglyphs.  Notepads may be useful.  There are 'Hint' buttons to provide additional help, should you need it.</b>\n\nIf the expansion box 'Curse of Set' is enabled, the custom 'Exhibition Hall' medium tile will be used and this tile must be printed out.  The Curse of Set package can be downloaded.\nhttps://github.com/NicolaZee/CoS_Package\nIf the expansion box 'Curse of Set' is not enabled, a surrogate tile will automatically be used instead."
+quest.authors,"Designer: Nicola Zee\n\nOriginal Portal Puzzle Code designed by Anton Timmermans.\nExhibition Hall tile designed by Gavin Bourchier.\nProofread by Sail (Osiris Saline).\nTranslations: Spanish by Vidimus."
+quest.synopsys,Investigate Professor Smith who is organising a new exhibition and clear your friend's name.
+CCYAN,<color=Cyan>
+CBLACK,<color=Black>
+COFF,</color>
+REPORTER,Kathleen Ross
+PROFESSOR,Professor Smith
+DOCTOR,Doctor Whitehead
+ARMITAGE,Professor Armitage
+LEDGERUPDATE,The Ledger has been updated with your latest findings.
+CANCEL,Cancel
+CONTINUE,Continue
+REVEAL,Reveal
+YES,Yes
+NO,No
+NEVERMIND,<i>Nevermind.</i>
+EXPLORE,{action} Explore
+INSPECT,{action} Inspect
+OPEN,{action} Open
+SEARCH,{action} Search
+EXAMINE,{action} Examine
+GAINCLUE,Gain 1 Clue {clue}.
+EXTRAACTION,You may spend a {clue} to take an additional Action.
+PLACESEARCH,Place a Search Token as indicated.
+PLACEEXPLORE,Place an Explore Token as indicated.
+PLACESIGHT,Place a Sight Token as indicated.
+PLACEINTERACT,Place an Interact Token as indicated.
+PLACEWALL,Place a Wall Token as indicated.
+PLACEDARKNESS,Place Darkness Tokens as indicated.
+MOVEPERSON,Move the Person token as indicated.
+EXPLOREMOVE,You may move 1 space into the explored area.
+DISCARDEXPLORE,Discard the Explore token leading to it.
+DISCARDREVEAL,Discard the Sight token leading to it.
+DISCARDSEARCH,Discard the Search token.
+DISCARDINTERACT,Discard the Interact token.
+PASS,Pass
+FAIL,Fail
+REVEALSIGHT_TILE,An investigator standing on the tile with this Sight Token may reveal the next tile.
+REVEALSIGHT_SPACE,An investigator standing on the space with this Sight Token may reveal the next tile.
+FACEDOWNHORROR,You suffer {n} facedown Horror
+FACEUPHORROR,You suffer {n} Horror
+COMMONITEM,Common Item
+UNIQUEITEM,Unique Item
+GAINITEM,You gain the {qst:CCYAN}{itm}{qst:COFF}
+PLACEITEMCOMMON,Place the {qst:CCYAN}{itm}{qst:COFF} Common Item as indicated.
+PLACETEMUNIQUE,Place the {qst:CCYAN}{itm}{qst:COFF} Unique Item as indicated.
+EXAMINEITEM,You may examine the item by clicking the {qst:CCYAN} 'Items' {qst:COFF} button and clicking on the Item.
+DISCARDPERSON,Discard the Person token from the indicated space.
+ZOOMIN,Zoom In
+DOORSTUDY,"There is a sign on the door.\n<i>Study\nStaff Only</i>"
+DOORWORKSHOP,"There is a sign on the door.\n<i>Restoration Workshop\nStaff Only</i>"
+BLACKBOARDGLYPHS,"You copied out the hieroglyphs written on the blackboard in the lecture hall.\nYou could not read the first glyph but the faint traces indicate it was different from the other glyphs."
+REVIEWCARTOUCHE,"You examined a cartouche carved on the side a giant stone throne in the buried chamber and made a drawing of it.\nThe cartouche contained an unsual snake symbol."
+EventMoveOneSpace.text,You may move one space into the explored area.
+EventMoveOneSpace.button1,{qst:CONTINUE}
+EventPlaceEntrance.text,"You open the large foyer door.  Inside you see a massive stegosaurus filling the entrance hall.\n\nPlace the {c:TileEntrance} tile as indicated."
+EventGuardObjects.text,"The security guard shouts,\n<i>Leave that alone or I'm calling the cops!</i>"
+EventPlaceEntrance.button1,{qst:CONTINUE}
+EventStartPlaceGuard.text,"A security guard sits behind an imposing front desk.  He seems put out by something.  He says,\n<i>Most of the halls are shut.  I'm filling in for the receptionist.\nI suggest you come back next week when the new exhibition has opened.</i>\n\nPlace the Cyan Person token as indicated."
+EventPlaceStartLeaflets.button1,{qst:CONTINUE}
+EventPlacePortraitHall.text,"The entrance extends into a portrait hall.  The portrait hall is packed with portraits, pictures and head busts of people who have worked, and collaborated, with this museum and the renowned Miskatonic University.\nSome of their eyes seem to stare at you.\n\nPlace the {c:TilePortraitHall} tile.\n\n{qst:DISCARDREVEAL}\n\n{qst:PLACEWALL}"
+EventPlaceEntranceToExhibition.text,"A large sign to your left reads\n<i>Entrance to the Exhibition.\nClosed.</i>\n\nThe nearest door is used by the public to enter the exhibition while the furthest is used as an exit.\n\nPlace two Explorer tokens as indicated."
+EventPlacePortraitHallStatueHJ.text,"A giant stone statue of a snake fills the hall.\n\nPlace a Temple Guardian figure as indicated.\nThis figure does not count as a monster.\nPlace an Interact token next to the figure."
+EventPlacePortraitHallDisplay.text,"Inside a nearby display case, you see a collection of items connected with notable academics and scientists.\n\nPlace a Search Token as indicated."
+EventPlaceEntranceToPortraitHall.button1,{qst:CONTINUE}
+EventPlaceEntranceToClassroom.text,"There is a sign next to the door to the right, \n<i>Public Classroom.</i>\n\nPlace an Explore Token as indicated."
+EventPlaceEntranceToClassroom.button1,{qst:CONTINUE}
+EventPlaceEntranceToStudy.button1,{qst:CONTINUE}
+TokenPortraitHallDisplay.text,"The display cabinet contains a diverse collection of items that belonged to academics and scientists.\nSeveral are connected with the famous Miskatonic University.\nThere is a small patch of sand in front of the cabinet."
+EventPlacePortraitHallStatueHJ.button1,{qst:CONTINUE}
+EventPlacePortraitHallToPaleoHall.text,"The long hall connects to a large room which contains fossils.\nThe flickering light makes it hard to see more.\n\nPlace a Sight Token as indicated."
+EventPlacePortraitHallToPaleoHall.button1,{qst:CONTINUE}
+TokenEntranceToPortraitHall.button1,{qst:REVEAL}
+EventPlaceEntranceToScienceHall.text,"A large sign above this door reads\n<i>Science Hall</i>."
+EventPlaceWorkshop.button1,{qst:CONTINUE}
+EventPlaceEntranceToScienceHall.button1,{qst:CONTINUE}
+EventPlaceDials.text," On the nearest large table is a large electronic machine of an unusual design with a set of five dials.\n\n{qst:PLACEINTERACT}"
+TokenLeaflet.text,Leaflets are scattered over the top of the desk.
+EventLeafletPickup.text,"You approach the desk to look more closely at the leaflets.\nThe security guard starts to gather them up.\n\nTest ({agility},2)."
+EventLeafletPickupPass.text,"You pick up a couple of leaflets before the guard can grab them all.\nHe says,\n<i>Hey, give them back!  Professor Smith shouted at me the leaflets must not be given out!</i>\n\nYou hand the leaflets over but you keep one back.\nYou hide the leaflet in your pocket.\n\nDiscard the Search token."
+EventLeafletPickup.button1,{qst:PASS}
+EventLeafletPickup.button2,{qst:FAIL}
+EventLeafletPickupFail.button1,{qst:CONTINUE}
+EventGainMagicCompass.text,"Among the items you find an otherworldly compass donated by {qst:ARMITAGE}.\nThere is a note covered in granules of sand and grit,\n<i>An aid to travel through the realm of aether.</i>\n\nGain the {c:QItemMagicCompass} {qst:COMMONITEM}.\n\n{qst:DISCARDSEARCH}"
+EventPlaceClassroom.text,"The large room is used for public lectures.\n\nPlace the {c:TileClassroom} tile as indicated.\n\n{qst:DISCARDEXPLORE}"
+EventGainJournal.text,"You examine the journal the reporter gave you.\n\nThe investigator with the highest {observation} gains the {c:QItemJournal} {qst:UNIQUEITEM}.\n\nYou may examine the journal by clicking the <color=Cyan> 'Items' </color> button and clicking on the Item."
+EventPlacePortraitHall.button1,{qst:CONTINUE}
+TokenEntranceToPortraitHall.text,"It is hard to see what is down the long corridor.\nThe lights of the corridor flicker on and off.\n\n{qst:REVEALSIGHT_SPACE}"
+EventPlacePaleoHallDarkness.button1,{qst:CONTINUE}
+TokenPortraitHallToPaleoHall.text,"The long hall connects to a large room which contains fossils.\nYou glimpse something large looming out of the flickering light.\n\nAn investigator standing on the space with this Sight Token may reveal the next tile."
+TokenPortraitHallToPaleoHall.button1,{qst:REVEAL}
+EventPlacePaleoHall.button1,{qst:CONTINUE}
+EventPlacePaleoHallDinosaur.text,"The huge articulated skeleton of the Tyrannosaurus Rex is posed on two huge legs, rearing up with its skull almost touching the high ceiling.\n\n{qst:PLACESEARCH}"
+EventPlacePaleoHallDinosaur.button1,{qst:CONTINUE}
+TokenEntranceToScienceHall.text,"A large sign reads\n<i>Science Hall</i>.\n\nThe view into the long hall is obscured by the large imposing front desk.\n\n{qst:REVEALSIGHT_SPACE}"
+EventPlaceScienceHall.text,"You lean past the front desk and see a hall packed full of scientific equipment.\nOn tables and in cabinets, diverse machines illustrate the history of science.\n\nPlace the {c:TileScienceHall} tile.\n\n{qst:DISCARDREVEAL}"
+EventPlaceScienceHall.button1,{qst:CONTINUE}
+EventPlaceEntranceToStudy.text,"There is a door to your right,\n{qst:DOORSTUDY}"
+EventPlacePaleoHallShock.button2,{qst:FAIL}
+EventPlacePaleoHallShock.text,"Something huge with giant teeth towers over you.\n\nTest ({will},2)"
+EventPlacePaleoHallShock_Fail.text,"The thing swings its massive head towards you.\n\nSuffer 1 Horror.\n\nYour eyes adjust to the light,\nYou realise you are seeing a huge skeleton of a long dead two legged dinosaur. The bones are held rigidly in place.\nYour eyes must have been playing tricks.\n\nFlip the Horror facedown."
+EventPlacePaleoHallShock_Pass.text,You realise what you see is an impressively large skeleton of a Tyrannosaurus Rex.
+EventPlacePaleoHallShock_Pass.button1,{qst:CONTINUE}
+EventPlacePaleoHall.text,"The exhibits in the room loom above and around you.\n\nPlace the {c:TilePaleoHall} tile.\n\n{qst:DISCARDREVEAL}"
+EventPlacePaleoHallShock_Fail.button1,{qst:CONTINUE}
+EventPlacePaleoHallToExhibition.button1,{qst:CONTINUE}
+EventPlacePaleoHallShock.button1,{qst:PASS}
+EventPlacePaleoHallToExhibition.text,"A sign on a doorway reads\n<i>Staff Only</i>.\n\n{qst:PLACEEXPLORE}"
+EventEntranceToExhibitionBarred.text,"The door is barred from the inside.\nFrom the faint eldritch glow that surrounds the door you infer it is barred by some kind of magical barrier."
+EventGainSpectralRazor.text,"A spell catches your attention.\n\nYou gain the {c:QItemSpectralRazor} Spell."
+EventExhibitStaffDoorLocked.button1,{qst:CONTINUE}
+EventPlaceScienceHallToWorkshop.button1,{qst:CONTINUE}
+TokenEntranceToClassroom.text,"There is a sign next to the door, \n<i>Public Lecture Hall.</i>"
+TokenEntranceToClassroom.button1,{qst:EXPLORE}
+EventPlaceFireAxe.button1,{qst:CONTINUE}
+EventPlaceClassroom.button1,{qst:CONTINUE}
+EventPlaceLibrarian.text,"A studious looking man is cleaning the board with a blackboard rubber.\nHe says,\n<i>I'm the head librarian... not a janitor!\nIf you see Professor Smith, tell him it is not my job to clean up after him!</i>\n\nPlace the Red Person token as indicated."
+EventPlaceLibrarian.button1,{qst:CONTINUE}
+EventPlaceBlackboard.text,Behind the podium is a blackboard.
+EventPlaceClassroomToLibrary.text,"A door has a sign\n<i>Research Library\nNo Entry."
+EventPlaceClassroomToLibrary.button1,{qst:CONTINUE}
+EventPlacePaleoHallDarkness.text,"The lights flicker and then go out.\n\n{qst:PLACEDARKNESS}"
+EventPlaceEntranceToExhibition.button1,{qst:CONTINUE}
+EventPlaceEntranceToPortraitHall.text,"The museum's entrance hall is too large to take in all at once. \nIn this direction, the lights are faulty and periodically flash on and off.\n\nPlace a Sight token as indicated."
+EventGuardTalk_Leaflets_Lights.text,"The Security Guard is sitting behind the imposing front desk.\nFrom his position he has a commanding view of the cavernous halls."
+EventGuardTalkLeaflets.text,"The security guard says,<i>\nWhat's that got to do with you!</i>\n\nTest ({influence},2)"
+EventGuardTalkLeaflets.button1,{qst:PASS}
+EventGuardTalkLeafletsPass.text,"The security guard says,\n<i>Professor Smith lost his temper when he read the leaflet for the new exhibition, \nHe knocked over the display stand and shouted at me these are not to be handed out.\nI can't afford to lose my job.\nHe's already fired the receptionist for asking questions!</i>"
+EventGuardTalkLeafletsPass.button1,{qst:CONTINUE}
+EventGuardTalkLeafletsFail.text,"<i>Leave me alone.\nLet me get on with tidying up this desk!</i>"
+EventGuardTalkLeafletsFail.button1,{qst:CONTINUE}
+EventGuardTalk_Leaflets_Lights.button3,{qst:NEVERMIND}
+EventGuardTalk_Leaflets_Lights.button1,{action} <i>What happened with the leaflets?</i>
+EventGuardLightsLookOK.button1,{qst:CONTINUE}
+EventGuardLightsLookOK.text,"The security guard says,<i>\nThey flicker a bit but they work.\nStop complaining!</i>"
+TokenDials.text,An electrical machine sits on a large table.  The front has a set of dials.  Buttons can be used to change what is displayed on the dials.
+EventGuardPaleoLights.text,The security guard is too focused on trying to fix the lights to talk.
+EventPlaceStudy.text,"The door is unlocked.\nThe office is empty.\n\nPlace the {c:TileStudy} tile as indicated.\n\n{qst:DISCARDEXPLORE}"
+EventEntranceToStudy.text,{qst:DOORSTUDY}
+EventPlaceStudy.button1,{qst:CONTINUE}
+EventGuardLightsOut_Step1.text,"The security guard finishes tidying up the front desk and wearily gets up.\nHe says,\n<i>Hey, what's happened with the lights in the Paleontology Hall!\nAnd the only one around here to sort it out is me! "
+EventGuardLightsOut_Step1.button1,{qst:CONTINUE}
+EventGuardLightsOut_Step2.text,{qst:MOVEPERSON}
+EventGuardLightsOut_Step2.button1,{qst:CONTINUE}
+TokenStudyDesk.button1,{qst:SEARCH}
+TokenStudySafe.text,The safe requires a code to open but it is old and poorly maintained.  You may be able to use your fingers to feel when the tumblers have fallen into place.
+EventBlackboardInteract.text,"You try to trace out the outline of the writing.\nIt will take good eyesight and some knowledge of symbols.\n\nTest the lower of {observation} and {lore}.\n\nRoll one (and at most one) additional die if you possess a Tome item or the {c:QItemJournal} Unique Item."
+TokenBlackboard.button1,{action} Interact
+EventLibrarian1Talk_Access_Board.text,"The librarian pauses from cleaning the blackboard.\nHe starts to tidy up the podium."
+EventExhibitBoat.text,"The gold boat is large and ornate.\nThere are numerous small statues in and around the ship.\nThey depict a large crew together with an array of Gods and Goddesses who are the passengers.\nYou may try to spot if any of the statues look different from the rest.\n\nYou may use an {action} to test {observation}.\nRoll an additional die if you possess a Tome Item."
+EventPlaceWorkshopBoxes.text,The workshop is full of boxes, one on top of another.
+EventLeafletPickupFail.text,The guard grabs the leaflets and locks them away in the desk.
+EventPlaceScienceHallToWorkshop.text,{qst:DOORWORKSHOP}
+TokenEntranceToScienceHall.button1,{qst:REVEAL}
+TokenPortraitHallDisplay.button1,{qst:SEARCH}
+TokenLibraryManuscript.button1,{qst:SEARCH}
+TokenTest3.button1,Button1
+EventStudyDeskTest.text,"There is still a lot of mundane paperwork.\nIt will take a keen eye to spot anything significant.\n\nTest({observation},2)."
+EventPlaceStudySafe.button1,{qst:CONTINUE}
+EventPlacePortraitHallDisplay.button1,{qst:CONTINUE}
+EventGainStartClues.text,Each investigator gains {var:numStartClues} {clue}.
+EventPlaceInvestigators.text,"As you enter, your footsteps echo off the hard marble floor.\nThe heavy broad entrance door makes a disquieting noise as it closes behind you.\n\nPlace your investigator figures as indicated."
+EventPlaceInvestigators.button1,{qst:CONTINUE}
+UIIntroText1.uitext,"<b>The reporter, Kathleen Ross, is in the street leading to the Miskatonic Museum.  She's standing next to the sidecar of her old battered Scout motorcycle.\n\n<i>I heard from a friend at the Miskatonic University wild tales exhibits at the Museum are coming to life!  A few days ago, I stuck around at closing time to check it out.  I saw Professor Smith standing in the Lecture Hall holding a small snake statue and chanting in a strange language.  The Professor spotted me and called security.  I got out before they could catch me.\n\nThis morning, the police brought me in for questioning about a theft.  The small snake statue has gone missing.  I'm sure the Professor is behind the accusation.  He made a complaint to my editor.  My boss already thinks I'm nuts!  Any more trouble and he'll fire me!\n\nI'll stay here, just in case one of you needs to make a quick getaway.</i></b>"
+UIIntroText2.uitext,"<b><i>I've brought you a gift.  Use the blank pages of this journal to make a record of clues.  Find the statue the Professor says has been stolen.  Finding it will clear my name and get me the scoop that's gonna blow the socks off my ungrateful boss!</i>\n\nThe reporter hands over an old journal and some pencils.\n\nYou walk to the imposing building.</b>"
+UIIntroContinueTextPage1.uitext,{qst:CONTINUE}
+UIIntroContinueTextPage2.uitext,{qst:CONTINUE}
+EventClassroomToLibrary_Forbidden.text,"The librarian says,<i>\nThe research library contains a number of rare and valuable tomes,\nOnly researchers with permission are allowed entry and only in exceptional circumstances."
+EventClassroomToLibrary_Forbidden.button1,{qst:CONTINUE}
+EventLibrarian1Talk_Access_Board.button1,{action} <i>We need access to the library!</i>
+EventLibrarian1Talk_Access_Board.button2,{action} <i>What's on the blackboard?</i>
+EventLibrarianTalkBoardPart1.text,"<i>Professor Smith treats the lecture hall like his own personal office.  A few months ago, he brought in bits of electrical machinery.  After the Museum was shut, him and Doctor Whitehead would huddle together fixing some kind of wireless radio.\n\nI'm not a janitor!  It's not my job to clear up the mess they leave.  Yesterday, I had to put back an item one of them took from the Portrait Hall and left on the podium.</i>"
+EventLibrarianTalkBoardPart2.text,"<i>The Professor left this writing on the blackboard.\nRecently, he's taken to writing things in hieroglyphs - which to my mind is something of an affectation.  A few days ago, Doctor Whitehead came across the blackboard and became fascinated with what was written.\n\nWith the forthcoming exhibition, Doctor Whitehead has become obsessed with Egyptology.  He has been spending days and nights studying in the library and taking up far too much of my valuable time.</i>"
+EventLibrarianTalkBoardPart2.button1,{qst:CONTINUE}
+EventBlackboardSuccess.text,"You recognise the writing as hieroglyphs.\nYou are sure they are important.\nThe board has been partially cleaned and the first glyph is too indistinct to read.\nYou carefully copy out the symbols of the other rows.\n \n{qst:GAINCLUE}\n\n{qst:DISCARDINTERACT}\n\nYou may review clues you record by inspecting the Journal by clicking the 'Items' button."
+EventBlackboardSuccess.button1,{qst:CONTINUE}
+EventBlackboardFail.text,The chalk marks seem to form patterns but you cannot figure out what they are.
+EventBlackboardFail.button1,{qst:CONTINUE}
+EventBlackboardInteract.button1,{qst:CONTINUE}
+EventCartoucheExtraAction.button1,{qst:CONTINUE}
+EventThroneInteract.text,"Buried beneath the rubble is a skeleton.\nFrom the shape of the skeleton it is obvious the occupant was a serpent person.\nThe carvings around the throne depict a serpent man dressed as a pharaoh worshipping some kind of giant snake god.\nNext to the image is an inscription with a cartouche.\nThe cartouche has three hieroglyphs.\nThe last glyph is damaged and hard to read."
+EventPlaceChamberThroneRubble.button1,{qst:CONTINUE}
+EventStartPlaceGuard.button1,{qst:CONTINUE}
+EventLibrarian1Talk_Access_Doctor.text,"The librarian says,<i>\nI am very busy.\nWhat do you want now?"
+EventLibrarian1Talk_Access_Doctor.button1,{action} <i>We need access to the library!</i>
+EventLibrarian1Talk_Access_Doctor.button2,{action} <i>Tell me about {qst:DOCTOR}.</i>
+EventLibrarian1Talk_Access_Doctor.button3,{qst:NEVERMIND}
+EventPlaceStudyDesk.text,"The study desktop is covered by scattered paperwork. It has several drawers.\n\n{qst:PLACESEARCH}"
+EventPlaceStudyDesk.button1,{qst:CONTINUE}
+TokenStudyDesk.text,The desk contains several drawers, all filled with old paperwork.
+EventStudyDeskTest.button1,{qst:PASS}
+EventStudyDeskGoStudySafe.text,"It is clear from the abundance of paperwork, {qst:DOCTOR} does most of his work in his study.\nItems have been recorded that are not part of the collection and are not on loan from other institutions.\nOne of these items is a small statue of Imhotep depicted as a serpent god.\n\n{qst:GAINCLUE}\n\n{qst:DISCARDSEARCH}"
+EventReviewLedgerPage1.button2,{qst:CANCEL}
+EventReviewLedgerPage2.button1,Next Page
+EventReviewLedgerResearch.text,"<i>I fear my friend has fallen under the influence of the spirit of a long forgotten high priest.\nIn the research library, I found an arcane papyrus,\n'Forbidden Rituals of Necromancy'.\nIt hints at the most profane and disturbing blood pacts.\nThe Head Librarian is obstructive and officious.\nHe will not allow the papyrus out of the library under any circumstances.\nProfessor Armitage is sending over a student to help in my research.\nI have told the Librarian he must give whoever arrives his full assistance.</i>"
+EventReviewLedgerPage1.button1,Next Page
+EventReviewLedger.button4,{qst:CANCEL}
+EventReviewLedgerPage2.button2,{qst:CANCEL}
+EventReviewLedger.text,The scribbled ledger of {qst:DOCTOR} contains a number of subjects relevant to the case.
+EventReviewLedger.button2,Research
+EventReviewLedger.button1,{qst:PROFESSOR}
+EventReviewLedgerGlyphs.button1,{qst:CONTINUE}
+EventDoctorTalkSpell.button1,{qst:CONTINUE}
+EventReviewJournalNone.button1,{qst:CONTINUE}
+EventReviewLedger.button3,Hieroglyphs
+EventReviewLedgerGlyphs.text,On the last page of the ledger, Doctor Whitehead has carefully written down translations of hieroglyphs.
+EventReviewJournalNone.text,You have not made any notes in the journal.
+TokenLeaflet.button1,{qst:SEARCH}
+EventGuardTalkLeaflets.button2,{qst:FAIL}
+EventGainMagicCompass.button1,{qst:CONTINUE}
+EventGainLeaflet.text,"Professor Smith is clearly trying to hide something.\n\nGain the {c:QItemLeaflet} {qst:UNIQUEITEM}.\n\n{qst:GAINCLUE}\n\n{qst:EXAMINEITEM}"
+EventGainLeaflet.button1,{qst:CONTINUE}
+EventGuardLightsTidyingLeaflets.text,"The security guard says,<i>\nHey, can't you see I'm busy tidying up this desk!</i>\n\nTest ({influence},2)"
+EventGuardTalkBusy.button1,{qst:CONTINUE}
+EventGuardLightsTidyingLeaflets.button2,{qst:FAIL}
+EventPlaceChamberAgain.button1,{qst:CONTINUE}
+EventDialSetOn.text,The generator crackles with energy and electricity sparks around the giant capacitors.
+EventDialSetOn.button1,{qst:CONTINUE}
+EventLibrarianMoveToLibrary.button1,{qst:CONTINUE}
+EventLibrarian1TalkAccess.text,"<i>The library contains valuable and fragile rare books, tomes and manuscripts.  Members of the public are not allowed entry and certainly not to browse at random!\n\nI will only allow access to experts researching a specific item.</i>"
+EventLibrarian1TalkAccessFail.button1,{qst:CONTINUE}
+EventLibrarian1TalkAccessPass.text,"<i>As the manuscript it is already out of storage, and you know what you are talking about, I will allow you access.\n</i>\nHe unlocks the library door."
+EventLibrarian1TalkAccessTest.button1,{qst:PASS}
+EventPlaceLibrary.text,"The research library contains a plethora of materials carefully and neatly logged and catalogued.\n\nPlace the {c:TileLibrary} as indicated."
+EventPlaceLibrary.button1,{qst:CONTINUE}
+EventPlaceLibraryManuscript.text,"<i>The papyrus {qst:DOCTOR} is working on is on the shelf next to that table.</i>\n\nPlace a Search Token as indicated."
+EventPlaceLibraryManuscript.button1,{qst:CONTINUE}
+TokenLibraryManuscript.text,On the table is a set of notes and a papyrus.
+EventLibrarian1TalkAccessTest.button2,{qst:FAIL}
+EventLibrarian1TalkAccessPass.button1,{qst:CONTINUE}
+TokenLibrarian1.button1,Button1
+EventLibrarianMoveToLibrary.text,"The Librarian says,\n<i>I need to get back to my work of organising the collection.</i>\n\n{qst:MOVEPERSON}"
+EventLibrarian1TalkAccessFail.text,"The Librarian says,<i>\nThis request is most irregular!</i>"
+EventLibrarian1TalkAccessTest.text,"<i>Doctor Whitehead has asked for our help in researching the Egyptian papyrus,\n'Forbidden Rituals of Necromancy'.</i>\n\nTest either ({lore},2) or ({influence},2)"
+EventGainManuscript.text,"The manuscript is an ancient papyrus dating back to the New Kingdom.\nDoctor Whitehead has made a partial translation and notes.\nHe has, also, made notes on the names of Imhotep inscribed on artifacts, carvings and statues.\n\nGain the {c:QItemManuscript} {qst:COMMONITEM}.\n\n{qst:DISCARDSEARCH}\n\n{qst:EXAMINEITEM}"
+EventGainManuscript.button1,{qst:CONTINUE}
+EventManuscriptUshabti.button1,{qst:CONTINUE}
+EventLibrarianTalkBoardPart1.button1,{qst:CONTINUE}
+EventPlaceExhibitStoneChest.text,"There is a large stone chest.\n\n{qst:PLACEINTERACT}"
+TokenChamberSpell.text,"The reliefs depict serpent people worshipping a giant serpent god and casting spells.\nAny Rubble token in the space must be removed before you can carry out a Search Action."
+EventExhibitChestHasStatue.text,"But hidden by the sand is a small snake-like statue.\nYou carefully pick it up."
+EventPlaceExhibitCoffin.text,"There is a large coffin.\n\nPlace an Interact Token as indicated."
+EventPlaceScienceInventions.text,"On a large table is a collection of historical inventions.\n\n{qst:PLACESEARCH}"
+TokenPaleoToExhibit.text,"The door leads to the Exhibition Hall.\nYou may click 'Continue' only if your investigator is on the space adjacent to the Explore token."
+EventScienceInventions.text,"All the items except one are too ancient to function.\nYou find an old safety lantern in good working order.\n\nGain the {c:QItemLantern} {qst:COMMONITEM}.\n\n{qst:DISCARDSEARCH}"
+EventLibraryBookExpedition.text,"An article describes a dig Professor Smith partook in.\n\nGain the {c:QItemExpeditionLog} {qst:COMMONITEM}.\n\nThis item counts as evidence.\n\n{qst:EXAMINEITEM}"
+EventEntranceToStudyGuarded.text,{qst:DOORSTUDY}
+EventGuardTalk_Leaflets_Lights.button2,{action} <i>You should go fix the lights!</i>
+TokenExhibitCoffin.button1,Button1
+EventLibrarianTalkDoctorWorkshop.text,"<i>He should be spending more time in the workshop catching up on his restoration work</i>!\n\n{qst:GAINCLUE}"
+EventLibrarianTalkDoctorWorkshop.button1,{qst:CONTINUE}
+EventGainRevolver.button1,{qst:CONTINUE}
+EventStudyDeskGoWorkshop.text,"The plethora of bills of invoices, delivery notes and other old paperwork gives insights into the operation of the Museum.\nItems have been recorded that are not part of the collection and are not on loan from other institutions.\nOne of these items is a small statue of Imhotep depicted as a serpent god.\n{qst:DOCTOR} does most of his on-going work in the workshop where he restores and conserves artifacts.\n\n{qst:GAINCLUE}\n\n{qst:DISCARDSEARCH}"
+EventStudyDeskTest.button2,{qst:FAIL}
+EventStudyDeskTestFail.text,"Paperwork spills over the top of the desk and becomes mixed up with a cascade of bills, invoices and letters you pull out of the drawers.\nThe task is hopeless.\n\n{qst:DISCARDSEARCH}"
+EventStudyDeskTestFail.button1,{qst:CONTINUE}
+EventGainLedger.text,"You spot a small black ledger hidden beneath a stack of mundane paperwork.\n\nYou gain the {c:QItemLedger} {qst:UNIQUEITEM}.\n\n{qst:EXAMINEITEM}"
+EventGainLedger.button1,{qst:CONTINUE}
+EventStudyFirstAid.text,The closet is glass fronted and inside you can see a first aid kit.
+EventGainRevolver.text,"Inside the safe is a gun.\nDoctor Whitehead is clearly worried about his safety.\n\nGain the {c:QItemRevolver} Common Item."
+TokenStudySafe.button1,{action} Open Safe
+EventStudyFirstAid.button1,{qst:SEARCH}
+PuzzleStudySafeSmallGroup.button1,Open Safe
+EventStudyFirstAid.button2,{qst:CANCEL}
+EventGainInstillBravery.button1,{qst:CONTINUE}
+EventPlaceWorkshop.text,"The door opens with a loud rattling noise, fortunately nobody is close enough to notice.\n\nPlace the {c:TileWorkshop} tile as indicated.\n\n{qst:DISCARDEXPLORE}"
+TokenFossil.text,"There are scratch marks on the bones of the giant dinosaur.\nIt is hard to make them out in the dark."
+TokenFossil.button1,{qst:SEARCH}
+EventFossilSearch.button1,{qst:PASS}
+EventFossilSearch.button2,{qst:FAIL}
+EventFossilSignFound.text,"There is a distinctive symbol on one of the giant thigh bones, a serpent with several twists in its body.  The symbol looks recently carved.\n\n{qst:GAINCLUE}\n\n{qst:DISCARDSEARCH}"
+EventFossilSearchFail.button1,{qst:CONTINUE}
+EventFossilEvade.text,"The head of the giant dinosaur swings backwards and forwards.\nYou must first do an evade test.\n\nTest ({agility},2)"
+EventFossilSignFound.button1,{qst:CONTINUE}
+EventFossilSearchFail.text,"Considering how old the fossils are, it would be surprising if they weren't a bit scratched.\nMaybe some light might help to see the scratch marks more clearly?"
+TokenWorkshopStorage.button1,{qst:SEARCH}
+EventPlaceStudySafe.text,There is a small sturdy safe.
+EventWorkshopItem.text,In the box there may be something of use.
+EventWorkshopItem.button1,{qst:SEARCH}
+EventGainRandomItemSkull.button1,{qst:CONTINUE}
+EventLibraryBookRestricted.text,"The librarian brings you a weighty and ominous looking tome.\nThe disturbing text and images present a horrifically bleak view of the petty unimportance of human existence.\nYou expend you mind but only by calling into question all you know.\n\nGain 1 {clue}.\nYou may spend 2 {clue} to improve {lore}.\nThen suffer 2 Horror ({will} negates)."
+TokenChamberThrone.text,"The giant stone throne fills the back of the chamber.\nThe throne is buried under rubble fallen from the roof and the wall.\nIf there is still rubble in the space, it prevents you from examining the item in more detail."
+EventThroneInteract.button1,{qst:CONTINUE}
+EventGainRitual.text,"You carefully gather up the pages.\nThey form part of a banishment spell.\n{qst:DOCTOR} has translated the hieroglyphs carved on the artifacts and walls of the chamber to almost complete the spell.\n \nGain the {c:QItemRitual} {qst:UNIQUEITEM}."
+EventGainRitual.button1,{qst:CONTINUE}
+EventLeafletPickupPass.button1,{qst:CONTINUE}
+EventPlacePortalInfo.text,On this wall are large information boards.
+EventPlacePortalInfo.button1,{qst:CONTINUE}
+TokenInfoBoard.button1,{qst:SEARCH}
+EventInfoBoardSeach.button1,{qst:CONTINUE}
+TokenWorkshopBoxes.button1,{action} Stack Boxes
+EventStudyDeskGoWorkshop.button1,{qst:CONTINUE}
+EventGainRandomItemDisc.text,"A strange disc from a far off land catches your eye.\n\nGain the {c:QItemDisc} {qst:COMMONITEM}."
+EventGainRandomItemSkull.text,"A strange jewelled skull from a far off land catches your eye.\n\nGain the {c:QItemJeweledSkull}  {qst:COMMONITEM}."
+EventGainRandomItemDisc.button1,{qst:CONTINUE}
+EventEntranceToExhibitionSign.button1,{qst:CONTINUE}
+EventEntranceToExhibitionSign.text,"A large sign next to the door reads\n<i>To Main Exhibition Hall.\nClosed.</i>\n\nYou may click 'Continue' only if your investigator is on the space adjacent to the Explore token."
+EventPlaceWorkshopStorage.button1,{qst:CONTINUE}
+TokenWorkshopStorage.text,This door leads into a small storage area.
+EventWorkshopStorageSearch.text,"You rummage through the items in storage.\nThey are covered in dust.\nYou doubt anyone will notice if one of them goes missing.\n\n{qst:DISCARDSEARCH}"
+EventWorkshopStorageSearch.button1,{qst:CONTINUE}
+EventPlaceWorkshopStorage.text,There is a door leading to a small storage area.
+EventGainRandomItemPendant.text,"An interesting pendant catches your eye,\n\nGain the {c:QItemPendant}  {qst:COMMONITEM}."
+EventGainRandomItemPendant.button1,{qst:CONTINUE}
+EventStudyDeskGoStudySafe.button1,{qst:CONTINUE}
+TokenWorkshopBoxes.text,"There is a stack of very large heavy wooden boxes.\nA stack of smaller sized boxes has toppled over and has buried paperwork.\nYou can pick up and stack the smaller sized boxes on top of the largest stack.\nThen, you will be able to have a look at the paperwork that is buried beneath the small boxes."
+EventPlaceWorkshopBoxes.button1,{qst:CONTINUE}
+EventStudyHasLedger.button1,Button1
+EventWorkshopGoStudy.button1,{qst:CONTINUE}
+EventWorkshopGoStudy.text,"Some of items on display in the new exhibit have no provenance.\n{qst:DOCTOR} has queried the delivery notes and loan papers for a small statue of Imhotep depicted as a serpent god.\nThere is a letter requesting copies of the paperwork be sent to his study.\n\n{qst:GAINCLUE}"
+PuzzleStudySafeLargeGroup.button1,Open Safe
+TokenInfoBoard.text,On the wall, behind the table, is a set of information boards.
+EventInfoBoardSeach.text,"The machine was built by Nikola Tesla.\nIt was retrieved from the ruins of his Experimental Station in Colorado Springs.\nIt was given to the Museum by Professor Armitage on the strict proviso that the machine must never be repaired.\nIt is obvious from the new wires and gleaming new parts the machine has been recently extensively repaired, rebuilt and modified.\n\n{qst:GAINCLUE}\n\n{qst:DISCARDSEARCH}"
+EventExhibitDoorSpellFound.text,"You can dispel the barrier by casting a Banishment spell.\n\nDo you possess the {c:QItemBanishmentSpell}?"
+TokenPaleoToExhibit.button1,{qst:CONTINUE}
+EventExhibitDoorSpellFound.button1,{qst:YES}
+EventPlaceExhibitHallCoS.button1,{qst:CONTINUE}
+EventPlaceExhibits.button1,{qst:CONTINUE}
+EventExhibitCoffinSuccess.text,The coffin lid slowly moves to one side.
+EventPlaceExhibitBoat.button1,{qst:CONTINUE}
+EventPlaceProfessor.text,"Standing behind the stone statue, Professor Smith is speaking in a strange guttural voice.\nHe was concentrating on the doors leading to the Entrance Hall.\nHe turns around and faces you.\nHe shouts out in an alien hissing voice,\n<i>You human s-s-scum will die!\nMy guardian will crus-s-sh you!</i>\n\nPlace this Person token as indicated."
+EventPlaceProfessor.button1,{qst:CONTINUE}
+EventExhibitBoatNoStatue.button1,{qst:CONTINUE}
+EventPlaceExhibitBoat.text,"There is a large wooden golden boat.\n\nPlace an Interact Token as indicated."
+EventExhibitDoorCastSpell.button1,{action} Cast the spell to open the door.
+SpawnTempleGuardian.button1,{qst:CONTINUE}
+EventExhibitDoorCastSpell.text,You may use an {action} to cast the {c:QItemBanishmentSpell} spell.
+EventExhibitBoatNoStatue.text,"You admire the workmanship of the toy-like crew.\nHowever, you are sure none of the many figures are snake-like.\n\n{qst:DISCARDINTERACT}"
+EventExhibitBoatHasStatue.text,"You spot one statue that is snake-like and different from the rest.\nYou carefully pick it up.\n\n{qst:DISCARDINTERACT}"
+EventExhibitBoatHasStatue.button1,{qst:CONTINUE}
+EventGainSnakeStatue.text,"The statue is small enough to fit in your hand.\nIt is carved from transparent, yellow Quartz-like stone.\nAlthough clearly some kind of snake or serpent, it has humanoid arms and hands.\nThe craftmanship is so detailed and expert you can see it even has a tiny pair of sharp fangs.\n\nGain the {c:QItemSnakeStatue} {qst:UNIQUEITEM}.\n\n{qst:EXAMINEITEM}"
+EventPlaceExhibitStoneChest.button1,{qst:CONTINUE}
+EventPlaceExhibitCoffin.button1,{qst:CONTINUE}
+EventPlaceExhibits.text,The hall is full of wonderful things.
+EventGainSnakeStatue.button1,{qst:CONTINUE}
+EventExhibitCoffin.button1,{qst:CONTINUE}
+EventExhibitCoffinHasStatue.button1,Continue
+EventExhibitCoffinSuccess.button1,{qst:CONTINUE}
+EventExhibitCoffinHasStatue.text,"Resting in the coffin is a small statue.\n\nDiscard the Interact token."
+EventExhibitCoffinFail.text,The coffin lid only moves a small amount.
+EventExhibitCoffinFail.button1,{qst:CONTINUE}
+EventExhibitChest.button1,Continue
+TokenExhibitChest.button1,Button1
+EventExhibitChestHasStatue.button1,{qst:CONTINUE}
+EventExhibitChestNoStatue.text,The inside of the chest is empty.
+EventExhibitChestNoStatue.button1,{qst:CONTINUE}
+EventExhibitBoatFail.text,There are many statues to examine.
+EventExhibitBoatFail.button1,{qst:CONTINUE}
+EventExhibitChestFail.text,The lid is still firmly shut.
+EventExhibitChestFail.button1,{qst:CONTINUE}
+EventExhibitBoatSuccess.button1,{qst:CONTINUE}
+EventManuscriptNames.text,"Doctor Whitehead has made notes about the names of Imhotep.\nFive names may have been inscribed on statues and relics.\n\n1. Imhotep - The one who comes in peace.\n\n2. KhepheruNecherSutekh - Avatar of the god Sutekh.\n\n3. KhepheruNebSutekh - Avatar of lord Sutekh.\n\n4. KhepheruNecherApep - Avatar of the god Apep.\n\n5. KhepheruNebApep - Avatar of the lord Apep.\n\nThe first name has two glyphs while the others have three glyphs.\nThe phrase to 'take the form of' may be translated as avatar and the abbreviation is represented by the sign for scarab beetle.\nThere is a note the sacred symbol for the name of the god is placed first in an inscription.  This is called honorific transposition."
+EventReviewManuscriptNotRead.text," Doctor Whitehead has made copious notes about the papyrus scroll and the names of Imhotep inscribed on artifacts, carvings, and statues.  From a quick look, it is clear the scroll describes disturbing and dark rituals.\n\nIf you possess this item, you may use an {action} to study the notes of Doctor Whitehead."
+EventReviewLedgerPage1.text,"<i>Etched in my mind is the fateful evening when my friend, Professor Smith, switched on the Tesla radio and told me to listen.  Over the crackling whine, I faintly heard a hissing voice.  It was so rasping and alien, my immediate instinct was to smash the infernal device to pieces.\n\nWith a sudden epiphany, I realised the voice spoke of a high priest, and his long forgotten tomb!  The spirit revealed how the machine could be repaired, enabling an intrepid explorer to be transported in a blink of an eye!</i>"
+EventReviewCartoucheLord.text,{qst:REVIEWCARTOUCHE}
+EventReviewCartoucheGod.button1,{qst:CONTINUE}
+EventPlaceChamberThrone.text,"A huge stone throne dominates the far wall.\n\nPlace an Interact Token as indicated."
+EventGainPlumbTheVoidSpell.text,"A spell catches your attention.\n\nGain the {c:QItemPlumbTheVoidSpell} Spell."
+EventLibrarian1TalkAccess.button1,{qst:CONTINUE}
+EventLibrarian2TalkBooks.button2,{action} A restricted book on the Occult.
+EventLibrarian2TalkBooks.button3,{action} Recent digs in Egypt.
+EventLibrarian2TalkBooks.button4,{action} The names of Imhotep.  (Hint)
+EventLibrarian2TalkBooks.text,"Now he has given you access, the librarian is more willing to help.  He asks, <i>\nAre there any books you need for your research?</i>"
+EventLibrarian2TalkDone.text,"The librarian says,<i>\nI am sorry but I have fetched you more than enough books.\nI must focus on my work.\nIt is likely {qst:DOCTOR} has already looked at all the relevant books.</i>"
+EventLibraryBookSpell.text,The Librarian brings you a weighty tome on Egyptian magic.  The ancient Egyptians were masters of strange and dangerous magic.
+EventLibraryBookRestricted.button1,{qst:CONTINUE}
+EventLibrarian2TalkDone.button1,{qst:CONTINUE}
+EventExhibitStaffDoorLocked.text,"There is a label on the door\n<i>Staff Entrance</i>\n\nThe door is barred by some kind of spell.\n\nThe power of the spell is weaker on this door than the main doors.  You may dispel the barrier only if you possess a suitable spell."
+EventExhibitDoorSpellFound.button2,No
+EventLibrarian1Talk_Access_Board.button3,<i>Nevermind.</i>
+EventReviewManuscriptNotRead.button1,{action} Study the notes.
+EventManuscriptNames.button1,{qst:CONTINUE}
+EventLibrarian2TalkBooks.button1,{action} A book on Egyptian Magic.
+EventGainStartClues.button1,{qst:CONTINUE}
+EventGainJournal.button1,{qst:CONTINUE}
+EventLeafletGainExtraAction.button1,{qst:CONTINUE}
+EventLeafletGainExtraAction.text,"Knowing the Professor is hiding something spurs you on.\n\nYou may spend a {clue} to take an additional Action."
+EventGuardLightsTidyingLeaflets.button1,{qst:PASS}
+EventReadManuscriptFail.button1,{qst:CONTINUE}
+EventGainInstillBravery.text,"A spell catches your attention.\n\nGain the {c:QItemInstillBravery} Spell."
+EventGainSpectralRazor.button1,{qst:CONTINUE}
+EventReviewBlackboard1.text,{qst:BLACKBOARDGLYPHS}
+EventReviewBlackboard1.button1,{qst:CONTINUE}
+EventReviewBlackboard1.button2,{qst:ZOOMIN}
+EventReviewBlackboard2.text,{qst:BLACKBOARDGLYPHS}
+EventReviewBlackboard2.button1,{qst:CONTINUE}
+EventReviewBlackboard2.button2,{qst:ZOOMIN}
+EventReviewBlackboard3.text,{qst:BLACKBOARDGLYPHS}
+EventReviewBlackboard3.button1,{qst:CONTINUE}
+EventReviewBlackboard3.button2,{qst:ZOOMIN}
+EventReviewBlackboard4.text,{qst:BLACKBOARDGLYPHS}
+EventReviewBlackboard4.button1,{qst:CONTINUE}
+EventReviewBlackboard4.button2,{qst:ZOOMIN}
+EventReviewBlackboard5.text,{qst:BLACKBOARDGLYPHS}
+EventReviewBlackboard5.button1,{qst:CONTINUE}
+EventReviewBlackboard5.button2,{qst:ZOOMIN}
+EventReviewBlackboard6.text,{qst:BLACKBOARDGLYPHS}
+EventReviewBlackboard6.button1,{qst:CONTINUE}
+EventReviewBlackboard6.button2,{qst:ZOOMIN}
+EventReviewBlackboard7.text,{qst:BLACKBOARDGLYPHS}
+EventReviewBlackboard7.button1,{qst:CONTINUE}
+EventReviewBlackboard7.button2,{qst:ZOOMIN}
+EventReviewBlackboard8.text,{qst:BLACKBOARDGLYPHS}
+EventReviewBlackboard8.button1,{qst:CONTINUE}
+EventReviewBlackboard8.button2,{qst:ZOOMIN}
+UIReviewBlackboardContinueButton.uitext,{qst:CONTINUE}
+UICryptexGuess.uitext,{qst:CONTINUE}
+UICryptexHint.uitext,Hint
+UICryptextPos1Val0.uitext,0
+UICryptextPos1Val1.uitext,1
+UICryptextPos1Val2.uitext,2
+UICryptextPos1Val3.uitext,3
+UICryptextPos1Val4.uitext,4
+UICryptextPos1Val5.uitext,5
+UICryptextPos1Val6.uitext,6
+UICryptextPos1Val7.uitext,7
+UICryptextPos1Val8.uitext,8
+UICryptextPos1Val9.uitext,9
+UICryptextPos2Val0.uitext,0
+UICryptextPos2Val1.uitext,1
+UICryptextPos2Val2.uitext,2
+UICryptextPos2Val3.uitext,3
+UICryptextPos2Val4.uitext,4
+UICryptextPos2Val5.uitext,5
+UICryptextPos2Val6.uitext,6
+UICryptextPos2Val7.uitext,7
+UICryptextPos2Val8.uitext,8
+UICryptextPos2Val9.uitext,9
+UICryptextPos3Val0.uitext,0
+UICryptextPos3Val1.uitext,1
+UICryptextPos3Val2.uitext,2
+UICryptextPos3Val3.uitext,3
+UICryptextPos3Val4.uitext,4
+UICryptextPos3Val5.uitext,5
+UICryptextPos3Val6.uitext,6
+UICryptextPos3Val7.uitext,7
+UICryptextPos3Val8.uitext,8
+UICryptextPos3Val9.uitext,9
+UICryptextPos4Val0.uitext,0
+UICryptextPos4Val1.uitext,1
+UICryptextPos4Val2.uitext,2
+UICryptextPos4Val3.uitext,3
+UICryptextPos4Val4.uitext,4
+UICryptextPos4Val5.uitext,5
+UICryptextPos4Val6.uitext,6
+UICryptextPos4Val7.uitext,7
+UICryptextPos4Val8.uitext,8
+UICryptextPos4Val9.uitext,9
+UICryptextPos5Val0.uitext,0
+UICryptextPos5Val1.uitext,1
+UICryptextPos5Val2.uitext,2
+UICryptextPos5Val3.uitext,3
+UICryptextPos5Val4.uitext,4
+UICryptextPos5Val5.uitext,5
+UICryptextPos5Val6.uitext,6
+UICryptextPos5Val7.uitext,7
+UICryptextPos5Val8.uitext,8
+UICryptextPos5Val9.uitext,9
+TokenDials.button1,Change the Dials
+EventPlaceDials.button1,{qst:CONTINUE}
+EventLibrarianTalkDoctor.text,"<i>Doctor Whitehead has been taking up far too much of my valuable time.\n\nIt has taken me a great deal of effort to track down for him an especially rare papyrus and manuscript.</i>"
+EventLibrarianTalkDoctor.button1,{qst:CONTINUE}
+EventLibrarianTalkDoctorStudy.text,"<i>He should be spending more time catching up on his paperwork in his study!</i>\n\n{qst:GAINCLUE}"
+EventLibrarianTalkDoctorStudy.button1,{qst:CONTINUE}
+EventDialSetZeroPortalIsOff.button1,{qst:CONTINUE}
+EventDialSetOff.button1,Button1
+EventDialSetZeroPortalIsOn.text,The groaning and crackling of the giant capacitors gets louder as they discharge their energy and, then, the faraday cage powers down.  The room falls silent.
+EventDialSetZeroPortalIsOff.text,When you press the button nothing happens.
+EventDialSetZeroPortalIsOn.button1,{qst:CONTINUE}
+EventPlacePortal.text,To the right of the table is a faraday cage large enough for a man to fit inside.
+EventPlacePortal.button1,Continue
+EventPortalFuture.text,Inside the faraday cage, you glimpse images of a ruined overgrown building which resembles the Museum.
+EventPortalStreetDoctor.text,"You help {qst:DOCTOR} to stagger into the portal.\n\n{qst:DISCARDPERSON}"
+EventPortalChamberCompass.button2,{qst:NO}
+EventPortalFracture.text,"Sparks of electricity surround the faraday cage.\nWithin the cage you glimpse a chaotic jumble of fractured images, showing the inside of the cage itself."
+EventPortalMuseumTeleport.text,"You step into the portal at the exact right moment.\nYou are immediately teleported to within the Museum.\n\nYou may place your investigator figure in any space in the Museum."
+EventPortalMuseumTeleport.button1,{qst:CONTINUE}
+EventPortalTeleportChamber.text,Burial Chamber
+EventPortalTeleportChamber.button1,{qst:CONTINUE}
+EventPortalChamberCompass.text,"You recall the {c:QItemMagicCompass} was found in the Science Hall.\nDo you possess the {c:QItemMagicCompass}?"
+EventPortalCodeRight.text,"Electricity sparks off the faraday cage to your right.\nInside you can see a portal to a chamber.\nThe chamber is buried in sand and rubble."
+EventPortalCodeRight.button1,{qst:CONTINUE}
+EventPortalMuseum.text,"A swirling black portal has opened inside the cage.\nYou glimpse fleeting images of the halls in the Museum including a brief vision of the main Exhibition Hall."
+EventPortalMuseum.button1,{action} Teleport to the Exhibition Hall
+EventPortalMuseum.button2,{action} Teleport to another room in the Museum.
+EventPortalMuseum.button3,{qst:CANCEL}
+EventPortalCryptexButtonPressed.button1,Button1
+EventPortalFractureEnter.text,"As you enter the swirling maelstorm, you feel destructive forces tear into your body.\n\nSuffer 1 Damage ({strength} negates).\nSuffer 1 facedown Horror ({will} negates)."
+EventPortalChamberNoCompass.button1,{qst:YES}
+EventPortalEgypt.text,In the faraday cage, you glimpse flashes of the Pyramids, the Great Sphinx, and dark buried tunnels and chambers.
+EventPortalChamberNoCompass.text,"Just as you are about to enter the portal, the vision within the portal changes and then changes again.\n\nYou may spend 2 {clue} to decide when to step into the portal.\nDo you want to spend 2 {clue}?"
+EventPortalFuture.button2,{qst:CANCEL}
+EventPortalEgypt.button1,{action} Enter the Portal.
+EventPortalEgypt.button2,{qst:CANCEL}
+EventPortalOff.text,Wires lead from a machine with dials to an electrical generator on top of which are giant capacitors.  Thick wires from the capacitors are connected to a faraday cage.  The faraday cage, open at the front, is big enough for a large man to fit inside.
+EventPortalOff.button1,{qst:CONTINUE}
+EventPortalFracture.button1,{action} Enter the Portal.
+EventPortalFractureLeave.text,You stagger out of the cage.
+EventPortalFractureLeave.button1,{qst:CONTINUE}
+EventPlaceChamberAgain.text,"You appear from the portal.\n\nPlace your figure in the space indicated."
+EventPlaceChamberInvestigator.text,"You appear from the portal.\n\nPlace your figure in the space indicated."
+EventPlaceDoctor.text,"{qst:DOCTOR} is collapsed in the corner of the room.\n\nPlace the White Person token as indicated."
+EventPlaceChamberExit.text,"You look behind you and see the portal back to the Museum is still open.\n\nPlace an Interact Token as indicated."
+EventDoctor1Escape1.text,"You help {qst:DOCTOR} to his feet, assisting him as he staggers towards the portal.\n\nMove your figure and the Person\ntoken to the space indicated."
+EventPlaceChamberThroneRubble.text,"Parts of the stone wall and ceiling have collapsed burying the throne under rubble.\n\nPlace a Rubble token as indicated."
+EventChamberRelief.text,"The wall to your left is filled with pictures of elaborate rituals.\n\n{qst:PLACESEARCH}"
+EventDoctorTalkRitual1.button2,{qst:FAIL}
+EventPlaceChamber.button1,Button1
+EventPlaceChamberInvestigator.button1,{qst:CONTINUE}
+TokenChamberThrone.button1,{qst:EXAMINE}
+EventPlaceChamberExit.button1,{qst:CONTINUE}
+EventChamberExitNoSpell.text,"The portal is surrounded by a glowing light. \nSome kind of magical barrier prevents anyone from leaving the portal.\nYou will only be able to dispel the barrier using a suitable spell."
+EventReviewCartoucheGod.text,{qst:REVIEWCARTOUCHE}
+TokenBlackboard.text,"The board was covered with chalk writing.\nMuch of it has been rubbed off.\nYou can pick up a piece of chalk and try to trace out the lines."
+EventRemoveCartoucheImages.button1,Button1
+EventGuardObjects.button1,{qst:CONTINUE}
+EventGainPlumbTheVoidSpell.button1,{qst:CONTINUE}
+EventPlaceStartLeaflets.text,"A display has been turned over and leaflets are scattered all over the top of the imposing desk.\n\nPlace a Search Token as indicated."
+EventPlaceFrontDeskLocked.text,"The guard has left the front desk but the drawers are locked.\n\n{qst:PLACEINTERACT}"
+TokenFrontDeskLocked.text,"You may use {strength} to force open the drawer.\nAdd one additional die if you have a Heavy Weapon."
+TokenFrontDeskLocked.button1,{qst:CONTINUE}
+EventFrontDeskForceOpen.text,"The drawer opens and you look through the leaflets.\nThey are about the new exhibition.\nThere is a note scribbled on one in large crude capital letters.\n<i>THROW AWAY!</i>"
+EventPlaceFrontDeskLocked.button1,{qst:CONTINUE}
+EventPlaceReliefRubble.button1,{qst:CONTINUE}
+TokenChamberSpell.button1,{qst:SEARCH}
+EventPlaceChamberTorch.text,"A flickering torch is attached to the wall.\nIt can be removed from its holder.\n\nPlace the {c:QItemTorch} {qst:COMMONITEM} as indicated."
+EventPortalChamberTravel.button1,{qst:CONTINUE}
+EventPortalChamberTravel.text,"You step into the swirling portal.\nRemove your figure from the board."
+EventPlaceReliefRubble.text,"The inscriptions on the wall are buried by fallen rubble.\n\nPlace a Rubble token as indicated."
+EventDoctor1Escape1.button1,{qst:CONTINUE}
+EventDoctorTalk.text,"{qst:DOCTOR} is huddled in the corner of the room away from the fallen rubble.\nHe is gravely ill and in a state of panic."
+TokenDoctor2.text,"Doctor Whitehead is close to death and barely able to move.\nYou may not help him to move if a Rubble token is in this space."
+TokenDoctor2.button1,{action} <i>What happened?</i>
+TokenDoctor2.button2,{action} Help him to move.
+EventDoctorToMuseum.button1,{qst:CONTINUE}
+TokenDoctor2.button3,{qst:NEVERMIND}
+EventDoctorMuseumTalk.text,"{qst:DOCTOR} has collapsed.\nIf he is to survive, he must be taken to hospital as soon as possible."
+EventDoctorMuseumTalk.button1,{action} <i>What happened?</i>
+EventDoctorMuseumTalk.button2,{action} <i>Tell me about the cartouche.</i> (Hint)
+EventDoctorMuseumTalk.button3,{action} Help {qst:DOCTOR} into the Portal
+EventDoctorMuseumTalk.button4,{qst:NEVERMIND}
+EventLibraryBookSpell.button1,{qst:CONTINUE}
+EventGainBanishmentSpell.button1,{qst:CONTINUE}
+EventGainBanishmentSpell.text,"Reliefs show serpentine people worshipping a giant serpent god.\nTheir high priest speaks words of power that raise up an army of skeleton creatures.\nIn another panel, the high priest is mortally wounded.\nHis spirit leaves his body and enters a serpentine statue.\nThe rest of the wall depicts scenes of the high priest casting spells.\nThe notes describes the rituals and with their help you gain a spell.\n\nGain the {c:QItemBanishmentSpell} Spell.\n\n{qst:EXAMINEITEM}"
+EventPortalStreet.text,"Inside the cage, through the portal, you see the street outside the Museum.\nThe portal seems stable."
+EventPortalStreet.button1,{action} Enter the Portal.
+EventPortalStreetInvestigator.button1,{qst:CONTINUE}
+EventPortalStreetInvestigator.text,"You appear in the street.\n\nPlace your figure in the space indicated."
+EventPortalStreetDoctor1.button1,{qst:CONTINUE}
+EventPortalStreet.button2,{qst:CANCEL}
+EventPortalFracture.button2,{qst:CANCEL}
+EventStreetDoctorFled.button1,{qst:CONTINUE}
+EventPlaceFutureRuin.button1,{qst:CONTINUE}
+EventPortalStreetDoctor.button1,{qst:CONTINUE}
+EventPortalStreetDoctor2.button1,{qst:CONTINUE}
+EventPortalStreetDoctor1.text,"{qst:DOCTOR} appears in the street.\nHe is close to death."
+EventPlaceStreet.text,"You stand on the steps of the Museum.\n\nPlace the {c:TileStreet} tile as indicated."
+EventPortalStreetDoctor2.text,Kathleen Ross arrives on her motorcycle.
+EventPlaceStreet.button1,{qst:CONTINUE}
+EventPlaceReporterStart.text,"Kathleen Ross is standing next to her motorcycle.  She says,\n<i>Remember, find the snake statue and bring it here.\nI saw Professor Smith holding it in the Lecture Hall.\nIf you get stuck maybe I can give some advice.</i>\n\nPlace the Yellow Person token as indicated."
+EventPlaceReporterStart.button1,{qst:CONTINUE}
+EventStreetDoctorFled.text,"She helps {qst:DOCTOR} into her sidecar.\n\n{qst:DISCARDPERSON}"
+EventStreetDoctorFledBonus.text,"You're certain {qst:DOCTOR} is in safe hands.\nKnowing you've saved a life gives you a new sense of purpose.\n\nYou may spend 1 {clue} to flip 1 Horror facedown."
+EventReporter1.text,"Kathleen Ross is waiting next to her motorcycle.  She is a source of knowledge about the Museum.\n\nOnce per turn, an investigator in her space may spend an {action} to gain 1 {clue}."
+EventReporter1.button1,Discuss what you've discovered. (Hint)
+EventReporter1.button2,Flee with the {c:QItemSnakeStatue}.
+EventPlaceFutureRuinPortal.text,"Some kind of device is hidden among the ruins.\nThere is a broken sign with faded letters.\nIt reads\n<i>Science Hall</i>.\n\n{qst:PLACEINTERACT}"
+EventPlaceFutureRuinPortal.button1,{qst:CONTINUE}
+EventFutureRuinPortalLore.button2,{qst:FAIL}
+TokenFutureRuinPortal.text,"There is a much more advanced and alien version of the Portal machine in the Museum.\nThere is a broken sign with faded letters which reads,\n<i>Science Hall</i>."
+EventDoctor1Escape2.text,"He staggers into the portal and out of the faraday cage,\n\n{qst:MOVEPERSON}"
+EventDoctor1Escape2.button1,{qst:CONTINUE}
+EventDoctorTalkRitual2.text,"<i>I was making good progress in studying a rare papyrus in the library.   Imhotep must have discovered what I was up to.  He led me into a trap but he's not as smart as he thinks.  Before I took the bait, I saw him appear from the portal. Clutched tightly in his hands, he was holding a small citrine sculpture.\nHe carried it into the Exhibition Hall.\nThis ushabti is clearly important to him.</i>\n\n{qst:GAINCLUE}"
+EventDoctorTalkRitual2.button1,{qst:CONTINUE}
+TokenFutureRuinPortal.button1,{action} Examine
+EventFutureRuinPortalLore.text,"You will need to adjust the settings on the machine to safely use the portal.\n\nTest ({lore},2)"
+EventFutureRuinPortalLore.button1,{qst:PASS}
+EventFutureRuinPortalAgility.button2,{qst:FAIL}
+EventDistantPortalObserve.button2,{qst:FAIL}
+EventRuinPortalLoreTravel.button1,{qst:CONTINUE}
+EventFutureRuinPortalAgility.button1,{qst:PASS}
+EventDistantPortalObserve.text,"You see rifts form and glimpse places, some of which look familiar.\nYou try to observe which is the correct rift to jump into.\n\nTest ({observation},2)"
+EventFutureRuinPortalLoreFail.text,It is not yet safe for you to enter the portal.
+EventDistantPortalObservePass.button1,{qst:CONTINUE}
+EventFutureRuinPortalFail.text,"You jump through the portal too soon.\n\nPlace your figure in the space indicated."
+EventDistantPortalObservePass.text,"When you enter the portal, you are horrified to find the fragmented reality is like a splintered mirror.\nYou glimpse an infinite number of versions of yourself. \n\nSuffer 1 facedown Horror and place your figure in any explored space."
+EventDistantPortalObserve.button1,{qst:PASS}
+EventFutureRuinPortalLoreFail.button1,{qst:CONTINUE}
+EventFutureRuinPortalAgility.text,"You see a portal form and glimpse, in the fast changing images, what may be somewhere familiar.\nYou will need to leap into the portal at exactly the right time.\n\nTest ({agility},2)"
+EventFutureRuinPortalFail.button1,{qst:CONTINUE}
+EventRuinPortalAgilityPass.text,"You jump into the portal.\nThe strain of travelling through time drains you.\n\nSuffer 1 facedown Damage and place your figure in any explored space."
+EventRuinPortalAgilityPass.button1,{qst:CONTINUE}
+EventPlaceFutureRuinAgain.text,Place your figure in the space indicated.
+EventPortalFuture.button1,{action} Enter the Portal.
+SpawnSkeleton1.text,"Doctor Whitehead cries out,<i>\nBeware!\nThe necromancer has called up the undead!</i>\n\nA skeleton bursts through the door and crawls its way through the rubble."
+SpawnSkeleton1.button1,{qst:CONTINUE}
+EventChamberExitLeaveDoctor.button2,{qst:CANCEL}
+EventChamberExitLeaveDoctor.text,"You step in front of the portal and start to read out the words of the banishment spell.\n{qst:DOCTOR} cries out,\n<i>Please help me!\nDon't leave me here to die!\n</i>\nAre you going to ignore his calls for help?"
+EventChamberExit.button1,{qst:CONTINUE}
+EventChamberExitLeaveDoctorYes.text,"His piteous cries haunt you as you enter the portal.\nThe gate fluctutes in size causing an enormous cave-in.\n {qst:DOCTOR} is buried alive.\n\nSuffer 1 Horror."
+EventDoctor1Escape1NeedName.button1,{qst:CONTINUE}
+EventChamberExitLeaveDoctorYes.button1,{qst:CONTINUE}
+EventChamberRemoveTileCoS.button1,{qst:CONTINUE}
+EventChamberExitLeaveDoctor.button1,{action} Jump through the Portal.
+EventChamberExit.text,"As you enter the portal, the gate expands and contracts and phases in and out of existence.\nYou manage to leap through the portal at the right moment.\n\nRubble tumbles down from the ceiling and walls."
+EventDoctorTalkRitual1.text,"<i>Imhotep cast a magical barrier on the chamber.\nBuried alive, I tell you!\nBuried alive!\nThe dead walk!\nWe're all going to die!</i>\n\nIf he is to make sense you will need to calm him down.\n\nTest ({influence},2)"
+EventDoctorTalkRitual1.button1,{qst:PASS}
+EventChamberExitNoSpell.button1,{qst:CONTINUE}
+EventChamberRelief.button1,{qst:CONTINUE}
+EventPlaceChamberTorch.button1,{qst:CONTINUE}
+EventPlaceDoctor.button1,{qst:CONTINUE}
+EventDoctor1Escape1NeedName.text,"Just before he staggers into the portal, he cries out,<i>\nThere may be a clue here which reveals Imhotep's true name!</i>"
+EventDoctorTalk.button1,{action} <i>What happened?</i>
+EventDoctorTalk.button2,{action} <i>How do we get out?</i>
+EventDoctorTalk.button3,{action} Help him to enter the portal.
+EventDoctorTalk.button4,{qst:NEVERMIND}
+EventChamberExitLeave.text,If you possess the {c:QItemBanishmentSpell} Spell you may use an {action} to step into the portal and dispel the magical barrier.
+EventChamberExitLeave.button1,{action} Step into the Portal.
+EventPlaceExhibitShrine.button1,{qst:CONTINUE}
+EventProfessorBanish.text,"You step forward, ready to speak the banishment spell.\nAre you sure you know Imhotep's true name of power?"
+EventBanishName.text,"You command the spirit of Imhotep to leave the body of Professor Smith.\nYour words will only work if you invoke his true name of power."
+EventBanishName.button1,Imhotep
+EventBanishName.button2,KhepheruNecherSutekh
+EventBanishName.button3,KhepheruNebSutekh
+EventBanishName.button4,KhepheruNecherApep
+EventBanishName.button5,KhepheruNebApep
+EventBanishSuccess.button1,{qst:CONTINUE}
+EventBanishStatueFound.text,The thin trail of ectoplasm moves across the room and enters the  {c:QItemSnakeStatue}.
+EventBanishFail.text,"Imhotep cries out,<i>\nYour words foolis-s-sh human have no power over me!\nYou are too late!"
+EventBanishFail.button1,{qst:CONTINUE}
+SpawnImhotep.button1,{qst:CONTINUE}
+EventImhotepDefeated.button1,{qst:CONTINUE}
+SpawnImhotep.text,"The Professor pulls at his skin, ripping off giant clumps.\nSoon, the human is gone, replaced with a serpentine figure. \n\n{qst:DISCARDPERSON}\nSpawn a Serpent Person as indicated.\n\nEach investigator suffers 1 facedown Horror."
+CustomMonsterDinosaur.info,-
+EventImhotepDefeated.text,"Imhotep collapses to the ground.\nHis ancient body breaks down and crumbles into dust.\nAny strange creature still active, also, collapse and crumbles into dust."
+CustomMonsterDinosaur.monstername,Giant Skeletal Dinosaur
+EventDinosaurActivation.text,"Mindless but relentless, the undead creature moves one space towards the nearest investigator or person token in range.\n\nDue to it's size the Giant Skeletal Dinosaur can never move through a door, nor can it be moved through a door by a game effect.  After it has moved it will attack the nearest investigator or person token that is within one space."
+EventDinosaurEvade.text,"The mindless creature is slow and cumbersome but its sheer size makes it dangerous.\n\nTest ({agility},1)"
+EventDinosaurEvade.button1,{qst:PASS}
+EventDinosaurEvade.button2,{qst:FAIL}
+EventDinosaurEvadePass.text,You easily avoid this huge lumbering mountain of bones.
+EventDinosaurEvadePass.button1,{qst:CONTINUE}
+EventDinosaurEvadeFail.text,"You are knocked sideways by the sweep of its huge skull.\n\nSuffer 3 Damage ({strength} negates).\nMove your figure to an adjacent space."
+EventDinosaurEvadeFail.button1,{qst:CONTINUE}
+CustomMonsterDinosaur.Attack_bladed_1,The density and sheer size of its vast bones make it unvulnerable to bladed weapons.
+CustomMonsterDinosaur.Attack_firearm_1,-
+SpawnDinosaur.button1,{qst:CONTINUE}
+EventDinosaurAttack.button1,{qst:PASS}
+EventDinosaurAttack.button2,{qst:FAIL}
+EventDinosaurAttackPass.text,"The movement of the giant bones is slow.\nYou easily side-step its huge skull and it snaps at empty air. The crunching sound of its huge jaws snapping shut disturbs you.\n\nSuffer 1 facedown Horror ({will} negates}."
+EventDinosaurAttack.text,"Its huge skull moves towards you and its jaws snap shut.\n\nTest ({agility},2)"
+EventDinosaurAttackPass.button1,{qst:CONTINUE}
+EventDinosaurAttackFail.text,"Only its lack of coordination prevents certain death but the sheer size of its jaws and teeth still does major damage.\n\nSuffer 3 Damage."
+EventDinosaurAttackFail.button1,{qst:CONTINUE}
+EventDinosaurDefeated.text,"The giant skeleton collapses into a huge pile of bones on the floor.\n\nPlace a Rubble token in the space where it was defeated."
+EventDinosaurDefeated.button1,{qst:CONTINUE}
+PuzzleWorkshopBoxesLargeGroup.button1,{qst:CONTINUE}
+EventResearchStudent.text,"An earnest young man is looking at the huge skeleton.\n\nPlace the Blue Person token as indicated."
+EventResearchStudent.button1,{qst:CONTINUE}
+EventResearcherTalkSign.text,You show the researcher the unusual sign carved on the thigh of the dinosaur.
+EventResearcherTalk.text,A studious concerned young man is examining the skeleton of the Tyrannosaurus Rex.
+EventResearcherTalk.button1,{action} <i>Hello, has something happened?</i>
+EventResearcherTalk.button2,{action} <i>Do you recognise the graffiti sign?</i>
+EventResearcherTalk.button3,{action} Show him the blackboard signs. (Hint)
+EventResearcherTalk.button4,{action} <i>It's not safe, you should leave!</i>
+EventResearcherTalk.button5,{qst:NEVERMIND}
+EventResearcherTalkFossil.text,"<i>I'm a student from the university.  I came here to help Doctor Whitehead with his research.  The librarian won't allow me access to the library because I don't know what he was researching.\n\nWhile I searched for the Doctor, I noticed a vandal has damaged this exhibit with graffiti.  Some visitors have no respect for anything.  This is not a mere replica but the actual fossilised bones of a creature millions of years old.\n\nProfessor Smith came out of the door to the Exhibition Hall.  I reported the damage to him and asked him if he'd seen Doctor Whitehead.  He shouted at me and stormed back through the door.  I think he's ill.  His face had an odd greenish palor and as he walked through the door, he made strange hand signs and shouted words in ancient Egyptian.\n</i>\nGain 1 Clue {clue}."
+EventResearcherTalkSign.button1,{qst:CONTINUE}
+EventResearcherTalkSignApep.text,"<i>That is odd!  I've been doing research for the new exhibition. That particular snake sign resembles the symbol for the infamous god Apep.\nHe was the ancient Egyptian deity who embodied chaos and opposed light, order and truth. He often appears in reliefs as a giant serpent.</i>\n\n{qst:GAINCLUE}\n\nYou make a record of this clue."
+EventResearcherTalkSignApep.button1,{qst:CONTINUE}
+EventResearcherTalkSignSutekh.text,"<i>That is odd!  I've been doing research for the new exhibition. That particular snake sign resembles the symbol for the god Sutekh in his snake form.\nSutekh is an evil aspect of the god Set.\nHe was the ancient Egyptian god of deserts, storms, disorder, violence, and foreigners.  In Imhotep's times, he was sometimes depicted in reliefs as a giant serpent.</i>\n\nGain 1 {clue}.\n\nYou make a record of this clue."
+EventResearcherTalkSignSutekh.button1,{qst:CONTINUE}
+EventResearcherTalkLeave.text,"<i>Recently, it seems, everyone wants me to leave.  Well, it's a free country and I want to know what's going on!</i>\n\nTest ({influence},2)"
+EventResearcherTalkLeave.button1,{qst:PASS}
+EventResearcherTalkLeave.button2,{qst:FAIL}
+EventReviewDinosaurSignApep.text,The researcher told you the sign carved on the bone of the dinosaur resembled the distinctive symbol of the god Apep.
+EventReviewDinosaurSignApep.button1,{qst:CONTINUE}
+EventReviewDinosaurSignSutekh.text,The researcher told you the sign carved on the bone of the dinosaur resembled the distinctive symbol of the god Sutekh.
+EventReviewDinosaurSignSutekh.button1,{qst:CONTINUE}
+TokenScienceInventions.button1,{qst:SEARCH}
+TokenScienceInventions.text,The table contains an diverse collection of inventions.
+EventWeaponSearch.text,"You look around to make sure no one is looking.\nThe weapon comes away from its wall mounting very easily."
+EventReviewLedgerPage3WestGlyph.text,"<i>He knows I'm watching him but today he has slipped up.\nI have learnt the glyph he sets the machine to is connected with the West.\n\nHe has left a clue written on the blackboard.  Tonight, I will return.  I am resolved to discover where my friend travels to.</i>"
+EventReviewLedgerPage3WestGlyph.button1,{qst:CONTINUE}
+EventReviewLedgerPage3RoomGlyph.text,"<i>He knows I'm watching him but today he has slipped up.\nI have learnt the glyph he sets the machine to is connected with chamber or room.\n\nHe has left a clue written on the blackboard.  Tonight, I will return.  I am resolved to discover where my friend travels to.</i>"
+EventReviewLedgerPage3RoomGlyph.button1,{qst:CONTINUE}
+EventReviewLedgerPage3BurialGlyph.text,"<i>He knows I'm watching him but today he has slipped up.\nI have learnt the glyph he sets the machine to is connected with burial.\n\nHe has left a clue written on the blackboard.  Tonight, I will return.  I am resolved to discover where my friend travels to.</i>"
+EventReviewLedgerPage3BurialGlyph.button1,{qst:CONTINUE}
+EventReviewLedgerPage3EastGlyph.text,"<i>He knows I'm watching him but today he has slipped up.\nI have learnt the glyph he sets the machine to is connected with the East.\n\nHe has left a clue written on the blackboard.  Tonight, I will return.  I am resolved to discover where my friend travels to.</i>"
+EventReviewLedgerPage3EastGlyph.button1,{qst:CONTINUE}
+EventReviewLedgerPage2.text,"<i>Once the fixes were complete, I set the first dial on the machine to the sign for myself and the last to one.  My friend entered the faraday cage and was teleported to within the Museum.\n\nI set the last digit to two and my friend was teleported to the street outside.  We were like children playing with fire.\nFrom the very start, we came close to disaster.  I set the first dial to myself and the last to zero.  When I entered the cage the forces were destructive.  If I'd remained, they would have ripped me apart.\n\nI wanted to stop the experiments but my friend was undaunted.  He became distant and haughty.  His voice became guttural and hissing.</i>"
+EventReviewLedgerGlyphs.button2,{qst:ZOOMIN}
+EventMythosFlavor1.text,"The guard gets up from his desk.\nHe looks at you suspiciously."
+EventMythosFlavor1.button1,{qst:CONTINUE}
+EventMythosFlavor1More.text,He takes a few paces around the Entrance Hall and then gets back behind his desk.
+EventMythosFlavor1More.button1,{qst:CONTINUE}
+EventMythosFlavor2.text,"Throughout the building, the modern lighting fixtures buzzes and flash on and off.\n\nNo Immediate Effect."
+EventMythosFlavor2.button1,{qst:CONTINUE}
+EventMythosFlavor3.text,"The sound of chanting in a strange hissing guttural language comes from the Exhibition Hall.\n\nNo immediate effect."
+EventMythosFlavor3.button1,{qst:CONTINUE}
+EventMythosFlavor4.text,"In the Science Hall a glowing crack appears on a wall.\nFor a split-second, you glimpse a strange vista of an ancient building covered in overgrowth.\nBefore you see more, the rift closes.\n\nNo immediate effect."
+EventMythosFlavor4.button1,{qst:CONTINUE}
+EventMythosFlavor5.text,"For a moment you think you see the skull of one of the dinosaurs move.\nYou are relieved to find it was a trick of the light.\n\nNo immediate effect."
+EventMythosFlavor5.button1,{qst:CONTINUE}
+EventMythosMinor1.text,"The obssesive worship of science and knowledge begins to look twisted, even fanatic, in its relentless pursuit of answers regardless of the cost.\n\nEach investigator in the {c:TileScienceHall} Tile or with a Tome item must either suffer 1 facedown Horror, discard 1 {clue} or drop a Tome item."
+EventMythosMinor1.button1,{qst:CONTINUE}
+EventMythosMinor2.text,"A droning hissing chant, fills not just the air but the mind of {rnd:hero}. \n\n{rnd:hero} suffers 1 Horror ( negates)."
+EventMythosMinor2.button1,{qst:CONTINUE}
+EventMythosMinor3.text,"Evil energies in the air suck all light and hope away.\nThe lights in the {c:TileScienceHall} flicker and go out.\n \n Place Darkness tokens in both spaces in the {c:TileScienceHall} tile. Then, each investigator in Darkness suffers 2 facedown Horror ( negates)."
+EventMythosMinor3.button1,{qst:CONTINUE}
+EventMythosMinor4.text,"A stream of flesh-eating scarab beetles pour out from the portal.\nEach one is easy to stamp to death but their sheer numbers make them dangerous.\n\nAll investigators in a room with a Portal Interact token suffer 2 facedown Damage ({agility} negates).\nIf an investigator suffers Damage they must either discard 1 {clue} or become Poisoned."
+EventMythosMinor4.button1,{qst:CONTINUE}
+EventMythosMinor5.text,"The walls, floor and ceiling of the echoing cavernous hall seem to stretch out to infinity as though space and time is bent out of shape.\n\nAll investigators in a medium or large tile suffer 1 Horror ({observation} negates)."
+EventMythosMinor5.button1,{qst:CONTINUE}
+EventMythosMinor6.text,"A rip in space and time appears in the Science Hall.\n\nPlace a Rift token in the space indicated."
+EventMythosMinor6.button1,{qst:CONTINUE}
+EventMythosMinor7.text,"The antiques, relics, and fossils that fill the museum halls, lead your thoughts to the past and the inevitable fate that will befall all species and all civilisations - great or small.\n\nIf {rnd:hero} has no Horror, {rnd:hero} suffers 1 facedown Horror.\nOtherwise, {rnd:hero} must flip 1 Horror faceup."
+EventMythosMinor7.button1,{qst:CONTINUE}
+EventMythosMinor8.text,"The stange gutteral hissing chanting fills your mind.\nYou hear a defeaning voice in your head and you feel compelled to follow whatever it commands you to do.\n\n{rnd:hero} gains the Mesmerised Condition."
+EventMythosMinor8.button1,{qst:CONTINUE}
+EventMythosMinor9.text," You are suddenly aware of the awful and unstoppable passage of time, obsessively dwelling on your ultimate mortal fate.\n\n{rnd:hero} suffers 2 facedown Horror ({will} negates)."
+EventMythosMinor9.button1,{qst:CONTINUE}
+EventMythosMinor10.text,"Maybe the building is poorly maintained or maybe some malign force is at work.\nA piece masonry falls on you.\n\n{rnd:hero} suffers 2 facedown Damage ({agility} negates).\n\nPlace 1 Rubble token in the same space as {rnd:hero}."
+EventMythosMinor10.button1,{qst:CONTINUE}
+EventMythosDinosaurAttackMore.text,"Just as the jaws are about to snap shut on the student's head, the student flees and cowers in the corner of the hall.\n\nMove the Blue Man token as indicated. "
+EventMythosDinosaurAttackMore.button1,{qst:CONTINUE}
+EventMythosMinorDinosaurAttack.button1,{qst:CONTINUE}
+EventMythosReporterReturns.text,"You hear the sound of a motorcycle as it careers down the street.\n{qst:REPORTER} has returned.\n\nPlace the Yellow Person token as indicated."
+EventMythosReporterReturns.button1,{qst:CONTINUE}
+EventMythosPortalPowerUp.text,The electrical generator groans and sparks fly as the giant capacitors slowly powers up.
+EventMythosPortalPowerUp.button1,{qst:CONTINUE}
+EventGuardPaleoLights.button1,{qst:CONTINUE}
+EventGuardPaleoDinosaur.text,The guard cowers against the wall.
+EventGuardPaleoDinosaur.button1,{action} <i>You must flee!</i>
+EventGuardPaleoPersuade.button2,{qst:FAIL}
+EventGuardPaleoPersuade.text,"You shout at the guard he must flee for his life!\n\nTest ({influence},2)"
+EventGuardPaleoDinosaur.button2,{action} Shake some sense into him.
+EventGuardPaleoPass.button1,{qst:CONTINUE}
+EventGuardPaleoPersuade.button1,{qst:PASS}
+EventGuardPaleoPass.text,"The guard comes to his senses and runs off.\nYou neither know nor care where he goes as long as he is safe for now.  His rescue gives you new hope.\n\n{qst:DISCARDPERSON}\nGain the Focussed Condition."
+EventGuardPaleoFail.text,The guard stands frozen in terror.
+EventGuardPaleoFail.button1,{qst:CONTINUE}
+EventGuardPaleoIntimidate.text,"You grab the guard by the lapels of his uniform and try to shake some sense into him.\n\nTest ({strength},2)"
+EventGuardPaleoIntimidate.button1,{qst:PASS}
+EventGuardPaleoIntimidate.button2,{qst:FAIL}
+EventScienceHallToWorkshop.text,{qst:DOORWORKSHOP}
+EventEntranceToExhibitionBarred.button1,{qst:CONTINUE}
+EventEntranceToExhibitionSign.button2,{qst:CANCEL}
+EventPlaceScienceInventions.button1,{qst:CONTINUE}
+EventScienceInventions.button1,{qst:CONTINUE}
+EventFrontDeskForceOpen.button1,{qst:CONTINUE}
+EventPortalChamberNoCompass.button2,{qst:NO}
+EventDoctorToMuseum.text,"You help {qst:DOCTOR} to enter the portal.\n\n{qst:MOVEPERSON}"
+EventChamberExitLeave.button2,{qst:CANCEL}
+EventExhibitCoffin.text,"The coffin is large and ornate.\nThe lid is heavy.\nYou may try to move the the coffin lid to one side from this end of the coffin.\n\nYou may use an {action} to test ({strength}).\nRoll an additional die if you possess a Heavy Weapon."
+EventExhibitCoffinNoStatue.text,"The coffin is empty.\n\n{qst:DISCARDINTERACT}"
+EventExhibitCoffinNoStatue.button1,{qst:CONTINUE}
+EventExhibitBoat.button1,{qst:CONTINUE}
+EventExhibitBoatSuccess.text,You carefully check the numerous small statues on and in the boat.
+EventExhibitChestSuccess.text,"Inside the chest seems to be empty except for sand.\n\nDiscard the Interact token."
+EventExhibitChest.text,"The large stone chest is locked by some cunning mechanism.\nYou may try to trigger the mechanism to open the lid.\n\nYou may use an {action} to test {agility}.\nRoll an additional die if you possess a Bladed Weapon."
+TokenProfessor.text,"Professor Smith scratches at his neck.\nSmall strips of skin peel away, revealing iridescent green scales.\nThe Professor is rooted to the spot as the transformation continues.\nYou may only click the 'Banish' button if you are in his space and possess the {c:QItemBanishmentSpell} spell."
+TokenProfessor.button1,Banish
+TokenProfessor.button2,Attack
+EventProfessorBanishManuscriptNotRead.text,"You realise there is a key part of the spell you do not know.\nYou do not know his true name of power."
+EventProfessorBanish.button1,{action} Call out his true name.
+EventProfessorBanishManuscriptNotRead.button1,{qst:CONTINUE}
+EventProfessorBanish.button2,{qst:CANCEL}
+EventBanishSuccess.text,"You command Imhotep by his true name of power.\nHis spirit comes out of his mouth as a serpentine protrusion of ectoplasm.\nThe Professor, free of his malign influence, flees the Exhibition Hall.\n\n{qst:DISCARDPERSON}\n\nYou may flip one Horror facedown."
+EventBanishStatueFound.button1,{qst:CONTINUE}
+EventBanishStatueNotFound.text,A cloud of ectoplasim swirls arounds the main relics of the exhibition and vanishes.
+EventBanishStatueNotFound.button1,{qst:CONTINUE}
+EventDoctorTalkSpell.text,"<i>Reliefs in this chamber contain a description of a banishment spell.\nI learnt about the spell by researching the Egyptian papyrus,\n'Forbidden Rituals of Necromancy'.\n I believe it is key to breaking the magical barrier and banishing the spirit of Imhotep.\nBanishing the spirit requires speaking its true name.</i>\n\n{qst:GAINCLUE}"
+SpawnSkeleton2.text,Another skeleton crawls its way through the rubble.
+SpawnSkeleton2.button1,{qst:CONTINUE}
+EventPortalToEgyptClosed.text,In the cage, the visions of ancient Egypt fades and vanish.
+EventPortalToEgyptClosed.button1,{qst:CONTINUE}
+EventChamberRemoveTile.button1,{qst:CONTINUE}
+EventReviewBanishmentSpell.text,"The spell can be used to break magical barriers.\n It can, also, be used to force a spirit possessing someone to depart the body.\nTo succeed the banishment requires commanding the spirit by its true name.\n\nNo game effect can cause the spell to be discarded from the game."
+EventReviewBanishmentSpell.button1,{qst:CONTINUE}
+EventPlaceExhibitMonster.button1,Button1
+TokenExhibitShrine.button1,Button1
+EventPortalFractureFinale.text,"You throw the {c:QItemSnakeStatue} into the rift.\nYou watch as the statue spins as it disappears into the void."
+EventPortalFractureFinale.button1,{qst:CONTINUE}
+EventDinosaurActivation.button1,An investigator is within one space.
+EventDinosaurActivation.button2,A person token is within one space.
+EventDinosaurActivation.button3,None is within one space.
+EventResearcherTalkLeaveSuccess.text,"The research student leaves the building.\n\n{qst:DISCARDPERSON}"
+EventResearcherTalkLeaveSuccess.button1,{qst:CONTINUE}
+EventResearcherTalkLeaveFail.text,<i>I think you're hiding something from me!</i>
+EventResearcherTalkLeaveFail.button1,{qst:CONTINUE}
+EventStreetReporterFled.text,"She drives off at speed to the nearby hospital.\n\n{qst:DISCARDPERSON}"
+EventDinosaurAttackAlly.text,Which person is within one space?
+EventDinosaurAttackAlly.button1,The Security Guard
+EventDinosaurAttackAlly.button2,The Research Student
+EventDinosaurAttackAlly.button3,{qst:DOCTOR}
+EventDinosaurAttackAlly.button4,{qst:CANCEL}
+EventDinosaurAttackGuard.text,"The guard freezes in terror.\nThe huge jaws slam shut.\nThe guard is cut in two.\nThe two parts of what remains of his body fall to the floor in a torrent of blood.\n\n{qst:DISCARDPERSON}\nAll investigators suffer 1 Horror."
+EventDinosaurAttackGuard.button1,{qst:CONTINUE}
+EventDinosaurAttackResearcher.text,"The student screams and attempts to dive out of the way, but trips.\nThe front leg of the skeletal monstrosity comes forward and crashes down on his back.\nHuge claws sink into his body and tears off large chunks of flesh.\n\n{qst:DISCARDPERSON}\nAll investigators suffer 1 Horror."
+EventDinosaurAttackResearcher.button1,{qst:CONTINUE}
+EventDinosaurAttackDoctor.text,"{qst:DOCTOR} is too weak to move.\nBefore the creature can even begin its attack, he lets out a piercing haunting scream, clutches his chest, and dies of shock.\n\n{qst:DISCARDPERSON}\nAll investigators suffer 1 Horror."
+EventDinosaurAttackDoctor.button1,{qst:CONTINUE}
+EventDinosaurAttackLibrarian.text,"The Librarian runs but trips and falls to the ground.\nThe leg of the creature crashes down on him crushing his body.\n\nDiscard the Librarian token from the board.\nAll investigators suffer 1 Horror."
+EventDinosaurAttackLibrarian.button1,{qst:CONTINUE}
+EventPlacePortraitHallWeapon.text,"To your right is a collection of items connected with famous explorers.\nThere is a collection of ancient weapons hanging on the wall above a display cabinet.\n\nPlace a Search Token as indicated."
+EventPlacePortraitHallWeapon.button1,{qst:CONTINUE}
+TokenPortraitHallWeapon.text,Above a display cabinet, hanging on wall fittings is a collection of ancient weapons.
+TokenPortraitHallWeapon.button1,{qst:SEARCH}
+EventWeaponSearch.button1,{qst:CONTINUE}
+EventGainWeaponTimewornBrand.button1,{qst:CONTINUE}
+EventStartGainAction.button1,{qst:CONTINUE}
+EventStartGainAction.text,"There is something not right going on.\nYou are fully rested and your suspicions spurs you on to move faster.\n\nThis turn, the investigator with the highest {agility} may spend a {clue} to take an additional Move Action."
+EventBanishName.button6,{qst:CANCEL}
+EventPlaceChamberPotS.text,"You see a chamber dimly lit by a burning torch attached to the wall.\n\nPlace the {c:TileChamber} tile as indicated."
+EventPlaceChamberPotS.button1,{qst:CONTINUE}
+EventResearcher2.text,The young man cowers in fear and shock.
+EventResearcher2.button1,{action} <i>Run for your life!</i>
+EventResearcher2TalkFlee.text,"While you act as a distraction, the young man flees from the museum.\n\n{qst:DISCARDPERSON}"
+EventResearcher2TalkFlee.button1,{qst:CONTINUE}
+EventResearcher2.button2,{qst:NEVERMIND}
+EventFossilSearch.text,"It is hard to examine the bones in the dark.\n\nTest({observation},2).\nRoll one less die if your space is in Darkness."
+EventFossilEvade.button1,{qst:PASS}
+EventFossilEvade.button2,{qst:FAIL}
+EventResearcherTalkFossil.button1,{qst:CONTINUE}
+EventGuardPaleoDinosaur.button3,{qst:NEVERMIND}
+EventReporterObjective1.text,<i>I mentioned I saw Professor Smith acting strange in the Lecture Hall.  Maybe you should check it out?</i>
+EventReporterObjective1.button1,{qst:CONTINUE}
+EventReporterObjective2.text,"<i>It sounds like {qst:DOCTOR} may know something.\nMaybe you should find him?"
+EventReporterObjective2.button1,{qst:CONTINUE}
+EventReporterHintDoors.text,<i>This is a dumb question but you did try all the doors into the Exhibition Hall?</i>
+EventReporterHintDoors.button1,{qst:CONTINUE}
+EventReporterObjective3.text,"<i>Finding the statue would be useful in clearing my name.\nMaybe it could, also, be useful in defeating Imhotep?</i>"
+EventReporterObjective3.button1,{qst:CONTINUE}
+EventReporterObjectiveDefault.text,"<i>Once you have defeated Imhotep, bring the statue here.\nProfessor Armitage is a friend of mine and can help.</i>"
+EventReporterObjectiveDefault.button1,{qst:CONTINUE}
+UILedgerZoomContinueButton.uitext,{qst:CONTINUE}
+EventEliminated.button1,Button1
+UIEliminatedProfessorSavedText.uitext,"With the loss of your companion, your resolve crumbles.  You flee the Museum just as the police car arrives.  When the police officers search the Museum, they find no trace of Imhotep, nor any strange creatures.\n\nProfessor Smith returns and persuades them you are innocent.  But nagging doubts knaws at your mind.  The spirit of Imhotep survived so many centuries.  You lie awake, worrying.  How long will it be before he returns?  A phrase from the dread book the Necronomicon comes to you,\n\n'That is not dead which can eternal lie,\nAnd with strange aeons even death may die.'\n\nThe investigation is not complete."
+UIEliminatedProfessorNotSavedText.uitext,"With the loss of your companion, your resolve crumbles.  You flee the Museum just as a police car arrives.  The police interview Professor Smith.  He is plausible and persuasive, pinning the blame on you.  Fleeing the scene of the crime does not help your case.\n\nWith the police investigating you, you dare not go anywhere near the Professor or the Museum.  The reporter, Kathleen Ross is fired by her irate editor.  The incident is soon forgotten.\n\nIn time, the Professor becomes influential, well-respected and a pillar of the community.  He leaves his job for a career in politics.  There is talk of him running for Major and even higher office.  The one tiny flaw that counts against him in the minds of the general public is his occasional slight hissing lisp.\n\nThe investigation is not complete."
+UITheEndButtonText.uitext,The End
+UIFinaleMajorVictoryTextPage2Default.uitext,"The police arrive and are baffled by what they find.  Fortunately, Professor Smith makes a complete recovery.  He persuades them the damage, chaos and deaths were due to a severe gas leak.  He is happy to clear the good name of the reporter, Kathleen Ross.  With a clever spin on her story, she gets the scoop she wanted and her job is safe.\n\nThe Professor ensures the portal device is dismantled.  He promises you he will never get involved in anything arcane again.\n\nYour only regret is you were not able to save everybody but that would be an almost impossible task.\n\nThe investigation is complete."
+UIFinaleMajorVictoryTextPage2AllSaved.uitext,"The police arrive and are baffled by what they find.\nFortunately, Professor Smith makes a complete recovery.  He persuades them the damage and chaos were due to a severe gas leak.  He is happy to clear the good name of the reporter, Kathleen Ross.  With a clever spin on her story, she gets the scoop she wanted and her job is safe.\n\nThe Professor ensures the portal device is dismantled.  He promises you he will never get involved in anything arcane again.  But what pleases you most is, not just you succeeded, but that nobody died!\n\nThis is a total victory."
+UIFinaleMinorVictoryText.uitext,"You hear the siren of an approaching police car.  Before you're discovered, you flee. The police are baffled by what they find.\n\nWith their chief witness, Professor Smith, missing and seemingly involved in criminal activity, all charges are dropped against the reporter.  She gets the scoop she wanted.  In her story, she claims the deaths were due to faulty electrics and a gas explosion and starts a campaign to improve the safety of public buildings.  As part of this campaign she ensures the portal device is dismantled.\n\nYou succeeded in destroying the physical body of the necromancer.  But his spirit survived and will be seeking a suitable new body.\n\nThe investigation is complete.\nBut Imhotep will return! "
+UIFinaleReporterFleeText1.uitext,"You clamber into the sidecar.  You hear the siren of an approaching police car.  Before it arrives, Kathleen Ross makes a quick getaway, with you clutching the statue.\n\nOnce you get far enough away, the malign influence of the necromancer fades and the creatures he has animated become lifeless and inert."
+UIFinaleReporterFleeButtonText.uitext,{qst:CONTINUE}
+UIFinaleReporterFleeText2.uitext,"She goes to the office of the Arkham Gazette and, by the following day, her story is front page news.  Her story leaves out much of what happened and, instead,  implies the chaos was caused by faults in the electrics and a gas leak.  The Professor goes along with this version of events.  He ensures the portal device is dismantled and promises never to get involved in anything arcane again.\n\nThere is just one problem.  What to do with the statue?  Kathleen has a friend who can help.  Professor Armitage agrees to store it in a vault deep beneath the Miskatonic University."
+PuzzleWorkshopBoxesSmallGroup.button1,{qst:CONTINUE}
+EventStreetReporterFled.button1,{qst:CONTINUE}
+EventStreetDoctorFledBonus.button1,{qst:CONTINUE}
+EventGainWeaponMachete.button1,{qst:CONTINUE}
+EventGainWeaponTimewornBrand.text,"Gain the {c:QItemTimewornBrand} {qst:COMMONITEM}.\n\n{qst:DISCARDSEARCH}"
+EventGainWeaponMachete.text,"Gain the {c:QItemMachete} {qst:COMMONITEM}.\n\n{qst:DISCARDSEARCH}"
+EventGainWeaponEnchantedBlade.button1,{qst:CONTINUE}
+EventGainWeaponEnchantedBlade.text,"Gain the {c:QItemEnchantedBlade} {qst:COMMONITEM}.\n\n{qst:DISCARDSEARCH}"
+EventExhibitDoorCastSpell.button2,{qst:CANCEL}
+EventExhibitChestSuccess.button1,{qst:CONTINUE}
+EventReporter1.button3,{qst:NEVERMIND}
+EventReporteFleeStatue.button2,{qst:CANCEL}
+EventReporteFleeStatue.text,If you possess the {c:QItemSnakeStatue}, you may use an {action} to get into the sidecar and flee with the {c:QItemSnakeStatue}.
+EventReporteFleeStatue.button1,{action} Flee with the {c:QItemSnakeStatue}.
+EventPortalPoweringUp.text,"The generator groans and sparks fly as the giant capacitors start to power up.  Until fully powered, the portal cannot be used.   It will be ready to be used next turn.\n\nAttached to the generator is a hand crank.  The crank can be used to power up the capacitors sooner by pumping the handle up and down."
+EventPortalPoweringUp.button1,{action} Pump the hand crank.
+EventPortalNotPoweredUp.button1,{qst:CONTINUE}
+EventPlaceFutureRuinAgain.button1,{qst:CONTINUE}
+EventPortalNotPoweredUp.text,The portal is not yet powered up.
+EventExhibitDoorResolveSpell.text,"Dark magic causes dangerous effects.\n\nYou must either choose to discard a {clue} or, instead, turn over the {c:QItemBanishmentSpell} card, resolve the effects and then gain a new {c:QItemBanishmentSpell} spell."
+EventExhibitDoorResolveSpell.button1,{qst:CONTINUE}
+EventDinosaurAttackReporter.text,The reporter guns her motorcycle into action and easily evades the huge lumbering creature.
+EventDinosaurAttackReporter.button1,{qst:CONTINUE}
+EventPlaceChamberThrone.button1,{qst:CONTINUE}
+EventPlaceExhibitHall.text,"The doors to the Exhibition Hall fly open.\nThe exhibition is in complete disarray.\n\nPlace the {c:TileExhibitHall} tile.\n\nPlace a Door token as indicated.\n \nRemove all Explore tokens leading into this tile."
+EventPlaceExhibitHall.button1,{qst:CONTINUE}
+EventScienceHallToWorkshopGuarded.button1,{qst:CONTINUE}
+EventScienceHallToWorkshopGuarded.text,{qst:DOORWORKSHOP}
+EventGuardTalkBusy.text,<i>I'm too busy to talk to you!</i>
+EventScienceHallToWorkshop.button1,{qst:EXPLORE}
+EventEntranceToStudyGuarded.button1,{qst:CONTINUE}
+EventEntranceToStudy.button1,{qst:EXPLORE}
+EventPlaceFireAxe.text,"In the corner of the hall is a {c:QItemFireExtinguisher}.\n\nPlace the {c:QItemFireExtinguisher} Common Item as indicated."
+EventLibraryBookExpedition.button1,{qst:CONTINUE}
+EventInspectExpeditionLog.text,"A year ago, Professor Smith led a dig excavating a temple dedicated to the god Set.\nThe temple was unusual in that the god was represented as a giant snake.\nA number of items were recovered, including a gilded wooden boat, a coffin, and a stone chest.\nA shaft was found leading to deep beneath the temple.\nThere were concerns about safety but the Professor was determined to explore where it led.\nThe dig was abandoned when the shaft caved-in, causing the death of two of the archaeologists.\n\nThis item counts as evidence."
+EventInspectExpeditionLog.button1,{qst:CONTINUE}
+EventScienceHallToWorkshop.button2,{qst:CANCEL}
+EventEntranceToStudy.button2,{qst:CANCEL}
+EventPlaceShovel.button1,{qst:CONTINUE}
+EventPlaceShovel.text,"Leaning against a wall is a shovel.\nNear to it is a small pile of sand.\n\nPlace the {c:QItemShovel} Common Item in the space indicated."
+SpawnStarVampire.button1,{qst:CONTINUE}
+SpawnStarVampire.text,"Near to the centre of the room is a creature with multiple muscular tentacles.  Each has a tip with suckers and teeth.\nIt phases in and out of existence. \n\nSpawn a Star Vampire monster as indicated."
+EventPortalChamberCompass.button1,{qst:YES}
+EventPlaceExhibitShrine.text,"There is a shrine.\n\nPlace an Interact Token as indicated."
+SpawnTempleGuardian.text,"Near the centre of the room is a giant stone guardian.\n\nPlace a Temple Guardian monster in the indicated space."
+EventExhibitShrine.text,"The shrine contains a number of statues of gods and goddesses.\n\nYou may use an {action} to test {lore}."
+EventExhibitShrine.button1,{qst:CONTINUE}
+EventExhibitShrineSuccess.text,"None of the statues are connected with the god Set.\n\n{qst:DISCARDINTERACT}"
+EventExhibitShrineSuccess.button1,{qst:CONTINUE}
+EventExhibitShrineFail.text,It will take time to examine every statue.
+EventExhibitShrineFail.button1,{qst:CONTINUE}
+EventPortalExhibit.text,"You enter the portal.\n\nDo you possess the {c:QItemMagicCompass}?"
+EventPortalExhibit.button1,{qst:YES}
+EventPortalExhibitCompassNo.text,"You are thrown violently back into the faraday cage.\n\nSuffer 1 facedown Damage ({strength} negates)."
+EventPortalExhibit.button2,{qst:NO}
+EventPortalExhibitCompassYes.button1,{qst:CONTINUE}
+EventPortalExhibitCompassYes.text,"You travel through the ether and before you, you see an elderly man chanting.\nHe was facing the two main doors of the Exhibition Hall.\nThere was a glowing barrier on the door to the North but it seemed weaker.\nThen, suddenly, you are thrown back into the faraday cage.\n\n{qst:GAINCLUE}"
+EventPortalExhibitCompassExtraAction.button1,{qst:CONTINUE}
+EventPortalExhibitCompassExtraAction.text,"The experience of travelling through the ether gives you new insight.\n\n{qst:EXTRAACTION}"
+EventPortalExhibitCompassNo.button1,{qst:CONTINUE}
+EventChamberSpellTest.button2,{qst:FAIL}
+EventChamberSpellTest.text,"On the floor, you spot fragments of notes describing the panels.\n\nTest ({observation},2)."
+EventChamberSpellTest.button1,{qst:PASS}
+EventChamberSpellTestFail.text,"It will take time to find all the notes buried in the rubble.\nHowever, time is not on your side.\nMore fragments of stone fall from the ceiling.\n\nSuffer 1 facedown Damage ({agility} negates).\nPlace a Rubble token in your space."
+EventChamberSpellTestFail.button1,{qst:CONTINUE}
+EventReviewCartoucheLord.button1,{qst:CONTINUE}
+EventCartoucheRead.text,"You spot the symbols for dual kingship and beneath is a cartouche.\nIt is unusual for someone who is not royalty to have their name inscribed in a a cartouche.\nInside the cartouche is an unusual serpent glyph.\nYou make a drawing of the cartouche.\n\nGain {var:numCartoucheClues} {clue}."
+EventCartoucheRead.button1,{qst:CONTINUE}
+EventPlaceFutureRuin.text,"You emerge in a ruined building.\n\nPlace the {c:TileFutureRuin} tile.\n\nPlace your figure in the space indicated."
+EventPlacePastRuinAgain.text,Place your investigator figure in the space indicated.
+EventPlacePastRuinAgain.button1,{qst:CONTINUE}
+EventPlacePastRuin.text,"Through the portal is a dark ancient tunnel.\n\nPlace the {c:TilePastRuin} tile as indicated."
+EventPlacePastRuin.button1,{qst:CONTINUE}
+EventPlacePastRuinPortal.text,"You see a rift at the end of the tunnel.\n\n{qst:PLACEINTERACT}"
+EventPlacePastRuinPortal.button1,{qst:CONTINUE}
+EventPlacePastRuinRubble.text,"The tunnel is buried by rubble.\nIn front of you, a thick layer of sand, grit and dust covers the floor and rubble.\n\nPlace 3 Rubble tokens as indicated."
+EventPlacePastRuinRubble.button1,{qst:CONTINUE}
+EventPlacePastRuinDarkness.text,"The tunnel is in darkness.\n\nPlace Darkness tokens in the room as indicated."
+EventPlacePastRuinDarkness.button1,{qst:CONTINUE}
+TokenPastRuinPortal.text,Through the rift you glimpse what might be places in the Museum.
+TokenPastRuinPortal.button1,{action} Enter the Portal
+EventRuinPortalLoreTravel.text,"The strain of travelling through time drains you.\n\nSuffer 1 facedown Damage and place your figure in any explored space."
+EventPlacePastRuinInvestigator.text,"You stagger out of the rift into the tunnel.\n\nPlace your investigator figure in the space indicated."
+EventPlacePastRuinInvestigator.button1,{qst:CONTINUE}
+PuzzleInscription.button1,{qst:CONTINUE}
+EventCartoucheExtraAction.text,"Discovering the cartouche encourages you to re-double your efforts.\n\n{qst:EXTRAACTION}"
+EventChamberRemoveTile.text,"While the portal closes, the chamber collapses behind you.\n\nPlace all other investigator figures in the {c:TileChamber} tile in your space.\nRemove all tokens and monsters from the tile.\nRemove the {c:TileChamber} tile from play."
+EventReviewLedgerResearch.button1,{qst:CONTINUE}
+EventCryptexHintNoGlyph.text,"The first dial shows hieroglyphics.\nTo operate the machine it may be useful to discover more about hieroglyphs.\nIf you do, the hint displayed will be more useful."
+EventCryptexHintNoGlyph.button1,{qst:CONTINUE}
+EventEventCryptexHintGlyphs.button1,{qst:CONTINUE}
+EventInspectSnakeStatue.button1,Hint
+EventInspectSnakeStatueHint1.text,"The snake statue once contained the spirit of the necromancer.\nIt is too late to cast a spell to force his spirit to leave the Professor.\nYou will need to kill the Serpent Man."
+EventInspectSnakeStatueHint1.button1,{qst:CONTINUE}
+EventInspectSnakeStatueHint2.text,"The snake statue once contained the spirit of the necromancer.\nYou may be able to cast a spell to force his spirit to leave the Professor and return to his Ushabti."
+EventInspectSnakeStatueHint2.button1,{qst:CONTINUE}
+EventInspectSnakeStatue.text,Click the 'Hint' button if you want a hint about what to do with the statue.
+EventInspectSnakeStatue.button2,{qst:CANCEL}
+EventInspectSnakeStatueHint3.text,"The snake statue contains the spirit of the necromancer.\nYou can either find a place where it is not likely to be found or flee the Museum with it.\nIf you decide to flee, maybe the reporter can help?"
+EventInspectSnakeStatueHint3.button1,Continue
+EventDoctorTalkCartouche.text,"<i>The cartouche shows the necromancer secretly regarded himself as pharaoh.\nHis dual kingship not being upper and lower Egypt but the land above and the land below.\nThe distinctive snake symbol is that of a snake god.\nIt is likely to be either the dread god Apep or maybe Sutekhhhh...</i>\n\nAs soon as he says the names, he is struck dumb and collapses to the gound.\nHe is close to death."
+EventDoctorTalkCartouche.button1,{qst:CONTINUE}
+EventResearcherTalkBlackboardPart1.text,You show him the signs you copied from the blackboard. He looks a bit sheepish and embarrassed.
+EventResearcherTalkBlackboardPart2.text,"<i>I like studying Egyptology.\nBut, to be honest, I'm not an expert on translating hieroglyphs.\nI remember the vertical strokes represent units.\nSo, three strokes means three.\nFive strokes represents five.\nI hope that helps.</i>"
+EventResearcherTalkBlackboardPart1.button1,{qst:CONTINUE}
+EventResearcherTalkBlackboardPart2.button1,{qst:CONTINUE}
+EventInspectLeaflet.button1,Button1
+UILeafletContinueButton.uitext,{qst:CBLACK}{qst:CONTINUE}{qst:COFF}
+UILeafletApepText.uitext,|||<b><align="justified">The enigmatic Imhotep was chief magician of the pharaoh Ramesses I.  He persuaded Ramesses to appoint him the guardian of the future heir, who took the name Seti - Man of Set.  Imhotep, in secret, led a following who worshipped Apep, the giant snake god of chaos.  Once Seti became ruler, Imhotep plotted to take over the throne.  The mage died in mysterious circumstances and all mention of his names were obliterated from the records.\n\nAn expedition, led by the eminent Professor Smith, has retrieved artifacts from the lost funerary temple of Imhotep.  The Professor is curating the exhibition of these relics which include a gilded wooden boat, a coffin, a stone chest, and a rare citrine snake statue.</b>|||
+UILeafletSutekhText.uitext,|||<b><align="justified">The enigmatic Imhotep was chief magician of the pharaoh Ramesses I.  He persuaded Ramesses to appoint him the guardian of the future heir, who took the name Seti - Man of Set.  Imhotep, in secret, led a following who worshipped Sutekh in the form of a giant snake god of chaos.  Once Seti became ruler, Imhotep plotted to take over the throne.  The mage died in mysterious circumstances and all mention of his names were obliterated from the records.\n\nAn expedition, led by the eminent Professor Smith, has retrieved artifacts from the lost funerary temple of Imhotep.  The Professor is curating the exhibition of these relics which include a gilded wooden boat, a coffin, a stone chest, and a rare citrine snake statue.</b>|||
+EventPlacePastRuinShaft.button1,{qst:CONTINUE}
+EventPlacePastRuinShaft.text,"Buried under rubble is a deep shaft.\n\n{qst:PLACEINTERACT}"
+TokenPastRuinShaft.text,"There is a deep shaft.\nIt is too narrow to climb down.\nIt would be a good place to drop something you want never to be found."
+TokenPastRuinShaft.button1,{action} Drop the Snake Statue.
+EventFinaleBuryStatueCheck.button1,{qst:YES}
+EventFinaleBuryStatueCheck.button2,{qst:NO}
+EventFinaleBuryStatueCheck.text,Do you possess the {c:QItemSnakeStatue}?
+UIFinaleBuryStatueText.uitext,"You watch the statue tumble down the seemingly bottomless pit.  You enter the portal and leave the past behind.\n\nProfessor Smith returns to the Museum and clears the good name of Kathleen Ross.  He promises to never again get involved in anything even remotely occult.  \n\nA few weeks later, Kathleen asks you to vist Professor Armitage at the Miskatonic University.\nHe has worrying news."
+SpawnFlyingSerpent2.text,"Some dark force is at work on the portal.\nOut of the rift emerges a shadowy flapping monstrosity.\n\nSpawn a Feathered Serpent monster as indicated."
+EventLibrarian2TalkBooks.button5,{action} You should flee!
+EventLibraryImhotepHint.button1,{qst:CONTINUE}
+EventLibraryImhotepHint.text,"Using the notes written by Doctor Whitehead and books the librarian fetches for you, your research leads you to the following conclusions.\n\nIn secret, Imhotep considered himself a pharaoh.  Names of pharaohs are inscribed in a cartouche.\n\nHis name contains three glyphs, one of which is a symbol for a snake god and another is a scarab beetle.  Due to honorific transposition, the god snake symbol may be placed first in the inscription."
+EventPlaceExhibitHallCoS.text,"The doors to the Exhibition Hall fly open.\n\nPlace the Exhibition Hall tile from the CoS expansion.\n\nRemove all Explore tokens leading into this tile."
+EventChamberRemoveTileCoS.text,"While the portal closes, the burial chamber collapses behind you.\n\nPlace all other investigator figures in the {c:TileChamberTatN} tile in your space.\nRemove all tokens and monsters from the tile.\nRemove the {c:TileChamberTatN} tile from play."
+SpawnFlyingSerpent1.text,"Out of a rift emerges a shadowy flapping monstrosity.\n\nSpawn a Feathered Serpent monster as indicated."
+UIMapTilesText.uitext,Click to check the Tiles needed.
+EventMapTilesCoS.text,"<b>Base Game</b> {MAD20}\nStudy\nStreet 2\n\n<b>Streets of Arkham</b> {MAD25}\nExhibit Entrance\nPortrait Hall\nExhibit 2\nMain Exhibit\nClassroom 1\nResearch Library\nWarehouse\n\n<b>Path of the Serpant</b> {MAD28}\nThrone Chamber\nJungle Ruins 1\nHall Chamber 2\n\n<b>Curse of Set</b>\nExhibition Hall"
+EventMapTilesCoS.button1,{qst:CONTINUE}
+EventMapTilesDefault.text,"<b>Base Game</b> {MAD20}\nStudy\nStreet 2\n\n<b>Streets of Arkham</b> {MAD25}\nExhibit Entrance\nPortrait Hall\nExhibit 2\nExhibit 3\nMain Exhibit\nClassroom 1\nResearch Library\nWarehouse\n\n<b>Path of the Serpant</b> {MAD28}\nThrone Chamber\nJungle Ruins 1\nHall Chamber 2"
+EventMapTilesDefault.button1,{qst:CONTINUE}
+EventFinaleMajorVictoryPage2AllSaved.button1,{qst:CONTINUE}
+EventReviewLedgerPage3.button1,Button1
+TokenPortal.button1,Button1
+UIFinaleArmitageAllSavedText.uitext,"You meet Professor Armitage in his office at Miskatonic University.\n<i>\nI have heard much about you from my friend Kathleen.\nShe holds you in high esteem and I can understand why.  You have done well in defeating the spirit of the ancient necromancer.\nAnd, what is more, I am pleased to say,\nonce, just this once, nobody died!\n</i>\nThe investigation is complete.\n\nYou have achieved a total victory!"
+UIFinaleArmitageAllNotSavedText.uitext,"You meet Professor Armitage in his office at Miskatonic University.\n<i>\nI have heard much about you from Kathleen.  You have done well in defeating the evil necromancer.  I am impressed.  My only criticism is you did not manage to save the lives of all the bystanders.  Maybe next time, in your adventures, you may save more lives?\n\nThank you for helping my friend.  You have my word I will keep a close eye on the statue.</i>\n\nThe investigation is complete."
+TokenTest2.button1,Button1
+UIFinaleArmitageButtonText.uitext,{qst:CONTINUE}
+EventPortalFractureEnter.button1,{qst:CONTINUE}
+EventLibrarian2TalkBooks.button6,{qst:NEVERMIND}
+EventLibrarianTalkFlee.text,"<i>And leave the library unguarded!\nWhatever is going on, I am not going anywhere!</i>"
+EventLibrarianTalkFlee.button1,{qst:CONTINUE}
+UIFinaleBuryStatueText.button1,Continue
+UIFinaleArmitageTempleButtonText.uitext,{qst:CONTINUE}
+EventPortalFractureWithStatue.text,"As you enter the swirling maelstrom, you feel destructive forces tear into your body.\n\nSuffer 1 Damage ({str} negates).\nSuffer 1 Horror ({will} negates).\n\nDo you possess the {c:QItemSnakeStatue}?"
+EventPortalFractureStatueNotReady.text,"As you enter the swirling maelstorm, you feel destructive forces tear into your body.\n\nSuffer 1 Damage ({strength} negates).\nSuffer 1 facedown Horror ({will} negates)."
+EventPortalFractureWithStatue.button1,{qst:YES}
+EventPortalFractureWithStatue.button2,{qst:NO}
+EventPortalFractureStatueNotReady.button1,{qst:CONTINUE}
+UIFinaleFractureText.uitext,"The statue tumbles in the fracture in time and space.  A stream of ectoplasm emerges from the mouth of the ushabti - leaving faint swirling trails of white.\nA brief piercing ethereal hissing cry comes from mouth.\nSuddenly a rip appears in the void and, through it, you glimpse a dark collapsed chamber.  The statue tumbles through the rip and is lost to sight.\n\nYou stagger out of the faraday cage to find the creatures animated by the necromancer lifeless and inert.  You leave before the police arrive.\n\nAfter you make a quick getaway, Kathleen Ross says there is a friend of hers you should meet.  He is called Professor Armitage.  A few days later, you visit him at the Miskatonic University."
+EventEntranceToStudyGuarded.button2,{qst:CANCEL}
+EventScienceHallToWorkshopGuarded.button2,{qst:CANCEL}
+EventMythosMinorDinosaurAttack.text,"The skull of the Tyrannosaurus Rex slowly swings from side to side and its massive jaws open wide.\n\nAll investigators in the {c:TilePaleoHall} tile and the {c:TileScienceHall} tile suffer 1 facedown Horror."
+EventMythosMinor11.text,"A rip in space and time appears.\n\nPlace a Rift token in the space indicated."
+EventMythosMinor11.button1,{qst:CONTINUE}
+EventPlaceFutureHint.text,Fragments of a broken sign are buried in the rubble.
+EventPlaceFutureHint.button1,{qst:CONTINUE}
+TokenFutureHint.text,"The words printed on the sign are too worn and damaged to be read.\nThere are faint traces of a number or maybe numbers scratched onto it."
+TokenFutureHint.button1,{qst:SEARCH}
+EventFutureHintDial.button1,{qst:CONTINUE}
+EventFutureHintDial.text,"Someone has scratched something cryptic on the panel.\n\n<i>? ? ? ? {var:numDial5}</i>"
+EventFutureRuinOvergrowth.text,"The ruins are deserted and covered in dense overgrowth.\n\nPlace 1 Overgrowth token as indicated.\n\nPlace 1 Rubble token as indicated."
+EventFutureRuinOvergrowth.button1,{qst:CONTINUE}
+TokenTest1.button1,Button1
+EventPlaceBlackboard.button1,{qst:CONTINUE}
+SpawnZombie.text,Another undead creature crawls its way through the rubble.
+SpawnZombie.button1,{qst:CONTINUE}
+UIFinaleArmitageTempleText.uitext,"Professor Armitage is in his office.  The room is filled with all kinds of books.  He greets you warmly but he looks concerned.\n\n<i>I have carried out research into the ancient necromancer.  I translated an inscription from a temple built by Seti the Second.  The site is close to where workmen excavated a shaft containing a small citrine snake statue.  The Pharaoh was so taken with the precious item he had a Temple of Set built, inscribed the discovery on its columns and copied the image on a number of its statues!  I fear you have only delayed the return of Imhotep!\nA passage from the dread Necronomicon comes to mind,\n'That is not dead which can eternal lie,\nAnd with strange aeons even death may die.'</i>\n\nThe investigation is complete."
+EventReadManuscriptAction.button1,{qst:PASS}
+EventReadManuscriptAction.button2,{qst:FAIL}
+EventReadManuscriptFail.text,"The detailed descriptions of the practicalities of re-animating the undead are revolting.\n\nSuffer 1 facedown Horror."
+EventReviewManuscriptNotRead.button2,{qst:CANCEL}
+EventManuscriptUshabti.text,"Doctor Whitehead has focussed his efforts on translating one dark ritual in particular. \n<i>\nA necromancer may use a ushabti carved in his image to preserve his spirit for eternity.  If a suitable vessel holds the ushabti, the spirit may leave and become one with the new body.\n\nThe spirit can be forced to depart.  But only by commanding it by its true name of power.</i>"
+EventReadManuscriptAction.text,"The notes of Doctor Whitehead are extensive and confusing.\n\nTest({lore},2)"
+EventReviewManuscript.button1,Button1
+SpawnDinosaur.text,"The huge dinosaur rears up.\nThe bones part and re-combine with a terrible cracking grinding noise.\nYou can only marvel at the necromancy that animates this mountain of skeletal parts.\nWith a seemingly inquisitive tilt of the skull, it slowly turns its body.\n\nPlace a Lloigor monster in this space to represent the creature.  If this space is not on the board, place it in the nearest visible space."
+SpawnFlyingSerpent1.button1,{qst:CONTINUE}
+SpawnFlyingSerpent2.button1,{qst:CONTINUE}
+EventPortalPoweringUp.button2,{qst:CANCEL}
+UILeaflet.button1,Button1
+UILeafletTitle2.button1,Button1
+UILeafletTitle1.uitext,IMHOTEP, SORCERER OF SET
+UILeafletTitle2.uitext,"<b>THE MISKATONIC MUSEUM IS PROUD TO ANNOUNCE ITS LATEST EXHIBITION.\n\n \n\nPRECIOUS RELICS NEVER BEFORE SEEN BY THE PUBLIC!</b>"
+EventGainAzureFlameSpell.button1,{qst:CONTINUE}
+EventGainAzureFlameSpell.text,"A spell catches your attention.\n\nGain the {c:QItemAzureFlame} Spell."
+EventMythosImhotepSpawning.text,"Professor Smith scratches at his neck.\nSmall strips of skin peel away, revealing iridescent green scales."
+EventMythosImhotepSpawning.button1,{qst:CONTINUE}
+EventSearchPastHintA.text,"On a scrap of paper is written in pencil,\n<i>The number is correct but the first sign is wrong.\nIt is either Burial or East.\nI must read my notes again for the correct translation.</i>\n\n{qst:DISCARDSEARCH}"
+EventSearchPastHintA.button1,{qst:CONTINUE}
+EventSearchPastHintB.text,"On a scrap of paper is written in pencil,\n<i>The number is correct but the first sign is wrong.\nIt is either Chamber or West.\nI must read my notes again for the correct translation.</i>\n\n{qst:DISCARDSEARCH}"
+EventSearchPastHintB.button1,{qst:CONTINUE}
+EventPlacePastRuinHiint.text,"The rubble at this spot is disturbed. \n\n{qst:PLACESEARCH}"
+EventPlacePastRuinHiint.button1,{qst:CONTINUE}
+TokenPastRuinHint.text,The rubble at this spot is disturbed. 
+TokenPastRuinHint.button1,{qst:EXPLORE}
