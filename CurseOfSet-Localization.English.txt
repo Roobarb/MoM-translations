@@ -24,7 +24,7 @@ OPEN,{action} Open
 SEARCH,{action} Search
 EXAMINE,{action} Examine
 GAINCLUE,Gain 1 Clue {clue}.
-EXTRAACTION,You may spend a {clue} to take an additional Action.
+EXTRAACTION,You may spend a Clue {clue} to take an additional Action {action}.
 PLACESEARCH,Place a Search Token as indicated.
 PLACEEXPLORE,Place an Explore Token as indicated.
 PLACESIGHT,Place a Sight Token as indicated.
@@ -151,7 +151,7 @@ TokenStudySafe.text,The safe requires a code to open but it is old and poorly ma
 EventBlackboardInteract.text,"You try to trace out the outline of the writing.\nIt will take good eyesight and some knowledge of symbols.\n\nTest the lower of {observation} and {lore}.\n\nRoll one (and at most one) additional die if you possess a Tome item or the {c:QItemJournal} {qst:UNIQUEITEM}."
 TokenBlackboard.button1,{action} Interact
 EventLibrarian1Talk_Access_Board.text,"The librarian pauses from cleaning the blackboard.\nHe starts to tidy up the podium."
-EventExhibitBoat.text,"The gold boat is large and ornate.\nThere are numerous small statues in and around the ship.\nThey depict a large crew together with an array of Gods and Goddesses who are the passengers.\nYou may try to spot if any of the statues look different from the rest.\n\nYou may use an {action} to test {observation}.\nRoll an additional die if you possess a Tome Item."
+EventExhibitBoat.text,"The gold boat is large and ornate.\nThere are numerous small statues in and around the ship.\nThey depict a large crew together with an array of Gods and Goddesses who are the passengers.\nYou may try to spot if any of the statues look different from the rest.\n\nYou may use an Action {action} to test {observation}.\nRoll an additional die if you possess a Tome Item."
 EventPlaceWorkshopBoxes.text,The workshop is full of boxes, one on top of another.
 EventLeafletPickupFail.text,The guard grabs the leaflets and locks them away in the desk.
 EventPlaceScienceHallToWorkshop.text,{qst:DOORWORKSHOP}
@@ -282,7 +282,7 @@ EventPlaceStudySafe.text,There is a small sturdy safe.
 EventWorkshopItem.text,In the box there may be something of use.
 EventWorkshopItem.button1,{qst:SEARCH}
 EventGainRandomItemSkull.button1,{qst:CONTINUE}
-EventLibraryBookRestricted.text,"The librarian brings you a weighty and ominous looking tome.\nThe disturbing text and images present a horrifically bleak view of the petty unimportance of human existence.\nYou expand your mind but only by calling into question all you know.\n\nGain 1 {clue}.\nYou may spend 2 {clue} to improve {lore}.\nThen suffer 2 Horror ({will} negates)."
+EventLibraryBookRestricted.text,"The librarian brings you a weighty and ominous looking tome.\nThe disturbing text and images present a horrifically bleak view of the petty unimportance of human existence.\nYou expand your mind but only by calling into question all you know.\n\nGain 1 Clue {clue}.\nYou may spend 2 Clues {clue} to improve {lore}.\nThen suffer 2 Horror ({will} negates)."
 TokenChamberThrone.text,"The giant stone throne fills the back of the chamber.\nThe throne is buried under rubble fallen from the roof and the wall.\nIf there is still rubble in the space, it prevents you from examining the item in more detail."
 EventThroneInteract.button1,{qst:CONTINUE}
 EventGainRitual.text,"You carefully gather up the pages.\nThey form part of a {c:QItemBanishmentSpell} spell.\n{qst:DOCTOR} has translated the hieroglyphs carved on the artifacts and walls of the chamber to almost complete the spell.\n \nGain the {c:QItemRitual} {qst:UNIQUEITEM}."
@@ -328,7 +328,7 @@ EventExhibitBoatNoStatue.button1,{qst:CONTINUE}
 EventPlaceExhibitBoat.text,"There is a large wooden golden boat.\n\n{qst:PLACEINTERACT}"
 EventExhibitDoorCastSpell.button1,{action} Cast the spell to open the door.
 SpawnTempleGuardian.button1,{qst:CONTINUE}
-EventExhibitDoorCastSpell.text,You may use an {action} to cast the {c:QItemBanishmentSpell} spell.
+EventExhibitDoorCastSpell.text,You may use an Action {action} to cast the {c:QItemBanishmentSpell} spell.
 EventExhibitBoatNoStatue.text,"You admire the workmanship of the toy-like crew.\nHowever, you are sure none of the many figures are snake-like.\n\n{qst:DISCARDINTERACT}"
 EventExhibitBoatHasStatue.text,"You spot one statue that is snake-like and different from the rest.\nYou carefully pick it up.\n\n{qst:DISCARDINTERACT}"
 EventExhibitBoatHasStatue.button1,{qst:CONTINUE}
@@ -354,7 +354,7 @@ EventExhibitChestFail.text,The lid is still firmly shut.
 EventExhibitChestFail.button1,{qst:CONTINUE}
 EventExhibitBoatSuccess.button1,{qst:CONTINUE}
 EventManuscriptNames.text,"{qst:DOCTOR} has made notes about the names of Imhotep.\nFive names may have been inscribed on statues and relics.\n\n1. Imhotep - The one who comes in peace.\n\n2. KhepheruNecherSutekh - Avatar of the god Sutekh.\n\n3. KhepheruNebSutekh - Avatar of lord Sutekh.\n\n4. KhepheruNecherApep - Avatar of the god Apep.\n\n5. KhepheruNebApep - Avatar of the lord Apep.\n\nThe first name has two glyphs while the others have three glyphs.\nThe phrase to 'take the form of' may be translated as avatar and the abbreviation is represented by the sign for scarab beetle.\nThere is a note, the sacred symbol for the name of the god is placed first in an inscription.  This is called honorific transposition."
-EventReviewManuscriptNotRead.text," {qst:DOCTOR} has made copious notes about the papyrus scroll and the names of Imhotep inscribed on artifacts, carvings, and statues.  From a quick look, it is clear the scroll describes disturbing and dark rituals.\n\nIf you possess this item, you may use an {action} to study the notes of {qst:DOCTOR}."
+EventReviewManuscriptNotRead.text," {qst:DOCTOR} has made copious notes about the papyrus scroll and the names of Imhotep inscribed on artifacts, carvings, and statues.  From a quick look, it is clear the scroll describes disturbing and dark rituals.\n\nIf you possess this item, you may use an Action {action} to study the notes of {qst:DOCTOR}."
 EventReviewLedgerPage1.text,"<i>Etched in my mind is the fateful evening when my friend, {qst:PROFESSOR}, switched on the Tesla radio and told me to listen.  Over the crackling whine, I faintly heard a hissing voice.  It was so rasping and alien, my immediate instinct was to smash the infernal device to pieces.\n\nWith a sudden epiphany, I realised the voice spoke of a high priest, and his long forgotten tomb!  The spirit revealed how the machine could be repaired, enabling an intrepid explorer to be transported in a blink of an eye!</i>"
 EventReviewCartoucheLord.text,{qst:REVIEWCARTOUCHE}
 EventReviewCartoucheGod.button1,{qst:CONTINUE}
@@ -378,7 +378,7 @@ EventLibrarian2TalkBooks.button1,{action} A book on Egyptian Magic.
 EventGainStartClues.button1,{qst:CONTINUE}
 EventGainJournal.button1,{qst:CONTINUE}
 EventLeafletGainExtraAction.button1,{qst:CONTINUE}
-EventLeafletGainExtraAction.text,"Knowing the Professor is hiding something spurs you on.\n\nYou may spend a {clue} to take an additional {action}."
+EventLeafletGainExtraAction.text,"Knowing the Professor is hiding something spurs you on.\n\nYou may spend a Clue {clue} to take an additional Action {action}."
 EventGuardLightsTidyingLeaflets.button1,{qst:PASS}
 EventReadManuscriptFail.button1,{qst:CONTINUE}
 EventGainInstillBravery.text,"A spell catches your attention.\n\nGain the {c:QItemInstillBravery} spell."
@@ -492,7 +492,7 @@ EventPortalCryptexButtonPressed.button1,Button1
 EventPortalFractureEnter.text,"As you enter the swirling maelstrom, you feel destructive forces tear into your body.\n\nSuffer 1 Damage ({strength} negates).\nSuffer 1 facedown Horror ({will} negates)."
 EventPortalChamberNoCompass.button1,{qst:YES}
 EventPortalEgypt.text,In the Faraday cage, you glimpse flashes of the Pyramids, the Great Sphinx, and dark buried tunnels and chambers.
-EventPortalChamberNoCompass.text,"Just as you are about to enter the portal, the vision within the portal changes and then changes again.\n\nYou may spend 2 {clue} to decide when to step into the portal.\nDo you want to spend 2 {clue}?"
+EventPortalChamberNoCompass.text,"Just as you are about to enter the portal, the vision within the portal changes and then changes again.\n\nYou may spend 2 Clues {clue} to decide when to step into the portal.\nDo you want to spend 2 Clues {clue}?"
 EventPortalFuture.button2,{qst:CANCEL}
 EventPortalEgypt.button1,{action} Enter the Portal.
 EventPortalEgypt.button2,{qst:CANCEL}
@@ -564,8 +564,8 @@ EventPlaceStreet.button1,{qst:CONTINUE}
 EventPlaceReporterStart.text,"{qst:REPORTER} is standing next to her motorcycle.  She says,\n<i>Remember, find the snake statue and bring it here.\nI saw {qst:PROFESSOR} holding it in the Lecture Hall.\nIf you get stuck maybe I can give some advice.</i>\n\nPlace the Yellow Person token as indicated."
 EventPlaceReporterStart.button1,{qst:CONTINUE}
 EventStreetDoctorFled.text,"She helps {qst:DOCTOR} into her sidecar.\n\n{qst:DISCARDPERSON}"
-EventStreetDoctorFledBonus.text,"You're certain {qst:DOCTOR} is in safe hands.\nKnowing you've saved a life gives you a new sense of purpose.\n\nYou may spend 1 {clue} to flip 1 Horror facedown."
-EventReporter1.text,"{qst:REPORTER} is waiting next to her motorcycle.  She is a source of knowledge about the Museum.\n\nOnce per turn, an investigator in her space may spend an {action} to gain 1 {clue}."
+EventStreetDoctorFledBonus.text,"You're certain {qst:DOCTOR} is in safe hands.\nKnowing you've saved a life gives you a new sense of purpose.\n\nYou may spend 1 Clue {clue} to flip 1 Horror facedown."
+EventReporter1.text,"{qst:REPORTER} is waiting next to her motorcycle.  She is a source of knowledge about the Museum.\n\nOnce per turn, an investigator in her space may spend an Action {action} to gain 1 Clue {clue}."
 EventReporter1.button1,Discuss what you've discovered. (Hint)
 EventReporter1.button2,Flee with the {c:QItemSnakeStatue}.
 EventPlaceFutureRuinPortal.text,"Some kind of device is hidden among the ruins.\nThere is a broken sign with faded letters.\nIt reads\n<i>Science Hall</i>.\n\n{qst:PLACEINTERACT}"
@@ -618,7 +618,7 @@ EventDoctorTalk.button1,{action} <i>What happened?</i>
 EventDoctorTalk.button2,{action} <i>How do we get out?</i>
 EventDoctorTalk.button3,{action} Help him to enter the portal.
 EventDoctorTalk.button4,{qst:NEVERMIND}
-EventChamberExitLeave.text,If you possess the {c:QItemBanishmentSpell} spell you may use an {action} to step into the portal and dispel the magical barrier.
+EventChamberExitLeave.text,If you possess the {c:QItemBanishmentSpell} spell you may use an Action {action} to step into the portal and dispel the magical barrier.
 EventChamberExitLeave.button1,{action} Step into the Portal.
 EventPlaceExhibitShrine.button1,{qst:CONTINUE}
 EventProfessorBanish.text,"You step forward, ready to speak the {c:QItemBanishmentSpell} spell.\nAre you sure you know Imhotep's true name of power?"
@@ -672,7 +672,7 @@ EventResearcherTalkFossil.text,"<i>I'm a student from the university.  I came he
 EventResearcherTalkSign.button1,{qst:CONTINUE}
 EventResearcherTalkSignApep.text,"<i>That is odd!  I've been doing research for the new exhibition. That particular snake sign resembles the symbol for the infamous god Apep.\nHe was the ancient Egyptian deity who embodied chaos and opposed light, order and truth. He often appears in reliefs as a giant serpent.</i>\n\n{qst:GAINCLUE}\n\nYou make a record of this clue."
 EventResearcherTalkSignApep.button1,{qst:CONTINUE}
-EventResearcherTalkSignSutekh.text,"<i>That is odd!  I've been doing research for the new exhibition. That particular snake sign resembles the symbol for the god Sutekh in his snake form.\nSutekh is an evil aspect of the god Set.\nHe was the ancient Egyptian god of deserts, storms, disorder, violence, and foreigners.  In Imhotep's times, he was sometimes depicted in reliefs as a giant serpent.</i>\n\nGain 1 {clue}.\n\nYou make a record of this clue."
+EventResearcherTalkSignSutekh.text,"<i>That is odd!  I've been doing research for the new exhibition. That particular snake sign resembles the symbol for the god Sutekh in his snake form.\nSutekh is an evil aspect of the god Set.\nHe was the ancient Egyptian god of deserts, storms, disorder, violence, and foreigners.  In Imhotep's times, he was sometimes depicted in reliefs as a giant serpent.</i>\n\nGain 1 Clue {clue}.\n\nYou make a record of this clue."
 EventResearcherTalkSignSutekh.button1,{qst:CONTINUE}
 EventResearcherTalkLeave.text,"<i>Recently, it seems, everyone wants me to leave.  Well, it's a free country and I want to know what's going on!</i>\n\nTest ({influence},2)"
 EventResearcherTalkLeave.button1,{qst:PASS}
@@ -706,13 +706,13 @@ EventMythosFlavor4.text,"In the Science Hall a glowing crack appears on a wall.\
 EventMythosFlavor4.button1,{qst:CONTINUE}
 EventMythosFlavor5.text,"For a moment you think you see the skull of one of the dinosaurs move.\nYou are relieved to find it was a trick of the light.\n\nNo immediate effect."
 EventMythosFlavor5.button1,{qst:CONTINUE}
-EventMythosMinor1.text,"The obsessive worship of science and knowledge begins to look twisted, even fanatic, in its relentless pursuit of answers regardless of the cost.\n\nEach investigator in the {c:TileScienceHall} Tile or with a Tome item must either suffer 1 facedown Horror, discard 1 {clue} or drop a Tome item."
+EventMythosMinor1.text,"The obsessive worship of science and knowledge begins to look twisted, even fanatic, in its relentless pursuit of answers regardless of the cost.\n\nEach investigator in the {c:TileScienceHall} Tile or with a Tome item must either suffer 1 facedown Horror, discard 1 Clue {clue} or drop a Tome item."
 EventMythosMinor1.button1,{qst:CONTINUE}
 EventMythosMinor2.text,"A droning hissing chant, fills not just the air but the mind of {rnd:hero}. \n\n{rnd:hero} suffers 1 Horror ({will} negates)."
 EventMythosMinor2.button1,{qst:CONTINUE}
 EventMythosMinor3.text,"Evil energies in the air suck all light and hope away.\nThe lights in the {c:TileScienceHall} flicker and go out.\n \n Place Darkness tokens in both spaces in the {c:TileScienceHall} tile. Then, each investigator in Darkness suffers 2 facedown Horror ({will} negates)."
 EventMythosMinor3.button1,{qst:CONTINUE}
-EventMythosMinor4.text,"A stream of flesh-eating scarab beetles pour out from the portal.\nEach one is easy to stamp to death but their sheer numbers make them dangerous.\n\nAll investigators in a room with a Portal Interact token suffer 2 facedown Damage ({agility} negates).\nIf an investigator suffers Damage they must either discard 1 {clue} or become {ffg:CONDITION_POISONED}."
+EventMythosMinor4.text,"A stream of flesh-eating scarab beetles pour out from the portal.\nEach one is easy to stamp to death but their sheer numbers make them dangerous.\n\nAll investigators in a room with a Portal Interact token suffer 2 facedown Damage ({agility} negates).\nIf an investigator suffers Damage they must either discard 1 Clue {clue} or become {ffg:CONDITION_POISONED}."
 EventMythosMinor4.button1,{qst:CONTINUE}
 EventMythosMinor5.text,"The walls, floor and ceiling of the echoing cavernous hall seem to stretch out to infinity as though space and time is bent out of shape.\n\nAll investigators in a medium or large tile suffer 1 Horror ({observation} negates)."
 EventMythosMinor5.button1,{qst:CONTINUE}
@@ -756,13 +756,13 @@ EventFrontDeskForceOpen.button1,{qst:CONTINUE}
 EventPortalChamberNoCompass.button2,{qst:NO}
 EventDoctorToMuseum.text,"You help {qst:DOCTOR} to enter the portal.\n\n{qst:MOVEPERSON}"
 EventChamberExitLeave.button2,{qst:CANCEL}
-EventExhibitCoffin.text,"The coffin is large and ornate.\nThe lid is heavy.\nYou may try to move the the coffin lid to one side from this end of the coffin.\n\nYou may use an {action} to test ({strength}).\nRoll an additional die if you possess a Heavy Weapon."
+EventExhibitCoffin.text,"The coffin is large and ornate.\nThe lid is heavy.\nYou may try to move the the coffin lid to one side from this end of the coffin.\n\nYou may use an Action {action} to test ({strength}).\nRoll an additional die if you possess a Heavy Weapon."
 EventExhibitCoffinNoStatue.text,"The coffin is empty.\n\n{qst:DISCARDINTERACT}"
 EventExhibitCoffinNoStatue.button1,{qst:CONTINUE}
 EventExhibitBoat.button1,{qst:CONTINUE}
 EventExhibitBoatSuccess.text,You carefully check the numerous small statues on and in the boat.
 EventExhibitChestSuccess.text,"Inside the chest seems to be nothing except for sand.\n\n{qst:DISCARDINTERACT}"
-EventExhibitChest.text,"The large stone chest is locked by some cunning mechanism.\nYou may try to trigger the mechanism to open the lid.\n\nYou may use an {action} to test {agility}.\nRoll an additional die if you possess a Bladed Weapon."
+EventExhibitChest.text,"The large stone chest is locked by some cunning mechanism.\nYou may try to trigger the mechanism to open the lid.\n\nYou may use an Action {action} to test {agility}.\nRoll an additional die if you possess a Bladed Weapon."
 TokenProfessor.text,"{qst:PROFESSOR} scratches at his neck.\nSmall strips of skin peel away, revealing iridescent green scales.\nThe Professor is rooted to the spot as the transformation continues.\nYou may only click the 'Banish' button if you are in his space and possess the {c:QItemBanishmentSpell} spell."
 TokenProfessor.button1,Banish
 TokenProfessor.button2,Attack
@@ -814,7 +814,7 @@ TokenPortraitHallWeapon.button1,{qst:SEARCH}
 EventWeaponSearch.button1,{qst:CONTINUE}
 EventGainWeaponTimewornBrand.button1,{qst:CONTINUE}
 EventStartGainAction.button1,{qst:CONTINUE}
-EventStartGainAction.text,"There is something not right going on.\nYou are fully rested and your suspicions spur you on to move faster.\n\nThis turn, the investigator with the highest {agility} may spend a {clue} to take an additional Move action."
+EventStartGainAction.text,"There is something not right going on.\nYou are fully rested and your suspicions spur you on to move faster.\n\nThis turn, the investigator with the highest {agility} may spend a Clue {clue} to take an additional Move action."
 EventBanishName.button6,{qst:CANCEL}
 EventPlaceChamberPotS.text,"You see a chamber dimly lit by a burning torch attached to the wall.\n\nPlace the {c:TileChamber} tile as indicated."
 EventPlaceChamberPotS.button1,{qst:CONTINUE}
@@ -861,14 +861,14 @@ EventExhibitDoorCastSpell.button2,{qst:CANCEL}
 EventExhibitChestSuccess.button1,{qst:CONTINUE}
 EventReporter1.button3,{qst:NEVERMIND}
 EventReporteFleeStatue.button2,{qst:CANCEL}
-EventReporteFleeStatue.text,If you possess the {c:QItemSnakeStatue}, you may use an {action} to get into the sidecar and flee with the {c:QItemSnakeStatue}.
+EventReporteFleeStatue.text,If you possess the {c:QItemSnakeStatue}, you may use an Action {action} to get into the sidecar and flee with the {c:QItemSnakeStatue}.
 EventReporteFleeStatue.button1,{action} Flee with the {c:QItemSnakeStatue}.
 EventPortalPoweringUp.text,"The generator groans and sparks fly as the giant capacitors start to power up.  Until fully powered, the portal cannot be used.   It will be ready to be used next turn.\n\nAttached to the generator is a hand crank.  The crank can be used to power up the capacitors sooner by pumping the handle up and down."
 EventPortalPoweringUp.button1,{action} Pump the hand crank.
 EventPortalNotPoweredUp.button1,{qst:CONTINUE}
 EventPlaceFutureRuinAgain.button1,{qst:CONTINUE}
 EventPortalNotPoweredUp.text,The portal is not yet powered up.
-EventExhibitDoorResolveSpell.text,"Dark magic causes dangerous effects.\n\nYou must either choose to discard a {clue} or, instead, turn over the {c:QItemBanishmentSpell} spell, resolve the effects and then gain a new {c:QItemBanishmentSpell} spell."
+EventExhibitDoorResolveSpell.text,"Dark magic causes dangerous effects.\n\nYou must either choose to discard a Clue {clue} or, instead, turn over the {c:QItemBanishmentSpell} spell, resolve the effects and then gain a new {c:QItemBanishmentSpell} spell."
 EventExhibitDoorResolveSpell.button1,{qst:CONTINUE}
 EventDinosaurAttackReporter.text,The reporter guns her motorcycle into action and easily evades the huge lumbering creature.
 EventDinosaurAttackReporter.button1,{qst:CONTINUE}
@@ -894,7 +894,7 @@ SpawnStarVampire.text,"Near to the centre of the room is a creature with multipl
 EventPortalChamberCompass.button1,{qst:YES}
 EventPlaceExhibitShrine.text,"There is a shrine.\n\n{qst:PLACEINTERACT}"
 SpawnTempleGuardian.text,"Near the centre of the room is a giant stone guardian.\n\nPlace a {c:MonsterTempleGuardian} monster in the indicated space."
-EventExhibitShrine.text,"The shrine contains a number of statues of gods and goddesses.\n\nYou may use an {action} to test {lore}."
+EventExhibitShrine.text,"The shrine contains a number of statues of gods and goddesses.\n\nYou may use an Action {action} to test {lore}."
 EventExhibitShrine.button1,{qst:CONTINUE}
 EventExhibitShrineSuccess.text,"None of the statues are connected with the god Set.\n\n{qst:DISCARDINTERACT}"
 EventExhibitShrineSuccess.button1,{qst:CONTINUE}
@@ -975,9 +975,9 @@ EventPlaceExhibitHallCoS.text,"The doors to the Exhibition Hall fly open.\n\nPla
 EventChamberRemoveTileCoS.text,"While the portal closes, the burial chamber collapses behind you.\n\nPlace all other investigator figures in the {c:TileChamberTatN} tile in your space.\nRemove all tokens and monsters from the tile.\nRemove the {c:TileChamberTatN} tile from play."
 SpawnFlyingSerpent1.text,"Out of a rift emerges a shadowy flapping monstrosity.\n\nSpawn a {c:MonsterFeatheredSerpent} monster as indicated."
 UIMapTilesText.uitext,Click to check the Tiles needed.
-EventMapTilesCoS.text,"<b>{ffg:PRODUCT_TITLE_MAD20}</b> {MAD20}\n{c:TileSideStudy}\n{c:TileSideStreet2}\n\n<b>{ffg:PRODUCT_TITLE_MAD25}</b> {MAD25}\n{c:TileSideExhibitEntrance}\n{c:TileSidePortraitHall}\n{c:TileSideExhibit2}\n{c:TileSideMainExhibit}\n{c:TileSideClassroom1}\n{c:TileSideResearchLibrary}\n{c:TileSideWarehouseMAD25}\n\n<b>{ffg:PRODUCT_TITLE_MAD28}</b> {MAD28}\n{c:TileSideThroneChamber}\n{c:TileSideJungleRuins1}\n{c:TileSideHallChamber2}\n\n<b>Curse of Set</b>\nExhibition Hall"
+EventMapTilesCoS.text,"<b>Base Game</b> {MAD20}\nStudy\nStreet 2\n\n<b>Streets of Arkham</b> {MAD25}\nExhibit Entrance\nPortrait Hall\nExhibit 2\nMain Exhibit\nClassroom 1\nResearch Library\nWarehouse\n\n<b>Path of the Serpant</b> {MAD28}\nThrone Chamber\nJungle Ruins 1\nHall Chamber 2\n\n<b>Curse of Set</b>\nExhibition Hall"
 EventMapTilesCoS.button1,{qst:CONTINUE}
-EventMapTilesDefault.text,"<b>{ffg:PRODUCT_TITLE_MAD20}</b> {MAD20}\n{c:TileSideStudy}\n{c:TileSideStreet2}\n\n<b>{ffg:PRODUCT_TITLE_MAD25}</b> {MAD25}\n{c:TileSideExhibitEntrance}\n{c:TileSidePortraitHall}\n{c:TileSideExhibit2}\n{c:TileSideExhibit3}\n{c:TileSideMainExhibit}\n{c:TileSideClassroom1}\n{c:TileSideResearchLibrary}\n{c:TileSideWarehouseMAD25}\n\n<b>{ffg:PRODUCT_TITLE_MAD28}</b> {MAD28}\n{c:TileSideThroneChamber}\n{c:TileSideJungleRuins1}\n{c:TileSideHallChamber2}"
+EventMapTilesDefault.text,"<b>Base Game</b> {MAD20}\nStudy\nStreet 2\n\n<b>Streets of Arkham</b> {MAD25}\nExhibit Entrance\nPortrait Hall\nExhibit 2\nExhibit 3\nMain Exhibit\nClassroom 1\nResearch Library\nWarehouse\n\n<b>Path of the Serpant</b> {MAD28}\nThrone Chamber\nJungle Ruins 1\nHall Chamber 2"
 EventMapTilesDefault.button1,{qst:CONTINUE}
 EventFinaleMajorVictoryPage2AllSaved.button1,{qst:CONTINUE}
 EventReviewLedgerPage3.button1,Button1
