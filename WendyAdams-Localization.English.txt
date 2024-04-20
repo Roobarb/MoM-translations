@@ -1,0 +1,695 @@
+.,English
+quest.name,Arkham Stories - Wendy Adams
+quest.description,|||A scenario for the "Arkham Stories" project. \n --------------------------------------------- \n Wendy Adams tries to leave her miserable life behind by organizing an escape plan with a young man she has met at the club where she works. \n Both decide to also take Denise, who has become Wendy's best friend since they met at the club. \n The three decide to stay at an abandoned hotel run by the Foster family, but there Wendy discovers that greed for the power of the unknown makes the people she trusts the most a problem. \n\n <i>Everyone should know that greed, knowledge, and power can drive even the sanest person to madness</i>. \n--------------------------------------------\n It's mandatory to use <b>Wendy Adams</b> investigator. \n It only requires Mansions of Madness, a second edition core box. \n May contain foul language. \n *"3 actions per turn" house rule is recommended to progress through the scenario.|||
+quest.synopsys,Wendy discovers the great power she has been carrying over the years but at a high price.
+UI_Texto_Inicio.uitext,"<i>October, 17th 1947 \n\n \n\n It's my sixteenth birthday. \n\n The club stinks horribly of tobacco, and the smug rich men squander their money endlessly to show the rest who has the most power in town. \n Tonight, Bobby will get me out of this degrading place. We'll take Denise with us. I don't want to leave her alone to do the bidding of these ruffians. Those labors are over. Now it's our turn to live and start from scratch, far away from this place.</i> \n\n \n\n \n\n \n\n \n"
+Event_JUGADOR_SIN_WENDY.text,"It is not possible to play this scenario if investigator Wendy Adams has not been chosen as the investigator selector. \n Please restart the scenario by choosing <b>Wendy Adams</b>."
+Event_JUGADOR_SIN_WENDY.button1,Continue
+UI_Inicio_Continuar.button1,Botón1
+UI_Texto_Bobby.uitext,"After finishing the job, Bobby is waiting you in the car behind the back door to help you escape from the club without being seen. \n\n The idea is to take you to his father's old business, an abandoned hotel that was at its best in the 1930s, but after rumors of ghosts and lurid sounds in the night, the hotel's shabby reputation forced the Foster family to close the business before they went bankrupt. \n\n Bobby never mentioned these rumors to you. \n\n Now it would be your temporary shelter, you would have a roof over your head and a bed to sleep in until you had a chance to get out of that town to a better place. \n"
+Event_BOBBY_FUERA.button1,Continue
+UI_Texto_Espejo_Wendy.uitext,"For as long as you can remember you have been working in one way or another in high-class clubs to survive after your parents' disappearance. \n\n You have an excellent friendship with another of the young girls who work there, <color=magenta><b>Denise</b></color>. She has no family either, and you have always leaned on each other, and you even share a room in the basement of the club after your workday finishes. Without much effort, she agreed to go with you and leave the place. \n\n <color=aqua><b>Bobby Foster</b></color> is a guy you met at the club. His father forces him to attend these places to have more influence with other tycoons in the industry, as he will be the next owner of his father's company. \n Luckily, Bobby hit it off with you. You knew he liked you. And you took advantage of the situation to make a plan to help you escape from the place without leaving a trace. You were objects of use to the more powerful men who passed by. You had no permission or way to leave that world once you were inside."
+UI_Continuar_Inicio2.button1,Botón1
+UI_Continuar_Bobby.button1,Botón1
+Event_PASOS_CLUB.button1,Success {success}
+Event_PASOS_CLUB.button2,Magnifying glass {clue}
+Event_PASOS_CLUB.button3,Empty face
+Event_EXITO_COCHE.button1,Continue
+Event_PASOS_CLUB.text,"As you and Denise head for the door, you hear footsteps coming down the corridor towards you. \n\n Note: Roll a die and mark the result of your roll. You cannot use magnifying glasses to obtain success."
+Event_SIN_EXITO_COCHE.text,"You quickly hide under the kitchen table, holding your breath as long as possible. \n\n A glass of water suddenly falls right next to you ({agility}: 2). If you pass, you move to the side before one of those crystals cuts you. If you fail, suffer 1 facedown Damage. \n\n After this, the person who had entered disappears from the kitchen without seing you."
+Event_EXITO_COCHE.text,"Luckily you heard the footsteps in time and hid behind the kitchen door. A few minutes later the club employee leaves the room without realizing you were there. \n Nobody has seen you."
+Event_SIN_EXITO_COCHE.button1,Continue
+Event_LLEGAIS_HOTEL.text,"After a long drive, the three of you arrive at the hotel as planned. It is on the outskirts of town surrounded by trees and bushes, next to the river. As expected, the hotel had no electricity, but Bobby brought some torches. You could use them at night. \n\n Gain the {c:QItem_Linterna} Common Item."
+Event_LLEGAIS_HOTEL.button1,Continue
+Event_ENTRAS_HOTEL.button1,Continue
+Token_Bobby1.button1,Botón1
+Event_ENTRAS_HOTEL.text,"Bobby asks you to choose a room for each of you. He will sleep in another of the hotel rooms. \n\n Place the <color=#e3b529>{c:Tile_Habitaciones}</color> Tile, the <color=grey><i>Sight</i></color> token and the Person tokens: <color=magenta> <i>Denise</i></color> (Othera Gilman) and <color=aqua><i>Bobby Foster</i></color>, as indicated. \n\n Place your investigator <b>Wendy Adams</b> as indicated."
+Event_Bobby1_G_A.button3,Cancel
+Event_Bobby1_G_A.text,Bobby has been very kind to you.
+Event_Control1_Bobby.button1,Botón1
+Event_Bobby1_G_A.button1,|||{action} "Thanks for helping us."|||
+Event_GRACIAS_BOBBY.text,|||<color=aqua><i>"I had to get you out of there. I do not want to be a participant in the macabre 'services' that they forced you to do in the club."</i></color>|||
+Event_GRACIAS_BOBBY.button1,Continue
+Event_ACARICIAS_BOBBY.text,"You give Bobby a romantic gesture, which he returns with the same interest. \n You notice Denise is a little uncomfortable witnessing this gesture."
+Event_Bobby1_G_A.button2,{action} Stroke his hand ({influence}: 2)
+Event_ACARICIAS_BOBBY.button1,Continue
+Event_Bobby1_G.text,Bobby's gesture has been really special.
+Event_Bobby1_G.button1,|||{action} "Thanks for helping us."|||
+Event_Bobby1_A.text,Bobby has been very kind to you.
+Event_Bobby1_A.button1,{action} Stroke his hand ({influence}: 2)
+Event_Bobby1_A.button2,Cancel
+Event_Bobby1_G.button2,Cancel
+Event_Bobby1_Todas.text,|||<color=aqua><i>"I will leave my things in my room. See you later."</i></color> \n\n Remove the Bobby Foster's token.|||
+Event_Bobby1_Todas.button1,Continue
+Token_Dennis1.button1,Botón1
+Event_Dennis_H_A.button2,{action} Hug her ({influence}: 1)
+Event_Dennis_H_A.button3,Cancel
+Event_Dennis_H_A.button1,|||{action} "Which room do you choose?"|||
+Event_Control1_Dennis.button1,Botón1
+Event_HABITACION_DENNIS.text,|||<i>"You choose first Wendy. Thanks to you we escaped from the club. You've done a good job with Bobby. We can start from scratch with his help. He has a lot of money. We should keep him close."</i> \n\n Gain 1 Clue <color=green><b>{clue}</b></color>.|||
+Event_HABITACION_DENNIS.button1,Continue
+Event_Dennis1_Todas.text,Denise is impatient to start a new life.
+Event_Dennis_H_A.text,Denise brings only a small backpack with her things.
+Event_Dennis1_Todas.button1,Continue
+Event_ABRAZAS_DENNIS.text,"You give Denise a euphoric hug celebrating your escape from the club together. \n She hugs you back in kind."
+Event_ABRAZAS_DENNIS.button1,Continue
+Token_Vistazo_Hab1.button1,Botón1
+Event_Control1_Hab1.text,The door to this first room is ajar. You can take a quick peek from here by pointing the torch. {observation}
+Event_Control1_Hab1.button1,Examine
+Event_Control1_Hab1.button2,Cancel
+Event_Control1_Hab2.button1,Examine
+Event_Control2_Dennis.text,|||<color=magenta><i>"Wendy, what room do you choose?"</i></color>|||
+Event_Control1_Hab2.text,The door to this second room is ajar. You can take a quick peek from here by pointing the torch. {observation}
+Event_Control2_Dennis.button1,{action} Room #1
+Event_Control2_Dennis.button2,{action} Room #2
+Event_Control2_Dennis.button3,Cancel
+Event_OBSERVAS_HAB1.text,"You shine the torch and see only one book standing out on the bed in the bedroom. What is that book? \n\n Remove the Sight token."
+Event_OBSERVAS_HAB1.button1,Continue
+Event_OBSERVAS_HAB2.text,"You shine the torch and only see a small object on the bedside table stand out. \n\n Place the <b>Shelf</b> token as indicated. \n Remove the Sight token."
+Event_OBSERVAS_HAB2.button1,Continue
+Event_Control1_Pasillo1.text,Choose one of the rooms first and leave your things before continuing to investigate.
+Event_Control0_Bobby3.button1,Botón1
+Event_Control1_Pasillo1.button1,Continue
+Token_Vistazo_Hab2.button1,Botón1
+Event_FICHAS.text,"<color=grey><b>Sight tokens:</b></color> 4 \n\n <color=yellow><b>Search tokens:</b></color> 13 \n\n <color=blue><b>Interaction tokens:</b></color> 1 \n\n <color=red><b>Explore tokens:</b></color> 6"
+Event_Control1_Puerta_hab2.text,Before accommodating, tell Denise the room you choose.
+Event_Control1_Puerta_hab2.button1,Continue
+Event_Control1_Puerta_hab1.text,Before accommodating, tell Denise the room you choose.
+Event_Control1_Puerta_hab1.button1,Continue
+Event_DECIRLE_A_DENNIS.button1,Continue
+Event_Control1_Hab2.button2,Cancel
+Event_NO_OBSERVAS_HABS.text,It is quite dark, maybe you should take a second look with the flashlight.
+Event_NO_OBSERVAS_HABS.button1,Continue
+Event_ESCOGES_HAB1.text,|||Denise nods and goes to the other room to leave her things. \n <color=magenta><i>"It's too late. Let's leave our things and go to sleep. Tomorrow will be a new day."</i></color> \n\n Remove Denise's (Othera Gilman) token.|||
+Event_ESCOGES_HAB1.button1,Continue
+Event_ESCOGES_HAB2.text,"Denise nods and goes into the other room to put her things away. \n\n Remove the Denise token (Othera Gilman)."
+Event_ESCOGES_HAB2.button1,Continue
+Event_DECIRLE_A_DENNIS.text,<i>I should tell Denise the room in which I'm going to stay.</i>
+Event_DUERMES_HAB1.button1,Continue
+Event_DUERMES_HAB2.text,"You go to your room and pick up the object that was on the nightstand. \n\n You get the <b>{c:QItem_Pata_Conejo}</b> Common Item. \n\n It's late. Time to go to sleep."
+Event_DUERMES_HAB1.text,"You go to your room and pick up the book you saw on your bed. Its writing seems old. \n For some reason, reading some of its pages gives you a new power to understand other languages. \n\n You gain the Spell <b>{c:QItem_Alimentar_Mente1}</b>. \n\n It's late, better go to sleep. \n Remove the <color=white>{c:Tile_Habitaciones}</color> tile and all the tokens on it."
+Event_DUERMES_HAB2.button1,Continue
+Event_RETIRAS_BOBBY1.button1,Continue
+Event_RETIRAS_BOBBY1.text,|||<color=aqua><i>"I'm going to sleep too. I'll be in my room, at the end of the corridor, if you need anything." </i></color> \n\n Remove the Bobby Foster token.|||
+Event_FICHAS.button1,Continue
+Event_NOCHE1.text,"That night, the stars almost drew a straight line in the sky, forming a massive, dark gap, making you become lost. \n\n \n A little shimmering glow peeked for a few moments from the pendant around your neck. It was not the first time you had seen that light."
+Event_NOCHE1.button1,Continue
+Event_DIA1.text,"The night passed without any major problems. Now the daylight was coming through the hotel's windows. It was no longer as scary as the previous night. \n\n It was time to take a quick shower before starting the day. The pendant had stopped shining, so  you leave it on the cabinet next to the sink before entering the water. \n\n Place the <color=#e3b529>{c:Tile_Banio}</color> Tile and the <b>Wendy Adams</b> miniature as indicated. \n\n <b>Note:</b> A new Investigator's phase starts."
+Event_DIA1.button1,Continue
+Event_TE_OBSERVAN_DUCHA.text,|||You have a strange feeling that someone is watching you, but you don't see anyone in the room, and the door is closed. \n "Who's there?!", you ask with a trembling voice. \n\n <b>Note:</b> Roll 1 die and select your roll result. Magnifying glasses results {clue} cannot be exchanged for successes {success}.|||
+Event_TE_OBSERVAN_DUCHA.button1,Success {success}
+Event_TE_OBSERVAN_DUCHA.button2,Magnifying glass {clue}
+Event_TE_OBSERVAN_DUCHA.button3,Empty face
+Event_TOALLAS_DENNIS.button1,Continue
+Event_LUPA_DUCHA.text,You hear no response to your question. You think someone is still watching you and you decide to pay more attention to your surroundings. {observation}-1
+Event_TOALLAS_DENNIS.text,|||<color=magenta><i>"Wendy! Excuse me, I'm Denise. I've come to bring you some clean towels, Bobby gave them to me."</i></color> \n\n You let her in so she can leave the clean towels on the cabinet. Denise comes out of the bathroom.|||
+Event_LUPA_DUCHA.button1,Examine
+Event_LUPA_DUCHA.button2,Cancel
+Event_FALLAS_OBSERVAR.button1,Continue
+Event_OBSERVAS_BANIO.button1,Continue
+Event_FALLAS_OBSERVAR.text,Focus
+Event_OBSERVAS_BANIO.text,"You look around you, paying close attention. \n You notice a brief flicker of light on the wall in front of the shower. \n\n Place the <color=yellow><i>Search</i></color> token as indicated."
+Event_FALLAS_DUCHA.text,"You try to rush out of the shower, only to slip and fall to the floor. \n\n Suffer 1 facedown Damage. \n\n You quickly get to your feet despite the pain in your leg caused by the blow."
+Event_FALLAS_DUCHA.button1,Continue
+Event_OBJETOS_BANIO.button1,Continue
+Event_OBJETOS_BANIO.text,|||"<i>Did I imagine that? I don't want to worry Bobby and Denise</i>." \n\n \n\n Place <color=yellow><i>Search</i></color> and <color=red><i>Explore</i></color> tokens as indicated.|||
+Token_Toallas.text,Here are your clothes and the towels Denise left you, but where is your pendant? You left it here before you showered.
+Token_Toallas.button1,{action} Search
+Event_REBUSCAS_TOALLAS.text,"Frightened you rummage through the towels on the cabinet, luckily you find the pendant under the towels that Denise had left for you. You assume she hadn't noticed and left them there by mistake. \n\n Remove the Search token."
+Event_REBUSCAS_TOALLAS.button1,Continue
+Token_Agujero_Banio.button1,Botón1
+Event_Control1_Agujero_Banio.text,There is a small hole in the wall next to the picture. It faces right in front of the shower {observation}
+Event_Control1_Agujero_Banio.button1,{action} Examine
+Event_Control1_Agujero_Banio.button2,Cancel
+Event_MIRAS_AGUJERO.button1,Continue
+Event_Control1_Pasillo2.button1,Continue
+Event_MIRAS_AGUJERO.text,|||You peek through the almost imperceptible hole in the wall, but all you see is darkness. \n\n <i>"Is it possible someone was watching me through here? What's on the other side?</i>" \n\n Remove the Search token.|||
+Token_Puerta_Banio.button1,Botón1
+Event_SALES_BANIO.text,"The place is very quiet. You don't even hear Denise or Bobby doing chores around the hotel. \n\n Place the <b>Shelf</b> token and the <color=grey><i>Sight</i></color> token as indicated. \n You may move 1 or 2 spaces into the explored area. \n Remove the Explore token."
+Event_SALES_BANIO.button1,Continue
+Token_Pasillo2.text,The hall continues here.
+Token_Pasillo2.button1,Move on
+Event_VAS_PASILLO2.text,"Both the floor and the furniture are covered in a large amount of dust, and some areas of the walls have lost paint. \n\n Place the <color=#e3b529>{c:Tile_Pasillo2}</color> Tile, the <b>Door</b> token, the <color=red><i>Explore</i></color> token, the <color=yellow><i>Search</i></color> token and the <color=grey><i>Sight</i></color> token as indicated. \n\n \n Remove the Sight token."
+Event_VAS_PASILLO2.button1,Continue
+Token_Escultura1.button1,{action} Examine
+Event_PRUEBA_FOTOGRAFICA.text,"You pick up a photograph hidden in this grate. They are a group of smiling sailors at the entrance of this hotel. \n\n Gain the<b>{c:QItem_Prueba_Fotografica}</b> Unique item. \n You may interact with it from the Items button (<b>Items</b>) at the bottom left corner of the application. \n\n Remove the Search token."
+Event_SIMBOLO3.button1,Continue
+Event_Control1_Bebida.button1,{action} Examine
+Token_Escultura1.text,There are a lot of books scattered on the furniture. ({lore}: 2)
+Event_Control1_Alfombra.button1,{action} Move
+Event_MUEVES_ALFOMBRA.text,You pull up one side of the carpet, revealing a tiny grille that looks like a vent. There is something inside.
+Event_MUEVES_ALFOMBRA.button1,{action} Open ({strength}: 2)
+Token_Alfombra.button1,Botón1
+Event_Control1_Alfombra.text,This dusty old carpet is slightly moved.
+Event_PRUEBA_FOTOGRAFICA.button1,Continue
+Event_Control0_Fotografia.button1,Botón1
+Event_Control1_Fotografia.text,You found this old photograph in one of the hotel grilles.
+Event_Control1_Fotografia.button1,{action} Examine
+Event_Control1_Alfombra.button2,Cancel
+Event_MUEVES_ALFOMBRA.button2,Cancel
+Event_Control2_Alfombra.button1,Botón1
+Event_EXAMINAS_FOTO.button1,Continue
+Event_Control2_Fotografia.text,"The man holding a strange book is your father. \n To his right, another of the marines also grabs the book with a victorious smile. The resemblance of that man to Bobby's is striking."
+Event_EXAMINAS_FOTO.text,"On closer inspection, you notice that the man holding a strange book is your father. \n To his right, another of the Marines is also clutching the book with a victorious smile. The resemblance between the man and Bobby is striking. \n\n Gain <color=green><b>2 Clues {clue}</b></color>."
+Event_Control2_Fotografia.button1,Continue
+Event_Control1_Fotografia.button2,Cancel
+Event_Control2_Pasillo2.text,Now you are ready to leave the bathroom.
+Event_Control2_Pasillo2.button1,{action} Examine
+Event_Control2_Pasillo2.button2,Cancel
+Event_Control1_Pasillo2.text,Dress before leaving.
+Token_Puerta_Pasillo3.button1,Botón1
+Token_Puerta_Hab3.button1,Botón1
+Token_Puerta_Billar1.button1,Botón1
+Event_Control1_Pasillo3.text,This door has a particularly complex code. You cannot yet decipher it.
+Event_RESPIRACION_BOBBY.button1,Continue
+Event_VES_ESCULTURA.button1,{action} Examine
+Event_VES_ESCULTURA.button2,Cancel
+Event_VES_ESCULTURA.text,Below this sculpture is a number with a symbol engraved on it.
+Event_SIMBOLO1.button1,Continue
+Event_Control1_Escultura1.button1,Botón1
+Event_Control2_Escultura1.text,"Below this sculpture is an engraved number and symbol: \n <color=red>3{success}</color>."
+Event_Control2_Escultura1.button1,Continue
+Event_Control1_Billar.text,"A plate by the door indicates the name of the room: \n Game room."
+Event_Control1_Billar.button1,{action} Open
+Event_Control1_Billar.button2,Cancel
+Event_ENTRAS_BILLAR.text,"As expected, this room is also full of dust. The most striking feature of this room is the huge pool table in the center. A small drinks bar and a sofa also cheerfully decorate the room. \n\n Place the <color=#e3b529>{c:Tile_Billar}</color> Tile and the <color=yellow><i>Search</i></color> tokens as indicated. \n You may move 1 or 2 spaces into the explored area. \n\n Remove the Explore token."
+Event_ENTRAS_BILLAR.button1,Continue
+Token_Barra_Bebidas.button1,Botón1
+Event_Control1_Bebida.text,There's a small bar in this corner.
+Event_Control1_Bebida.button2,Cancel
+Event_WHISKY.button1,Continue
+Event_WHISKY.text,"There are some broken bottles behind this bar, but at the bottom of the cabinet, you see a bottle full of alcohol. \n\n Place the <b>{c:QItem_Whisky}</b> Common Item as indicated; you can pick it up using 1 {action}. \n\n Remove the Search token."
+Token_Billar.button1,Botón1
+Event_Control1_Bolas_Billar.text,Some of the billiard balls are missing and some of the remaining have a strange dark red stain on them.({will}:1)
+Event_Control1_Bolas_Billar.button1,{action} Examine
+Event_Control1_Bolas_Billar.button2,Cancel
+Event_OBSERVAS_BOLAS.text,"You look at each of the billiard balls and unexpectedly a ball shoots towards you ({agility}: 2) \n If you pass, you manage to dodge the ball in time without sustaining a scratch. If you fail, the ball manages to hit one of your shoulders. Suffer 2 facedown Damage. \n\n Move the Search token as indicated."
+Event_OBSERVAS_BOLAS.button1,Continue
+Token_Bola1.button1,Botón1
+Event_Control1_Bola1.text,This is the ball that fell to the floor. It has a dark red stain, like dried blood.
+Event_Control1_Bola1.button1,{action} Examine
+Event_Control1_Bola1.button2,Cancel
+Event_SIMBOLO2.text,"A symbol is engraved on the side of one of its keys: \n <color=orange>2{success}</color> \n\n Gain 1 Clue <color=green><b>{clue}</b></color>. \n\n Remove the token."
+Event_SIMBOLO1.text,"The ball has a number and symbol engraved on it. \n <color=blue>1{success}</color> \n\n You gain 1 Clue <color=green><b> {clue}</b></color>. \n\n Remove the Search token."
+Token_Pasillo1.button1,Botón1
+Event_Control1_Pasillo1_1.text,The hall continues here.
+Event_Control1_Pasillo1_1.button1,Move on
+Event_AVANZAS_PASILLO1.text,|||A silhouette at the end of the hallway slowly crosses towards the west of the hotel accompanied by a dark sound. \n "Denise? Bobby? Is it you?" \n\n Place the <color=#e3b529>{c:Tile_Pasillo1}</color> Tile, the <b>Painting</b> token, the <color=red><i>Explore</i></color> tokens and the <color=yellow><i>Search</i></color> tokens as indicated. \n\n Remove the Sight token.|||
+Event_AVANZAS_PASILLO1.button1,Continue
+Event_Control1_Pasillo1_1.button2,Cancel
+Token_Mesa_Pasillo1.button1,Botón1
+Token_Silueta.button1,Botón1
+Event_Control1_Silueta.text,You just see a dark figure heading west of the hotel.
+Event_Control1_Silueta.button1,{action} Check
+Event_Control1_Silueta.button2,Cancel
+Event_REVISAS_SILUETA.button1,Continue
+Event_Control1_Mesa.text,A folder full of papers is lying on the floor.
+Event_REVISAS_SILUETA.text,"The figure you saw was heading in this direction, but there was no door there, just a huge, empty wall. \n This situation makes your hair stand on end. \n\n Suffer 1 facedown Horror ({will} negates). \n Remove the Search token."
+Event_Control1_Mesa.button1,{action} Read ({lore}: 1)
+Event_Control1_Mesa.button2,Cancel
+Event_LEES_REGISTRO.text,"There is a complete record of guests who stayed at the hotel during the last year before it closed. \n You gossip a little about those records without knowing very well what you are going to find. Surprisingly you find a note with your father's name: \n\n <i>Date: October 10, 1937, \n Check-in time: 08:45h \n Guests: Patrick Adams</i> \n\n Behind him, another row of names were recorded the same day and at the same time. They must have been your father's fellow Marines. Another particular name is on that list: \n <i>Jonathan Foster</i> \n"
+Event_LEES_REGISTRO.button1,Continue
+Event_JONATHAN_FOSTER.button1,Continue
+Event_Control2_Pasillo1.text,You should explore more of the hotel before returning to your room.
+Event_JONATHAN_FOSTER.text,|||<i>"Jonathan Foster? He must be Bobby's family, but that's not his father's name. Could it be your uncle? He's never mentioned it to me."</i> \n\n Gain <color=green><b>2 Clues {clue}</b></color>. \n Remove the Search token.|||
+Event_Control2_Pasillo1.button1,Continue
+Token_Puerta_Salon.button1,Botón1
+Event_Control1_Hab3.button1,{action} Open
+Event_APARECE_BOBBY.text,|||"Bobby! You scared the life out of me! I didn't hear you coming... " \n\n You can barely finish the sentence before Bobby lunges at you. \n\n In one swift, abrupt gesture he grabs your hands and holds them against the wall. That was your first kiss, you were never going to forget it. \n\n Place the  <color=cyan><i>Bobby Foster</i></color> token as indicated.|||
+Event_APARECE_BOBBY.button1,Continue
+Event_Control1_Hab3.text,This door leads to another room in the hotel.
+Event_Control1_Hab3.button2,Cancel
+Event_RESPIRACION_BOBBY.text,When trying to open the door you feel a deep and calm breath behind your neck.
+Token_Bobby2.button1,Botón1
+Event_Control1_Bobby2.button1,Botón1
+Event_Bobby2_R_B_P.button1,{action} Rebuke his behaviour
+Event_Bobby2_P.button1,{action} Ask where he has been
+Event_Bobby2_R_B_P.text,You are very blushed after Bobby's gesture.
+Event_Bobby2_R_B_P.button4,Cancel
+Event_Bobby2_R_B_P.button3,{action} Ask where he has been
+Event_Bobby2_R_B_P.button2,{action} Back kiss
+Event_Bobby2_P.text,This encounter reminds you of the frequent abuse you received at the club. It's an uncomfortable feeling.
+Event_REPRENDES_BOBBY.button1,Continue
+Event_BESO_BOBBY.button1,Continue
+Event_REPRENDES_BOBBY.text,"You firmly rebuke Bobby's action, he has no right to treat you as he pleases. \n He doesn't seem to be affected by your reprimand but apologizes."
+Event_DONDE_BOBBY.button1,Continue
+Event_BESO_BOBBY.text,"You reply by kissing Bobby back. You think that deeper feelings for him are welling up inside you. \n\n You become <b>Focused</b>."
+Event_Bobby2_Todas.text,|||You ask Bobby to let you into his room, but he answers mockingly as he locks it: \n <color=aqua><i>"A lady should not go to a man's chambers without his permission. It wouldn't be chivalrous of me to let you in there. What would people say?"</i></color>|||
+Event_Bobby2_Todas.button1,Continue
+Event_DONDE_BOBBY.text,|||"I haven't seen you since last night. Where have you been?" \n\n Bobby explains to you that he had to leave the hotel to run errands his father had sent him, but he reminds you he is glad to see you.|||
+Event_Bobby2_P.button2,Cancel
+Event_SE_VA_BOBBY2.text,|||Politely Bobby bids you farewell with a warm kiss on the hand. \n <color=aqua><i>"I must attend to other matters, milady."</i></color> \n\n Remove the Person token.|||
+Event_SE_VA_BOBBY2.button1,Continue
+Event_Control2_Hab3.text,This door is locked.
+Event_Control2_Hab3.button1,Continue
+Event_SONIDO_SALON1.button1,Continue
+Event_SONIDO_SALON2.text,You hear a sound coming from the living room.
+Event_Control1_Salon.text,This door takes to the living room.
+Event_Control1_Salon.button1,{action} Explore
+Event_Control1_Salon.button2,Cancel
+Event_ENTRAS_SALON.text,"A large room located to the west of the hotel is decorated with a couple of tables and a huge dusty grand piano. \n Denise is sitting next to the piano. \n\n Place the <color=#e3b529>{c:Tile_Salon}</color> Tile, the <b>Shelf</b> token and the Person token <color=fuchsia><i>Denise</i></color> (Othera Gilman) as indicated. \n\n Remove the Explore token."
+Event_ENTRAS_SALON.button1,Continue
+Token_Dennis2.button1,Botón1
+Event_SONIDO_SALON2.button1,Continue
+Event_SONIDO_SALON1.text,You hear a sound coming from the living room.
+Event_Dennis2_R_B_A.text,Denise is sitting on the stool in front of the piano. She seems to be looking for something.
+Event_Control1_Dennis2.button1,Botón1
+Event_Dennis2_R_B_A.button1,|||{action} "What was that noise?"|||
+Event_Dennis2_R_B_A.button3,|||{action} "I am glad to be here with you."|||
+Event_Dennis2_R_B_A.button4,Cancel
+Event_Dennis2_R_B.button1,|||{action} "What was that noise?"|||
+Event_RUIDO_DENNIS2.button1,Continue
+Event_BUSCAS_DENNIS2.text,|||Denise's discomfort with this question is palpable. \n <color=magenta><i>"The piano, it sounded by itself without touching the keys"</i></color>, Denise's worried expression explains the situation well, <color=magenta><i>"I was looking to see if this piano has some kind of mechanism to make it sound without touching it. This is very strange."</i></color> \n\n Perplexed you ask Denise if she is sure, and she flatly confirms it.|||
+Event_BUSCAS_DENNIS2.button1,Continue
+Event_ALEGRA_DENNIS2.text,You express your appreciation to Denise for coming with you and daring to escape the club. You appreciate it.
+Event_ALEGRA_DENNIS2.button1,Continue
+Event_Dennis2_R_B_A.button2,|||{action} "Are you looking for something?"|||
+Event_RUIDO_DENNIS2.text,|||You can see Denise's discomfort with that question. \n <color=magenta><i>"The piano played by itself without touching the keys. How is this possible?"</i></color> \n Perplexed, you ask Denise if she is sure, she confirms it flatly. \n This situation worries you, you appreciate Denise a lot and you don't like seeing her like this.|||
+Event_Dennis2_R_B.button2,|||{action} "Are you looking for something?"|||
+Event_Dennis2_R_B.button3,Cancel
+Event_COLLAR_DENNIS2.text,|||Denise looks worried at your pendant. I believe that the necklace your parents gave you when you were a child is much more valuable than you think. \n <color=magenta><i>"Wendy, don't be mad at me for this, but I think Bobby brought us here to get that pendant. I've caught him watching him several times, he stays dumbfounded looking at him."</i></color> \n\n That accusation leaves you rather cold.|||
+Event_Dennis2_R_B.text,Denise is sitting on the stool in front of the piano. She seems to be looking for something.
+Event_PROPUESTA_COLLAR_DENNIS2.button1,Accept proposal
+Event_ACEPTAS_PROPUESTA_DENNIS2.text,|||You place your trust in Denise by giving her the necklace that your mother gave you when you were a girl. \n <color=magenta><i>"I'll make sure no one finds it. You've done the right thing, Wendy."</i></color> \n\n Remove the Person token and discard the {c:QItem_Colgante} Common Item.|||
+Event_PROPUESTA_COLLAR_DENNIS2.button2,Reject proposal
+Event_COLLAR_DENNIS2.button1,Continue
+Event_PROPUESTA_COLLAR_DENNIS2.text,|||<color=magenta><i>"I have a bad feeling. I know you have feelings for Bobby and you may find that hard to believe, but I know that if he gets his hands on it we're in serious trouble. We can hide the pendant and see how he reacts so you can test my theory. I know a safe place to do it.</i></color> \n\n She is convinced of her suspicions against Bobby.|||
+Event_ACEPTAS_PROPUESTA_DENNIS2.button1,Continue
+Event_RECHAZAS_PROPUESTA_DENNIS2.text,|||For a few seconds, Denise's face reflects surprise as well as anger. \n <color=magenta><i>"I hope I'm wrong, but be careful anyway. I'll be here in case you change your mind."</i></color> \n\n Remove the Person token.|||
+Event_RECHAZAS_PROPUESTA_DENNIS2.button1,Continue
+Event_PIANO.button1,Continue
+Event_TABLONES_MADERA.button1,Continue
+Event_PIANO.text,"You watch as Denise leaves the room, not quite sure how to interpret your suspicions. \n\n You look at the piano and notice that some of the keys are slightly lower than the rest. \n\n Place the <color=yellow><i>Search</i></color> token as indicated."
+Token_Piano.button1,Botón1
+Event_TABLONES_MADERA.text,"Due to the passage of time, some tables in the living room are destroyed. \n\n Place the <b>{c:QItem_Tablones_Madera}</b> Common Item. \n You may move 1 or 2 spaces into the explored area."
+Event_Control1_Piano.text,"Denise was looking for something in this piano. \n Some of its keys are slightly stuck."
+Event_Control1_Piano.button1,{action} Investigate
+Event_SIMBOLO2.button1,Continue
+Puzzle_Piano.button1,Solve
+Event_Control1_Piano.button2,Cancel
+Event_DIARIO_SIMBOLOS.text,"These colorful numbers and symbols scattered around the hotel seem curious to you, so you decide to write them down in your diary, in case you need them. \n\n Gain the Unique item <b>Old Diary</b>. \n You may interact with it from the Items button (<b>Items</b>) at the bottom left corner of the application."
+Event_DIARIO_SIMBOLOS.button1,Continue
+Event_Control0_Diario.button1,Read
+Event_DIARIO_SIMBOLO1.button1,Continue
+Event_DIARIO_SIMBOLO2.text,You found the number <color=Orange>2{success} </color> on the piano key.
+Event_DIARIO_SIMBOLO1.text,You found the number <color=Blue>1{success} </color> on the billiard ball.
+Event_DIARIO_SIMBOLO2.button1,Continue
+Event_DIARIO_SIMBOLO3.text,You found the number <color=red>3{success}</color> on the small sculpture on the shelf.
+Event_DIARIO_SIMBOLO3.button1,Continue
+Event_SIMBOLO3.text,"All these books are full of dust, there are even some pages destroyed by the passage of time. \n When you choose one of those books, you find behind it a small, greenish sculpture also covered in dust. \n Below it is a number with a symbol: <color=red> \n 3{success}</color> \n\n Gain <color=green><b>1 Clue {clue}</b></color> and the <b>Grotesque stone</b> Unique item. \n\n Remove this Search token."
+Event_Control1_Diario.button1,Continue
+Event_DIARIO_SIMBOLO1.button2,Close Diary
+Event_DIARIO_SIMBOLO2.button2,Close Diary
+Event_DIARIO_SIMBOLO3.button2,Close Diary
+Event_Control0_Diario.button2,Cancel
+Event_Control0_Diario.text,Here is where you have written down the symbols you have found.
+Event_APUNTAS_DIARIO.text,This symbol is also recorded in your diary.
+Event_APUNTAS_DIARIO.button1,Continue
+Event_Control3_Pasillo1.text,It is already getting dark. Do you want to return to your room?
+Event_Control3_Pasillo1.button1,{action} Go to sleep
+Event_Control3_Pasillo1.button2,Not yet
+Event_VAS_HABITACION_CON_COLLAR.text,"As night falls, the hotel becomes much darker than it was during the day ({will}-1: 1). If you pass, you know that these silhouettes are a figment of your mind, and you stop making a big deal out of it. If you fail, the play of shadows cast by the moon into the corners of the room makes you believe they are real, sinister figures; suffer 1 Horror. \n\n Before you close your eyes, you watch as the dark sky casts a huge bright line of glowing stars."
+Event_NOCHE2_CON_COLLAR.text,|||You can't stop thinking about everything that happened today. <i>"Do I have to worry about Bobby? Why is Denise so hard on him? After all, he helped us escape and is giving us a roof over our heads to temporarily take refuge. And why would he want the necklace? I don't think he's a bad guy"</i> \n\n You were so immersed in your thoughts that you forgot to pay attention to your surroundings.|||
+Event_VAS_HABITACION_SIN_COLLAR.button1,Continue
+Event_VIENE_BOBBY.button1,Continue
+Event_NOCHE2_SIN_COLLAR.text,|||You can't stop thinking about everything that happened today. <i>"Do I have to worry about Bobby? Why is Denise so hard on him? After all, he helped us escape and is giving us a roof over our heads to temporarily take refuge. And why would he want the necklace? I don't think he's a bad guy"</i> \n\n You were so immersed in your thoughts that you forgot to pay attention to your surroundings.|||
+Event_NOCHE2_BOBBY1.button1,Continue
+Event_VIENE_BOBBY.text,"Again, you hear more agitated breathing coming towards you. A small, tinkling light peeks out from the foot of the bed, and your sheets begin to move upwards. The event was so quick that you did not have time to see what was beneath them. ({agility}: 3) \n\n If you pass, you quickly grab the sheets while they are airborne allowing you to see what lurks beneath them, but still, the tension of the moment terrifies you; suffer 1 Horror facedown ({strength} negates). If you fail, strong hands grab your feet, pulling you down slightly; suffer 1 Horror."
+Event_NOCHE2_BOBBY3.text,"You listen to him attentively without knowing what to say, but you are sure that there is a strong connection between you two due to the way he looks at you. \n <color=aqua><i>—Let me stay with you tonight. I want to protect you. I will do whatever it takes to stop them from looking for you. We will somehow manage to be together. Trust me.</i></color>"
+Event_DIA2.button1,Continue
+Event_NOCHE2_BOBBY3.button1,Accept proposal
+Event_NOCHE2_BOBBY1.text,|||You try to scream with all your might, but before you can, Bobby tightly covers your mouth. \n <color=aqua><i>"Shhh! He's going to hear us!,"</i></color> he represses you in a high-pitched whisper, <color=aqua><i>"I didn't mean to scare you. I wanted to see you again after what happened this morning and it occurred to me to surprise you more 'affectionately'. I'm sorry I scared you." \n </i></color> \n You couldn't tell if it was an attempted romantic maneuver or a scare to death.|||
+Event_ACEPTAS_BOBBY_CON_COLLAR.text,You gently spent that dark and silent night until the next morning.
+Event_RECHAZAS_BOBBY_CON_COLLAR.text,|||Disappointed, Bobby disappears from your room, leaving you with this sentence: \n <color=aqua><i>"We all make mistakes, Wendy. Remember that you can trust me." </i></color> \n\n You notice that Bobby has glanced at the necklace on your bedside table and sighs in relief before leaving.|||
+Event_ACEPTAS_BOBBY_SIN_COLLAR.text,You gently spent that dark and silent night until the next morning.
+Event_DIA2_2.text,"When you wake up, you review everything that happened last night, and you wonder if you might have been a little cruel to him. \n You were sure that a good cold shower would give you pause for thought. \n\n You also realize that the small greenish figurine you found in the hotel is not in the room. \n Discard the Grotesque Stone Unique item."
+Event_NOCHE2_BOBBY3.button2,Reject proposal
+Event_CON_LLAVES_BOBBY.text,"This room is slightly larger than the rest of the hotel. It also has no dust on the furniture and is much better decorated. \n You close the door behind you so they can't see you. \n\n Place the <color=#e3b529>{c:Tile_Habitacion3}</color> Tile, your Investigator <b>Wendy Adams</b>, a <b>Shelf</b> token and <color=yellow><i>Search</i></color> and <color=red><i>Explore</i></color> tokens as indicated."
+Event_CON_LLAVES_BOBBY.button1,Continue
+Event_DIA2.text,"During the night while Bobby slept, you sneaked the keys to his room. You were too curious to see what was hidden behind that door. \n You thought Bobby had left for work that morning, so you took the opportunity to investigate further. \n\n What you didn't expect was that the small greenish figure you found in the hotel was not where you left it the night before. \n Remove the Grotesque Stone Unique item."
+Token_Agujero.button1,Botón1
+Event_Control1_Agujero.text,There is a large sailing theme painting on a sturdy frame, hanging on this wall. It is slightly moved.
+Event_Control1_Agujero.button1,{action} Remove
+Event_Control1_Agujero.button2,Cancel
+Event_FALLAS_CUADRO.button1,Continue
+Event_RETIRAS_CUADRO.text,|||You remove the huge painting and see a tiny hole in the wall. \n When you look out, you find out that the room on the other side is the hotel bathroom. \n <i>"Has Bobby been spying on us from here?"</i> \n\n Remove the Search token.|||
+Event_FALLAS_CUADRO.text,The painting is too heavy. You have to try harder.
+Event_RETIRAS_CUADRO.button1,Continue
+Token_Maleta.button1,Botón1
+Event_Control1_Maleta.text,This huge suitcase must be Bobby's, but it has a code.
+Event_Control1_Maleta.button1,{action} Continue
+Event_ABRES_MALETA.text,|||When you open the suitcase you find a jumble of documents and the most sinister gadgets. Among them are: a sacred cross, a cultist emblem, and an arcane manuscript. \n <i>"What will Bobby need all this for?"</i> \n\n You notice that this manuscript is the same book that your father was holding in the photograph you found in the hallway. You remember that your mother read you old books in unknown languages ​​when you were very little, some of those words you still have in your memory. \n With great effort, you try to read some of the pages of that ancient manuscript and understand it better {lore}|||
+Event_Control1_Maleta.button2,Cancel
+Puzzle_Maleta.button1,Solve
+Event_ABRES_MALETA.button1,Continue
+Event_ABRES_MALETA.button2,Botón2
+Event_FALLAS_LIBRO.text,You ought to remember the stories your mother taught you.
+Event_FALLAS_LIBRO.button1,Continue
+Event_Control2_Maleta.button1,Botón1
+Event_LEES_LIBRO.text,|||This ancient book recounts a host of terrifying legends that loom over the world, ancient writings well told of human sacrifices to great monsters called "Outer Gods". \n\n The last pages recount in detail the discoveries that a group of marines made ten years ago. \n\n <i>On a night like tonight, the stars will align in the dark sky, and only the flash of light emitted by the amulet with the {success} symbol will show the way to the new world, ruled by beings from other galaxies with powers far beyond our understanding.</i> \n The team assigned to this task was the crew your father was in. \n\n Countless other preparations and spells are described in detail in this book. \n Gain 1 Clue {clue] and the <b>Wrack</b> Spell. \n Remove this Search token.|||
+Event_LEES_LIBRO.button1,Continue
+Event_DONDE_ESTA_COLLAR.text,|||The pendant that shows the book's illustrations is the same one your parents gave you when you were little. \n\n Now you realize everything that Denise told you and that it seemed to be fine. \n You also realize you haven't seen the pendant since last night. \n "<i>I remember that last night I took it off and left it on my bedside table before going to sleep</i>." \n\n Discard the {c:QItem_Colgante}  Common Item.|||
+Event_DONDE_ESTA_COLLAR.button1,Continue
+Event_DONDE_ESTA_DENNIS.text,|||<i>"And where is Denise? I haven't seen her all morning. I hope nothing bad happened to her."</i> \n\n There is only one place in the entire hotel that you haven't investigated yet. \n\n Now would be a good time to go out and investigate outside the hotel.|||
+Event_DONDE_ESTA_DENNIS.button1,Continue
+Event_VAS_HABITACION_CON_COLLAR.button1,Continue
+Event_VAS_HABITACION_SIN_COLLAR.text,"As night falls, the hotel becomes much darker than it was during the day ({will}-1: 1). If you pass, you know that these silhouettes are a figment of your mind, and you stop making a big deal out of it. If you fail, the play of shadows cast by the moon into the corners of the room makes you believe they are real, sinister figures; suffer 1 Horror. \n\n Before you close your eyes, you watch as the dark sky casts a huge bright line of glowing stars."
+Event_Control2_Pasillo3.text,"This door leads outside, leading to a small dock next to the river. \n During these two days you have not been able to go outside the hotel for fear of being seen. But Denise may be in danger. \n\n To open the door you need to enter the code correctly. \n\n <b>Note:</b> You spend 1 {action} for each option you choose from the following:"
+Event_Control1_Objetos.button1,Success {success}
+Event_Control1_Objetos.button2,Magnifying glass {clue}
+Event_Control1_Objetos.button3,Empty face
+Event_REVOLVER.text,"{qst:OBC} {c:QItem} \n\n {qst:QBUS}"
+Event_NUDILLERAS.text,"{qst:OBC} {c:QItem} \n\n {qst:QBUS}"
+Event_NUDILLERAS.button1,Continue
+Event_Control1_Objetos.text,"Among Bobby's belongings are several interesting gadgets. \n\n <b>Note:</b> Roll 1 die and enter the result of your roll. You cannot trade magnifying glasses for success."
+Event_REVOLVER.button1,Continue
+Token_Puerta_Pasillo2.button1,Botón1
+Event_Control1_Puerta_Pasillo2.text,This door leads to the hotel hall.
+Event_Control1_Puerta_Pasillo2.button1,{action} Open
+Event_Control1_Puerta_Pasillo2.button2,Cancel
+Event_SALES_PASILLO2.text,"There is an uncomfortable silence in these halls. \n\n {qst:QBUS}"
+Event_SALES_PASILLO2.button1,Continue
+Event_Control1_Pasillo3.button1,Continue
+Event_TUBERIA1.button1,"Some of the objects that you didn't think of before now seem more useful to you for some reason. \n\n Place the <b>{c:QItem_Tuberia}</b> Common Item as indicated. \n You may move 1 or 2 spaces into the explored area."
+Event_PALANCA1.text,Continue
+quest.authors,"\n Created by Sandra P. \n\n Thanks to Vidimus, Dani RT, and Dark Vanf for their collaboration. \n\n English translation: Vidimus \n"
+quest.authors_short,Sandra P.
+Event_VENDAS.button1,Continue
+Token_Objetos_Bobby.button1,Botón1
+Event_VENDAS.text,"{qst:OBC} {c:QItem} \n\n {qst:QBUS}"
+Event_Control2_Pasillo3.button1,<color=red>{success}</color> {success} <color=green>{success}</color>
+Event_Control2_Pasillo3.button2,<color=orange>{success}</color> <color=red>{success}</color> <color=blue>{success}</color>
+Event_Control2_Pasillo3.button3,<color=fuchsia>{success}</color> <color=yellow>{success}</color> {success}
+Event_Control2_Pasillo3.button4,<color=orange>{success}</color> <color=red>{success}</color> <color=blue>{success}</color>
+Event_Control2_Pasillo3.button5,<color=red>{success}</color> <color=orange>{success}</color> <color=blue>{success}</color>
+Event_Control2_Pasillo3.button6,<color=blue>{success}</color> <color=orange>{success}</color> <color=red>{success}</color>
+Event_Control2_Pasillo3.button7,<color=green>{success}</color> <color=yellow>{success}</color> <color=red>{success}</color>
+Event_Control2_Pasillo3.button8,<color=blue>{success}</color> <color=yellow>{success}</color> <color=red>{success}</color>
+UI_Texto_Entierro_Bobby.uitext,Cancel
+Event_FALLAS_PUERTA.text,"On the plaque next to the door is a clue: \n\n<i>The first color represents the normality of the sky. \n The second color represents the drawing of the sunset. \n The third drawing represents what the sky will be like when the final apocalypse begins."
+Event_FALLAS_PUERTA.button1,Continue
+Event_ACEPTAS_BOBBY_CON_COLLAR.button1,Continue
+Event_ACEPTAS_BOBBY_SIN_COLLAR.button1,Continue
+Event_ACEPTAS_BOBBY_SIN_COLLAR2.button1,Continue
+Event_EXPLICACION_BOBBY.text,"Bobby exhales a sigh and worriedly details the plan he had with Denise. \n\n In great detail, he explains that Denise belongs to a cult of Arkham, who worship powerful gods from another dimension, and on nights like tonight when the stars are right, the amulet you wear as a pendant will show the way that opens the gap between Heaven and Earth to another world beyond imagining. \n\n On Bobby's side, he shows a photograph with a dedication from when he was a young boy, climbing on the knee of his uncle Jonathan Foster. He was very important in his life, he thought of him as a father. His uncle was a marine, just like your father, and together with his shipmates they were given the task of discovering the way to the portal, but things didn't go as expected and many of them died in the mission. Your father gave the pendant to your mother before he disappeared, and then she gave it to you."
+Event_ACEPTAS_BOBBY_SIN_COLLAR2.text,|||Before you wake up, anguished screams echo in your head. \n <color=cyan><i>"Wendy, where is your pendant? Wendy!"</i></color> \n You don't understand what's happening and Bobby starts to get very nervous, looking for the necklace in every corner of the room. \n Throwing his hands on his head, he keeps regretting not having told you sooner. \n <color=cyan><i>"Fuck… Fuck Wendy! Tell me you hid it, please..."</i></color> \n You also notice that the small greenish figure you found is not in the room. \n Discard the Grotesque Sculpture Common Item. \n\n You try to calm him down in some way ({influence}-1: 2) If you pass, you explain Denise's suspicions to him and he ends up understanding. If you fail, you try to calm him down without much success, suffer 1 facedown Horror, due to his hysteria.|||
+Event_EXPLICACION_BOBBY.button1,Continue
+Event_EXPLICACION_BOBBY2.button1,Continue
+Event_BUSCAS_DENNIS.button1,Continue
+Event_EXPLICACION_BOBBY2.text,"Denise tricked you into helping her open the portal, you had the amulet and Bobby had the components to get it. He thought that this way he would find out what happened to his uncle, but now he seems to be sorry. \n\n You feel deep pain as if several knives had been stabbed in your back. \n\n While Bobby holds your hands tightly, he asks you to help him stop Denise's plan. \n\n Gain 1 Clue <color=green><b>1 {clue}</b></color>."
+Event_TUBERIA2.text,"Some of the objects that you didn't think of before now seem more useful to you for some reason. \n\n Place the <b>{c:QItem_Tuberia}</b> Common Item as indicated. \n You may move 1 or 2 spaces into the explored area."
+Event_BUSCAS_DENNIS.text,"There is only one place in the entire hotel that you have not investigated yet. \n\n Place the <color=cyan><i>Bobby Foster</i></color>'s token as indicated."
+Event_TUBERIA2.button1,Continue
+Event_PALANCA2.button1,"Some of the objects that you didn't think of before now seem more useful to you for some reason. \n\n Place the <b>{c:QItem_Palanca}</b> Common Item as indicated. \n You may move 1 or 2 spaces into the explored area."
+Event_DENNIS_CONTRA_BOBBY.button2,Continue
+Token_Bobby3.button1,Botón1
+Event_Control1_Bobby3.text,Bobby is very sorry for what he has done.
+Event_Control1_Bobby3.button1,Continue
+Event_NOCHE2_BOBBY2.button1,Continue
+Event_RECHAZAS_BOBBY_CON_COLLAR.button1,Continue
+Event_NOCHE2_BOBBY2.text,|||<color=aqua><i>"Wendy, I know my ways of declaring myself are not the best, but believe me when I tell you that I fell in love with you from the first time you offered me a packet of cigarettes at the club. I was surprised to see how young you were and you were already working with that insight in those places. Then I found out that you were forced to work that way when your parents disappeared,"</i></color> he continues as he rests his hand on your cheek, <color=aqua><i>" but I'm here to help you. I want to make you happy, if you let me, of course."</i></color> \n\n Your brain begins to imagine for some reason Bobby's face distorted ({will}: 2). \n If you pass the roll, you think that spending so much time in this gloomy, forsaken place is upsetting your mind. If you fail, an uncontrollable terror invades your mind. Suffer 2 facedown Horror.|||
+Event_DIA2_2.button1,Continue
+Event_MIRAS_HAB3.text,As you walk past Bobby's room, you notice that it is slightly ajar. You don't see Bobby or Denise anywhere, so you decide to go inside.
+Event_MIRAS_HAB3.button1,Continue
+Event_RECHAZAS_BOBBY_SIN_COLLAR.button1,Continue
+UI_Texto_Final_Dennis.uitext,"It was too late. Denise had already opened the huge portal from which a bluish, hypnotic, glowing light was pouring into her through her eyes. \n"
+Event_DONDE_ESTA_BOBBY.text,|||<i>"Where is Bobby? I haven't seen him since last night, but I see through the window that his car is still parked in front of the hotel".</i>|||
+Event_DONDE_ESTA_BOBBY.button1,Continue
+UI_Continuar2.button1,Botón1
+Event_MONSTRUOS_PORTAL1.button1,Through it, some horrifying creatures identical to those described in the old book come out.
+Event_MONSTRUOS_PORTAL2.text,Continue
+Event_JUGADOR4.button1,Continue
+Event_JUGADOR4.text,Place <b>Wendy Adams</b> as indicated.
+Event_Control_Hab3.text,Bobby permits you to enter his room.
+Event_Control_Hab3.button1,{action} Explore
+Event_Control_Hab3.button2,Cancel
+Event_ENTRAS_HAB3.text,"This room is somewhat larger than the rest of the hotel. In addition, there is no dust on the furniture and it is much better decorated. \n\n Place the <color=#e3b529>{c:Tile_Habitacion3}</color> tile, the <b>Shelf</b> token and the <color=yellow><i>Search</i></color> token as indicated. \n Remove the Explore token."
+Event_ENTRAS_HAB3.button1,Continue
+Event_SALES_EXTERIOR.text,As you go down the stairs to go outside you see a huge, bluish light coming from the dock.
+Event_SALES_EXTERIOR.button1,Continue
+Event_MUELLES_DENNIS.text,|||<color=cyan><i> "We have to close that portal before more creatures like that come through!</i> </color>, Bobby shouts in anguish. \n\n Place the <color=#e3b529>{c:Tile_Muelle}</color> and <color=#e3b529>{c:Tile_Pasillo3}</color> Tiles, the <color=blue><i> Interaction</i> </color>token (it represents Denise in front of the portal) and your Investigator <b> Wendy Adams</b> as indicated.|||
+Event_PALA.text,"There is an object lying on the ground that might be useful to you. \n\n Place the <b>{c:QItem_Pala}</b> Common Item as indicated."
+Event_MUELLES_BOBBY.text,|||<color=cyan><i>"Naive! I have only used you to carry out my plan. I'll finally be able to find out what happened to my uncle before he disappeared,"</i></color> Bobby shouts, pointing to Denise's body." <color=cyan><i> Your stupid friend tried to interfere and paid dearly for it. Now you will be next."</i></color> \n\n Place the <color=#e3b529>{c:Tile_Muelle}</color> and <color=#e3b529>{c:Tile_Pasillo3}</color> Tiles, the <color=blue><i>Interaction token</i></color> (represents Bobby in front of the portal) and your investigator, <b>Wendy Adams</b>, as indicated.|||
+Event_PALA.button1,Continue
+Event_MACHETE.text,"There is an object lying on the ground that you may find useful. \n\n Place the <b>{c:QItem_Machete}</b> Common Item as indicated."
+Event_MACHETE.button1,Continue
+Event_DINAMITA.button1,Continue
+Event_DINAMITA.text,"There is an object lying on the ground that might be useful to you. \n\n Place the <b>{c:QItem_Dinamita}</b> Common Item as indicated."
+Spawn_Profundo1.button1,Spawn a <b>Deep One</b> as indicated.
+Spawn_Horrendo_Cazador.text,Spawn a <b>Hunting Horror</b> as indicated.
+Event_INICIO_PISTAS_Y_ACCIONES.button1,Continue
+Token_Portal.button1,Botón1
+Spawn_Profundo2.text,Continue
+Event_Control1_Portal.text,Denise is absorbed by the knowledge that the power of the portal gives him. You should take the opportunity to destroy it {will}.
+Event_Control1_Portal.button1,{action} Break
+Event_Control1_Portal.button2,Cancel
+Event_DENNIS_AGARRA.button1,Continue
+Event_DENNIS_CONTRA_BOBBY.text,"At your scream of pain, Bobby lunges at Denise to stop her, but Denise quickly turns to him and grabs him by the throat, lifting him dramatically off the ground. \n\n Bobby's face begins to flush from lack of air. If you don't do something soon he will die. \n On the other hand, this distraction is ideal for you to remove the statue next to the portal and prevent any more of these creatures from entering this world."
+Event_DENNIS_AGARRA.text,"You pick up the small figure in the corner of the doorway, but with your eyes rolling Denise grabs your arm with great force. ({agility}:2) \n\n If you pass, you give her a hard slap that causes her to release your arm. If you fail, you feel an unbearable burning in your arm as his fingers soak into your skin. Suffer 2 facedown Damage."
+Event_AYUDAS_BOBBY.button1,Take the stone
+Event_DENNIS_CONTRA_BOBBY.button1,Help Bobby
+Event_BOBBY_CASI_MUERE.text,"You try to take advantage of this distraction to destroy the portal, but you find it extremely difficult to pull the small statue as if it is anchored to the ground. \n While you think of a plan, you see how Bobby's face has already begun to bruise from lack of air as Denise continues to squeeze him tightly by the neck. \n If you don't do something soon, she will end Bobby's life."
+Event_AYUDAS_BOBBY.text,Without thinking twice you grab one of the wooden planks that were scattered around the dock and hit Denise in the head with all your might. This act causes her to let go of Bobby, who falls to the ground unconscious.
+Spawn_DENNIS1.button1,Continue
+Event_Control0_Portal.text,You must defeat them all before you close the portal.
+Event_BOBBY_MUERE1.text,"You quickly grab the figure from the ground and put it in your pocket. \n A gurgling sound finishes as Bobby collapses to the ground. \n Denise had killed him."
+Event_BOBBY_MUERE1.button1,Continue
+Spawn_DENNIS2.text,|||A terrible pang of conscience completely invades you. You can't believe what's happening. Suffer 1 facedown Horror. \n\n <color=magenta><i>"It's useless Wendy. Now I am much stronger and no one will be able to stop me."</i></color> \n\n A blinding light comes out of the pendant that Denise holds in her hand. \n\n Place a <b>Cultist</b> as indicated. \n Remove the Interaction token.|||
+Spawn_DENNIS2.button1,Continue
+Spawn_DENNIS1.text,"<color=magenta><i>—Damn meddler! You are of no use to me anymore, neither you nor your dear boyfriend. Then I'll take care of her.</i></color> \n\n A blinding light comes out of the necklace you gave Denise. \n\n Place the <b>Cultist</b> as indicated. \n Remove the Interaction token."
+Event_Control0_Portal.button1,Continue
+UI_Texto_Final_Bobby.uitext,"It was too late. Bobby had already opened a huge portal from which a hypnotic and brilliant light was emerging and entering him through his eyes. \n"
+UI_Continuar3.button1,Botón1
+Event_MUELLES_DENNIS.button1,Continue
+Event_MUELLES_BOBBY.button1,Continue
+Event_MUERE_DENNIS.button1,Continue
+Event_Control2_Portal.text,"Bobby is immersed in the knowledge that the power of the portal gives to him. You should take the opportunity to destroy it. \n In the old book you read how to do it {lore}."
+Event_MUERE_DENNIS1.text,With great pain, you cover Denise's lifeless body with a small tarpaulin. You had to leave the person you had once considered a great friend in that cold, damp place.
+Event_Control2_Portal.button1,{action} Break
+Event_FALLAS1_PORTAL_DENNIS.text,You try to grab the small sculpture by the doorway, but Denise steps forward and gets in your way.
+Event_FALLAS2_PORTAL_DENNIS.button1,Continue
+Event_Control2_Portal.button2,Botón2
+Event_AGARRA_BOBBY.text,"You try to grab the small figure in the corner of the doorway, but Bobby rolls his eyes and grabs your arm with great force. ({agility}:2) \n\n If you pass the roll, you give him a hard slap that causes him to release your arm. If you fail, you feel an unbearable burning in your arm as his fingers soak into your skin. Suffer 2 facedown Damage."
+Event_AGARRA_BOBBY.button1,Continue
+Spawn_BOBBY1.button1,Continuar
+Event_CASI_MUERE_DENNIS.text,|||For two seconds you try to think of a plan to make him free Denise. \n <i> "Maybe if I grab the small statue next to the doorway he will let go straight away. \n\n <b> Note:</b> Roll 1 die and indicate the result of your roll. No magnifying glasses can be exchanged for Successes.|||
+Event_DERROTAS_BOBBY1.text,"You give him the final blow and he collapses to the ground. A trickle of blood runs down from Bobby's skull into the river. You couldn't believe what you were seeing. \n Now all that was left was to finish the job. \n\n Remove the Cultist."
+Event_DERROTAS_BOBBY1.button1,Continue
+Event_DERROTAS_DENNIS1.button1,Continue
+Event_DERROTAS_DENNIS2.text,"You deliver the final blow and she collapses to the ground. A trickle of blood runs down from Denise's skull into the river. You couldn't believe your eyes. \n Now all that was left was to finish the job. \n\n Remove the Cultist."
+Event_DERROTAS_DENNIS1.text,"You deliver the final blow and she collapses to the ground. A trickle of blood runs down from Denise's skull into the river. You couldn't believe your eyes. \n Now all that was left was to finish the job. \n\n Remove the Cultist."
+Event_DERROTAS_DENNIS2.button1,Continue
+Event_MONSTRUOS.button1,Botón1
+UI_Texto_Final2.uitext,"The sun sets again as you walk aimlessly through the forest. \n A horrible feeling of loneliness floods your soul again, you are alone again, but that won't stop you from moving on. \n\n You also take with you the ancient book you found to study its magic and discover its secrets. You were sure that having that pendant was no coincidence, and you had to understand perfectly how the magical and supernatural world worked. \n\n \n <color=green><i>You won the game.</i></color> \n\n -The End-"
+Event_HUYES_BOSQUE1.text,|||You pick up your necklace, causing the portal to close completely. No more beings were going to enter this world, not while the portal remained closed, and the only two keys to open it were in your possession. \n\n <i>"I must protect this sculpture and the necklace that mom gave me at all costs. If they fall into the wrong hands again it would be a disaster."</i>|||
+UI_Texto_Final3.uitext,"The sun sets again as you walk aimlessly through the forest. \n A horrible feeling of loneliness floods your soul again, you were alone again, but that would not stop you from moving on. \n\n You also take with you the ancient book you found to study its magic and discover its secrets. You were sure that having that pendant was no coincidence, and you had to understand perfectly how the magical world and the supernatural worked. \n\n \n\n -The End-"
+Event_HUYES_BOSQUE2.text,|||You pick up your necklace, causing the portal to close completely. No more beings were going to enter this world, not while the portal remained closed, and the only two keys to open it were in your possession. \n\n <i>"I must protect this sculpture and the necklace that mom gave me at all costs. If they fall into the wrong hands again it would be a disaster."</i>|||
+Event_Control_Mytos.button1,Botón1
+Event_INICIO.button1,Continue
+Event_Control3_Terror.text,"You notice a dark shadow in one corner of the room. You focus your torch and see a faceless, legless figure standing motionless {lore}: 2 \n If you pass the roll, you try to believe it is a figment of your mind due to the dim light and think nothing more of it. If you fail, the figure suddenly moves and leaps on top of you. Suffer 1 facedown Horror."
+Event_Control1_Terror.text,"You hear deafening screams coming from the corridor. \n When you look out you see that everything is dark, there is no one around. \n Suffer 1 facedown Horror, ({will} negates)."
+Event_Control1_Terror.button1,Continue
+Event_Control2_Terror.text,"Dark stains begin to appear on the walls. You try to touch them and see how your hand is flooded with them. \n You forcefully remove your hand and surprisingly discover that those stains are no longer there. \n\n Suffer 1 facedown Damage ({strength} negates)."
+Event_Control2_Terror.button1,Continue
+Event_Control0_Terror.button1,Botón1
+Event_Control3_Terror.button1,Continue
+Event_FAMA_HOTEL.button1,Continue
+Event_FAMA_HOTEL.text,"You think this has gone too far and call Bobby to explain. \n\n He avoided telling you that the hotel had a reputation for being haunted so as not to scare you, but you were not pleased that he kept it from you."
+Event_MUERE_JUGADOR.text,"You did everything in your power to survive, but it wasn't enough. \n\n Unfortunately you will never find out what is hidden behind the pendant your parents gave you. \n\n \n <color=red><b>You have lost the game.</b></color> \n\n \n\n -The End-"
+Event_MUERE_JUGADOR.button1,Continue
+Spawn_Horrendo_Cazador.button1,Continue
+Event_PISTAS_INICIALES.text,"Before beginning, would you like to see a complete list of the components required by the scenario? \n\n This could help you speed up the search for components during the game, but it also contains <color=red><b>spoilers</b></color> about the story."
+Event_PISTAS_INICIALES.button1,List Components
+Event_PISTAS_INICIALES.button2,I prefer not to know them
+Event_VES_TABLEROS.button1,Continue
+Event_VES_COMPONENTES.text,This list is of all the components that have been included in the game and that could appear in the scenario (not all of them will appear since it will depend on the actions taken during the game).
+Event_VES_COMPONENTES.button1,List Tiles
+Event_VES_COMPONENTES.button2,List Objects
+Event_VES_TABLEROS.text,"<color=orange><b>Tiles:</b></color> \n {c:Tile_Habitaciones}\n {c:Tile_Salon} \n {c:Tile_Pasillo1} \n {c:Tile_Habitacion3} \n {c:Tile_Billar} \n {c:Tile_Pasillo2} \n {c:Tile_Banio} \n {c:Tile_Muelle} \n {c:Tile_Pasillo3}"
+Event_VES_COMPONENTES.button3,List Monsters and Persons
+Event_VES_COMPONENTES.button4,List tokens
+Event_VES_COMPONENTES.button5,Start Scenario
+Event_NO_VES_COMPONENTES.text,Are you sure you want to start the scenario?
+Event_NO_VES_COMPONENTES.button1,Start
+Event_NO_VES_COMPONENTES.button2,Back
+Event_VES_OBJETOS.text,"<color=yellow><b>Items:</b></color> \n {c:QItem_Linterna} \n {c:QItem_Colgante} \n {c:QItem_Pata_Conejo} \n {c:QItem_Whisky} \n {c:QItem_Tablones_Madera} \n {c:QItem_Nudilleras} \n {c:QItem_Revolver38} \n {c:QItem_Tuberia} \n {c:QItem_Vendas} \n {c:QItem_Palanca} \n {c:QItem_Pala} \n {c:QItem_Machete} \n {c:QItem_Dinamita} \n {c:QItem_Prueba_Fotografica} \n <color=yellow><b>Spells:</b></color> \n {c:QItem_Alimentar_Mente1}"
+Event_VES_OBJETOS.button1,Continue
+Event_MONSTRUOS_PERSONAJES.text,"<color=cyan><b>Person tokens:</b></color> \n -Bobby Foster \n -Othera Gilman (in this scenario she will be called 'Denise') \n\n \n <color=brown><b>Monsters:</b></color> \n -Cultist \n -Deep One \n -Hunting Horror"
+Event_MONSTRUOS_PERSONAJES.button1,Continue
+Event_INICIO_PISTAS_Y_ACCIONES.text,"You start the game with <color=green><b>2 Clues {clue}</b></color>. \n\n You cannot discard the <i>{c:QItem_Colgante}</i> Unique item unless otherwise indicated in the scenario's story. \n\n It is recommended to play with 3 actions {action} in each Investigator Phase."
+Event_FINAL1_DENNIS1.button1,Continue
+UI_Texto_Final3_1.uitext,"The sun sets again as you walk aimlessly through the forest. \n A horrible feeling of loneliness floods your soul again, you are alone again, but that won't stop you from moving on. \n\n You were sure that having that pendant was no coincidence and you must understand perfectly how the magical and supernatural world worked. \n\n \n <color=green><i>You won the game.</i></color> \n\n -The End-"
+Event_HUYES_BOSQUE1.button1,Continue
+Event_DERROTAS_SERPIENTE.button1,Continue
+UI_Texto_Final3_2.uitext,"The sun sets again as you walk aimlessly through the forest. \n A horrible feeling of loneliness floods your soul again, you were alone again, but that would not stop you from moving on. \n\n You also take with you the ancient book you found to study its magic and discover its secrets. You were sure that having that pendant was no coincidence, and you had to understand perfectly how the magical world and the supernatural worked. \n\n \n <color=green><i>You won the game</i></color> \n\n \n -THE END-"
+Event_HUYES_BOSQUE2.button1,Continue
+Event_HUYES_BOSQUE3.text,|||You pick up your necklace, causing the portal to close completely. No more beings were going to enter this world, not while the portal remained closed, and the only two keys to open it were in your possession. \n\n <i>"I must protect this sculpture and the necklace that mom gave me at all costs. If they fall into the wrong hands again it would be a disaster."</i>|||
+Event_HUYES_BOSQUE3.button1,Continue
+Event_FINAL1_DENNIS1.text,"You carry the still-unconscious Bobby into the room and write him a goodbye note. You can't stay next to someone who has played with your trust. \n By the time he wakes up, you won't be there anymore."
+Event_NOCHE2_CON_COLLAR.button1,Continue
+Event_NOCHE2_SIN_COLLAR.button1,Continue
+Token_Puerta_Habitaciones1.button1,Botón1
+Event_FALLAS2_PORTAL_DENNIS.text,"You try again to destroy the portal but Denise pushes you hard to one side. \n\n Suffer 1 facedown Damage."
+Event_FALLAS1_PORTAL_BOBBY.text,You reach for the small statue next to the doorway, but Bobby steps forward and gets in your way.
+Event_FALLAS1_PORTAL_DENNIS.button1,Continue
+Event_FALLAS1_PORTAL_BOBBY.button1,Continue
+Event_FALLAS2_PORTAL_BOBBY.text,"You try again to destroy the portal but Bobby pushes you hard to one side. \n\n Suffer 1 facedown Damage."
+Event_FALLAS2_PORTAL_BOBBY.button1,Continue
+Token_Puerta_Cerrada_Bobby.button1,Continue
+Token_Puerta_Cerrada_Bobby.text,For the moment, keep the door closed to avoid being discovered.
+Event_AGARRAS_FIGURA.button1,Continue
+Event_AGARRAS_FIGURA.text,"You grab the small statue in the corner of the doorway, but with her eyes rolling Denise grabs your arm with extreme force.({agility}:2) \n\n If you pass, you give her a hard slap that causes her to release your arm. If you fail, you feel an unbearable burning in your arm as her fingers soak into your skin. Suffer 2 facedown Damage."
+Event_BOBBY_CASI_MUERE.button1,Help Bobby
+Event_BOBBY_CASI_MUERE.button2,Pull the statue harder
+Event_BOBBY_CONTRA_DENNIS.button1,Help Denise
+Event_BOBBY_CONTRA_DENNIS.button2,Back off
+Event_BOBBY_CONTRA_DENNIS.text,|||Grabbing Denise by the neck, Bobby orders you to move back so as to avoid hindering his plans. \n <color=cyan><i> "If you try to stop me, I'll kill your friend!" </i> </color> \n\n Perhaps you should do as he asks for Denise's sake, but on the other hand, if you don't close the portal as soon as possible, more creatures could enter this world.|||
+Event_BOBBY_MUERE2.button1,Continue
+Event_BOBBY_MUERE2.text,"Resolutely, you pull the statue with greater force than before, getting it off the ground. You decide to quickly put it in your pocket to keep it safe. \n\n Finally, you hear some gurgling sounds as Bobby collapses on the ground. \n Denise had killed him."
+Event_CASI_MUERE_DENNIS.button1,{success}
+Event_CASI_MUERE_DENNIS.button2,{clue}
+Event_CASI_MUERE_DENNIS.button3,Empty face
+Event_COLOCA_HABITACIONES1.button1,Continue
+Event_COLOCA_HABITACIONES1.text,Place the <color=#e3b529>{c:Tile_Habitaciones}</color> Tile and the <b>Shelf</b> token as indicated.
+Event_COLOCA_HABITACIONES2.button1,Continue
+Event_COLOCA_HABITACIONES2.text,Place the <color=#e3b529>{c:Tile_Habitaciones}</color> Tile and the <b>Shelf</b> token as indicated.
+Event_Control1_Portal_Romance.button1,{action} Destroy
+Event_Control1_Portal_Romance.button2,Cancel
+Event_Control1_Portal_Romance.text,Holding hands, Denise and Bobby are engrossed in the knowledge that the portal's power gives them. Perhaps you should take the opportunity to try to destroy it {will}.
+Event_Control2_Portal_Romance.button1,Continue
+Event_Control2_Portal_Romance.text,You can't stop Denise as long as Bobby keeps getting in your way.
+Event_Control3_Pasillo3.button1,<color=red>{success}</color> {success} <color=green>{success}</color>
+Event_Control3_Pasillo3.button2,<color=blue>{success}</color> <color=yellow>{success}</color> <color=red>{success}</color>
+Event_Control3_Pasillo3.button3,<color=fuchsia>{success}</color> <color=yellow>{success}</color> {success}
+Event_Control3_Pasillo3.button4,<color=orange>{success}</color> <color=red>{success}</color> <color=blue>{success}</color>
+Event_Control3_Pasillo3.button5,<color=red>{success}</color> <color=orange>{success}</color> <color=blue>{success}</color>
+Event_Control3_Pasillo3.button6,<color=blue>{success}</color> <color=orange>{success}</color> <color=red>{success}</color>
+Event_Control3_Pasillo3.button7,<color=green>{success}</color> <color=yellow>{success}</color> <color=red>{success}</color>
+Event_Control3_Pasillo3.button8,Cancel
+Event_Control3_Pasillo3.text,"This door leads to the outside, leading to a small dock by the river. \n For the past two days you have not been able to go outside the hotel for fear of being seen. But someone may be in danger. \n\n To open the door you need to dial the code correctly. \n\n <b> Note:</b> You spend 1 action {action} for each option you choose from the following."
+Event_Control3_Portal.button1,{action} Help her
+Event_Control3_Portal.button2,Cancel
+Event_Control3_Portal.text,|||<color=cyan><i> "Destroy the small figure to close the portal!"</i> </color>, Bobby yells at you in desperation. \n\n Denise seems to be absorbed by the energy coming out of that portal.({strength}: 2)|||
+Event_Control4_Pasillo3.button1,<color=red>{success}</color> {success} <color=green>{success}</color>
+Event_Control4_Pasillo3.button2,<color=blue>{success}</color> <color=yellow>{success}</color> <color=red>{success}</color>
+Event_Control4_Pasillo3.button3,<color=fuchsia>{success}</color> <color=yellow>{success}</color> {success}
+Event_Control4_Pasillo3.button4,<color=orange>{success}</color> <color=red>{success}</color> <color=blue>{success}</color>
+Event_Control4_Pasillo3.button5,<color=red>{success}</color> <color=orange>{success}</color> <color=blue>{success}</color>
+Event_Control4_Pasillo3.button6,<color=blue>{success}</color> <color=orange>{success}</color> <color=red>{success}</color>
+Event_Control4_Pasillo3.button7,<color=green>{success}</color> <color=yellow>{success}</color> <color=red>{success}</color>
+Event_Control4_Pasillo3.button8,Cancel
+Event_Control4_Pasillo3.text,"This door leads outside, leading to a small dock by the river. \n\n To open the door you need to dial the code correctly. \n\n <b> Note:</b> You spend 1 action {action} for each option you choose from the following."
+Event_DECISION_BOBBY1.button1,Take him to Arkham
+Event_DECISION_BOBBY1.button2,Left him die
+Event_DECISION_BOBBY1.text,"Distressed, you approach Bobby's body, hoping to notice some sign of life in him. \n To your surprise, he was unconscious and in critical condition, but he was still alive despite the severe blow to his head. \n\n You stop to think about the times you have spent with him. He was always very attentive and kind to you. He treated you well right to the end, and you could not forget that he helped you to get out of that hell of a life you had. \n But on the other hand, Bobby has betrayed your trust and played with your feelings. After opening that portal, he may never be the same again. \n\n It is time to make a decision. \n If you decide to save him, you plan to take him to Arkham Asylum where you believe they will be able to cure his madness."
+Event_DECISION_BOBBY2.button1,Take him to Arkham
+Event_DECISION_BOBBY2.button2,Left him die
+Event_DECISION_BOBBY2.text,"Distressed, you approach Bobby's body, hoping to notice some sign of life in him. \n To your surprise, he was unconscious and in critical condition, but still alive despite the severe blow to his head. \n\n You stop to think about the times you have spent with him. He was always very attentive and kind to you. He treated you well right to the end, and you couldn't forget that he helped you get out of that hell of a life you had. \n But on the other hand, Bobby has betrayed your trust and played with your feelings. After opening that portal, he may never be the same again. \n\n It is time to make a decision. \n If you decide to save him, you plan to take him to Arkham Asylum because you believe they can cure his madness."
+Event_DECISION_DENNIS_ROMANCE.button1,Take her to Arkham
+Event_DECISION_DENNIS_ROMANCE.button2,Finish her
+Event_DECISION_DENNIS_ROMANCE.text,"Thousands of memories with her remind you of all the time she was there for you when no one else was, and that was something you would never forget. \n\n If you decide to save her, you plan to take her to Arkham Asylum because you believe they will be able to help her treat her madness. \n But on the other hand, Denise has betrayed your trust and played you all this time. After opening that portal, she may never be the same as she was before."
+Event_DECISION_DENNIS2.button1,Take her to Arkham
+Event_DECISION_DENNIS2.button2,Left her die
+Event_DECISION_DENNIS2.text,"Distressed, you approach Denise's body, hoping to notice some sign of life in her. \n To your surprise, she was unconscious and in critical condition, but still alive despite the severe blow to her head. \n\n Thousands of memories come to your mind of the person you once thought of as your sister. For a long time, she was there for you when no one else was, and that was something you could never forget. \n\n But it was time to make a decision. \n If you decide to save her, you plan to take her to Arkham Asylum because you think they can cure her madness. \nBut on the other hand, Denise has betrayed your trust and fooled you all this time. After opening that portal, she may never be the same again."
+Event_DECISION1_DENNIS1.button1,Take her to Arkham
+Event_DECISION1_DENNIS1.button2,Left her die
+Event_DECISION1_DENNIS1.text,"Distressed, you approach Denise's body, hoping to notice some sign of life in her. \n To your surprise, she was unconscious and in critical condition, but still alive despite the severe blow to her head. \n\n Thousands of memories come to your mind of the person you once thought of as your sister. For a long time, she was there for you when no one else was, and that was something you could never forget. \n\n But it is time to make a decision. \n If you decide to save her, you plan to take her to Arkham Asylum because you think they can cure her madness. \n But on the other hand, Denise has betrayed your trust and fooled you all this time. After opening that portal, she may never be the same again."
+Event_DECISION2_DENNIS1.button1,Take her to Arkham
+Event_DECISION2_DENNIS1.button2,Left her die
+Event_DECISION2_DENNIS1.text,"Dismayed, you approach Denise's body, hoping to notice some sign of life in her. \n To your surprise, she was unconscious and in critical condition, but still alive despite the severe blow to her head. \n\n Thousands of memories come to your mind of the person you once thought of as your sister. For a long time, she was there for you when no one else was, and that was something you could never forget. \n\n But it was time to make a decision. \n If you decide to save her, you plan to take her to Arkham Psychiatric Hospital because you believe they can help her cure her madness. \n But on the other hand, you think that after she has opened that portal she will never be the same again."
+Event_DERROTAS_BOBBY_ROMANCE.button1,Continue
+Event_DERROTAS_BOBBY_ROMANCE.text,"You give him the final blow and he collapses to the ground. A trickle of blood runs down from Bobby's skull into the river. You couldn't believe what you were seeing. \n Now all that was left was to finish the job. \n\n Remove the Cultist."
+Event_DERROTAS_BOBBY2.button1,Continue
+Event_DERROTAS_BOBBY2.text,"You give him the final blow and he collapses to the ground. A trickle of blood runs down from Bobby's skull into the river. You couldn't believe what you were seeing. \n Now the only thing left is to complete the job. \n\n Remove the Cultist."
+Event_DERROTAS_DENNIS_ROMANCE.button1,Continue
+Event_DERROTAS_DENNIS_ROMANCE.text,"Again you were in the same situation as before, but this time with someone you considered a sister. \n This time you chose to hit her hard in the back, an act which caused Denise to fall to the ground in pain. \n\n It was certainly a good time to decide what to do with her. \n\n Remove the Cultist."
+Event_DERROTAS_PROFUNDO1.button1,Botón1
+Event_DERROTAS_PROFUNDO2.button1,Botón1
+Event_DESCUBRES_BOBBY.button1,Continue
+Event_DESCUBRES_BOBBY.text,"You peek carefully through the small crack in the door to discover Bobby peering through a small hole in the wall. \n You know that on the other side is the hotel bathroom. \n\n As he does so, Bobby fiddles with his body, staring at the person behind the wall. \n Seeing this repulsive image makes you want to vomit. Suffer 2 face down Damage ({will} negates). \n\n Place the <color=#e3b529>{c:Tile_Room3}</color> Tile, the <b> bookshelf</b> token and the <color=cyan><i> Bobby Foster</i> </color> Person token as indicated."
+Event_DONDE_ESTAN_ROMANCE.button1,Continue
+Event_DONDE_ESTAN_ROMANCE.text,|||<i> "Where are Denise and Bobby? I can't believe they would fool around with me like this.|||
+Event_DUCHA_DIA3.button1,Continue
+Event_DUCHA_DIA3.text,|||After hearing the sound of water, you knock several times on the bathroom door, hoping to get a response. \n "Denise? Bobby? When you finish your shower, please let me know." \n\n You get no response to your request.|||
+Event_FALLAS1_PORTAL_ROMANCE.button1,Continue
+Event_FALLAS1_PORTAL_ROMANCE.text,You try to grab the small statue next to the portal, but Denise steps forward and gets in your way.
+Event_FALLAS2_PORTAL_ROMANCE.button1,Continue
+Event_FALLAS2_PORTAL_ROMANCE.text,"You try again to destroy the portal but Denise pushes you hard to one side. \n\n Suffer 1 face down Damage."
+Event_FALLAS3_PORTAL_ROMANCE.button1,Continue
+Event_FALLAS3_PORTAL_ROMANCE.text,"You try again to destroy the portal but they both push you harder to one side. \n\n Suffer 2 face down Damage."
+Event_FOTOS_BOBBY_DENNIS.button1,Continue
+Event_FOTOS_BOBBY_DENNIS.text,"You shout nasty things at Bobby, getting him to stop what he was doing. He becomes both flustered and shocked to see you there. \n\n As you enter the room you notice an endless array of erotic photographs of Bobby and Denise. Most of these photos are taken in private areas and rooms of the club, and a few of them show them naked in the same hotel bed that Bobby sleeps in. \n\n Still exhausted, you angrily ask Bobby for explanations, but he doesn't know how to respond. \n\n Due to the turmoil of the moment, you didn't hear Denise's footsteps coming towards the room."
+Event_GRITOS.button1,Continue
+Event_GRITOS.text,You hear deafening screams from behind the door leading to the river.
+Event_HAB_BOBBY_ABIERTA.button1,{success}
+Event_HAB_BOBBY_ABIERTA.button2,{clue}
+Event_HAB_BOBBY_ABIERTA.button3,Empty face
+Event_HAB_BOBBY_ABIERTA.text,|||On your way to your room, you notice that the door to Bobby's room is slightly open and there is a soft tinkle of light. \n\n <i> "I will peek in and look around very carefully" </i> \n\n Place your <b> Investigator</b> as indicated. \n\n <b> Note:</b> roll 1 die and mark the result of your roll. You cannot exchange magnifying glasses for successes.|||
+Event_HUYES_BOSQUE4.button1,Continue
+Event_HUYES_BOSQUE4.text,|||When you return to the hotel, you pick up your pendant and the small statue, causing the portal to close completely. No more creatures were going to enter this world, not while the portal was still closed, and the only two keys to open it were in your possession. \n\n <i> "I must protect this statue and the pendant my mother gave me at all costs. If they fall into the wrong hands again, it would be a disaster."</i>|||
+Event_HUYES_BOSQUE5.button1,Continue
+Event_HUYES_BOSQUE5.text,|||You pick up your pendant, causing the portal to close completely. No more creatures were going to enter this world, not while the portal was still closed, and the only two keys to open it were in your possession. \n\n <i> "I must protect this statue and the necklace my mother gave me at all costs. If they fall into the wrong hands again it would be a disaster" </i>|||
+Event_LLEVAS_BOBBY1_ARKHAM.button1,Continue
+Event_LLEVAS_BOBBY1_ARKHAM.text,"You grab the car keys that Bobby, still unconscious, had on him and struggle to get him into the front seat of the car. \n On the way to Arkham you try not to dwell on what you were doing until you finally arrive at your destination. \n\n Making sure no one sees you, you leave Bobby by the front door of Arkham Asylum, leaving a farewell note. \n\n Once again, you get back into the car and head for the Foster Hotel, as you still have other business to deal with."
+Event_LLEVAS_DENNIS_ARKHAM_ROMANCE.button1,Continue
+Event_LLEVAS_DENNIS_ARKHAM_ROMANCE.text,"You grab the car keys that Bobby had with him \n and struggle up to Denise. \n On the way to Arkham, you try not to dwell on what you were doing, until you finally arrive at your destination. \n\n Making sure no one sees you, you leave Denise by the front door of the Arkham Asylum, leaving a farewell note. \n\n Once again, you get into the car and head for Foster's hotel, as you still have other business to deal with."
+Event_LLEVAS_DENNIS1_ARKHAM.button1,Continue
+Event_LLEVAS_DENNIS1_ARKHAM.text,"You take the car keys that Bobby, still unconscious, had with him and struggle up to Denise. \n On the way to Arkham you try not to dwell on what you were doing until you finally arrive at your destination. \n\n Making sure no one sees you, you leave Denise by the front door of Arkham Asylum, leaving a farewell note. \n\n You get back into the car and head for the Foster's hotel, as you still have other business to deal with."
+Event_LLEVAS_DENNIS2_ARKHAM.button1,Continue
+Event_LLEVAS_DENNIS2_ARKHAM.text,"You take the car keys that Bobby had with him \n and with great effort you get into the car with Denise. \n On the way to Arkham you try not to dwell on what you were doing until you finally arrive at your destination. \n\n Making sure no one sees you, you leave Denise by the front door of the Arkham Asylum, leaving a farewell note. \n\n Again, you get back into the car and head for the Foster's hotel, as you still have other business to deal with."
+Event_MATAS_DENNIS_ROMANCE.button1,Continue
+Event_MATAS_DENNIS_ROMANCE.text,"You hit Denise in the head with all your might. A trail of blood stains the floor of the docks back to the river. \n\n With a great sense of guilt, you cover Denise's lifeless body with a small tarpaulin. You had to leave the woman you had once considered a great friend in that cold, damp place."
+Event_MIRAS_HAB_BOBBY.button1,Continue
+Event_MIRAS_HAB_BOBBY.text,"This room is slightly larger than the rest of the hotel. It also has no dust on the furniture and is much better decorated. \n\n Place the <color=yellow><i> Search</i> </color>and <color=red><i> Explore</i> </color>tokens as indicated."
+Event_MONSTRUOS_PORTAL1.text,Through him, horrific creatures identical to those described in the old book also plunge.
+Event_MONSTRUOS_PORTAL2.button1,Continue
+Event_MUELLES_ROMANCE.button1,Continue
+Event_MUELLES_ROMANCE.text,"Both Bobby and Denise belong to a cult that worships powerful Gods from other universes, as described in the ancient book.\n\n\n Place the <color=#e3b529>{c:Tile_Muelle}</color> and <color=#e3b529>{c:Tile_Pasillo3}</color> Tiles, the <color=blue><i>Interaction</i></color> token (it represents Bobby and Denise in front of the portal), and your Investigator <b>Wendy Adams</b> as indicated."
+Event_MUERE_BOBBY1.button1,Continue
+Event_MUERE_BOBBY1.text,With a heavy heart, you cover Bobby's lifeless body with a small tarpaulin. You had to leave on that cold, wet dock the only person for whom you had ever had deeper feelings than for anyone else.
+Event_MUERE_DENNIS.text,"Hastily, you try to grab Denise's arm but only succeed in getting Bobby to grab her by the neck with far more force than before. Soon Denise's face begins to bruise from lack of air, and within seconds she is suffocating on the cold ground by the river. \n\n You cry out in pain and despair at the sight of the lifeless body of the person you thought of as your sister. \n You could no longer do anything to save her. \n\n Suffer 2 Horror ({will}-1 negates)."
+Event_MUERE_DENNIS1.button1,Continue
+Event_MUERE_DENNIS2.button1,Continue
+Event_MUERE_DENNIS2.text,With great pain, you cover Denise's lifeless body with a small tarpaulin. You had to leave the person you once considered a great friend in that cold, damp place.
+Event_PALANCA1.button1,Continue
+Event_PALANCA2.text,"Some of the objects that you didn't care about before now seem more useful for some reason. \n\n Place the <b>Crowbar </b> Common Item as indicated. \n You may move 1 or 2 spaces into the explored area."
+Event_Prueba_Collar_Dennis1.button1,Continue
+Event_Prueba_Collar_Dennis1.text,You give Denise the pendant.
+Event_Prueba_Collar_Dennis2.button1,Continue
+Event_Prueba_Collar_Dennis2.text,You don't give Denise the pendant.
+Event_PRUEBAS.button1,Continue
+Event_PRUEBAS.text,Scenario test.
+Event_RECHAZAS_BOBBY_SIN_COLLAR.text,|||Disappointed, Bobby disappears from your room, leaving you with this sentence: \n <color=aqua><i> "We all make mistakes, Wendy. Remember you can trust me."</i> </color>.|||
+Event_RETROCEDES_DENNIS.button1,Continue
+Event_RETROCEDES_DENNIS.text,"You slowly back away, causing Bobby to let go of Denise, who falls to the ground unconscious. \n\n In a small distraction from Bobby, you quickly grab the statue on the ground, causing the portal to close completely."
+Event_SALVAS_DENNIS.button1,Continue
+Event_SALVAS_DENNIS.text,"You quickly grab the statue off the ground, causing the portal to close. Bobby suddenly releases Denise in an attempt to stop you, but doesn't get there in time. \n\n You notice that Denise is unconscious. \n You manage to save her for the moment."
+Event_TE_GOLPEA_DENNIS.button1,Continue
+Event_TE_GOLPEA_DENNIS.text,"Denise had just given you a good blow on the head. You fell unconscious for a few hours. \n\n ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n\n You wake up on Bobby's bed tied hand and foot with some old ropes. You also see that your pendant has been stolen. There was no one else in the room with you. \n\n <b> Note:</b> Move your <b> Investigator</b> as indicated. \n Discard the Elder Sign Pendant Common item. \n Remove the Bobby Foster Person token. \n\n You attempt to move from side to side by tearing the ropes with the bed head ({agility}-1: 2). If you pass, you manage to get the old ropes to unravel without any trouble. If you fail, forcing your skin against the ropes causes several small burns on your arms and legs. Suffer 1 face down Damage, but manage to get rid of the ropes."
+Event_TUBERIA1.text,"Some of the objects that you didn't care about before now seem more useful for some reason. \n\n Place the <b> Lead pipe</b> Common Item as indicated. \n You may move 1 or 2 spaces into the explored area."
+Event_VES_FOTOS.button1,Continue
+Event_VES_FOTOS.text,|||Several romantic photographs between Denise and Bobby cover most of the wall. \n\n <i> "How could they trick me like this?" </i> \n\n Gain <color=green><b> 1 Clue {clue}</b> </color>. \n Remove the Search token.|||
+Event_ZARANDEAS_DENNIS.button1,Continue
+Event_ZARANDEAS_DENNIS.text,"Ignoring Bobby's advice, you shake Denise's shoulders in anguish, but all you get is a strong grip on your arm.({agility}:2) \n\n If you pass, you slap her hard enough to make her let go of your arm. If you fail, you feel an unbearable burning in your arm as her fingers soak into your skin. Suffer 2 face down Damage. \n\n You can't understand where she got this strength from. It's as if she's possessed by a demon."
+Spawn_Bobby_Romance.button1,Continue
+Spawn_Bobby_Romance.text,"Bobby stands between you and Denise, letting Denise recite an ancient verse while holding your pendant in her hand. \n\n Place the <b> Cultist</b> as indicated ( it represents Bobby)."
+Spawn_BOBBY1.text,|||<color=aqua><i>"You meddling fool! I won't let you stand in the way of my plans!"</i></color> \n A blinding light comes from the necklace Bobby is holding in his hand. \n\n Place the <b>Cultist</b> as indicated. \n Remove the Interaction token.|||
+Spawn_BOBBY2.button1,Continue
+Spawn_BOBBY2.text,|||<color=aqua><i> "You meddling fool! I won't let you get in the way of my plans!" </i> </color>A blinding light comes from the necklace Bobby holds in his hand. \n\n Place the <b> Cultist</b> figure in the appropriate place. \n Remove the interaction token.|||
+Spawn_Dennis_Romance.button1,Continue
+Spawn_Dennis_Romance.text,"An angry shout from Denise echoes across the dock. \n She was determined to avenge Bobby's death and end the ritual. \n\n Place a <b> Cultist</b> as indicated (it represents Denise). \n Remove the Interaction token."
+Spawn_Profundo1.text,"A new monster emerges from the portal you failed to close. \n\n Place a <b> Deep One</b> as indicated."
+Spawn_Profundo2.button1,Continue
+Token_DENNIS.button1,Give Denise the pendant
+Token_DENNIS.button2,Keep the pendant.
+Token_DENNIS.text,Test Denise's decisions?
+Token_Fotos_Dennis_Bobby.button1,{action} Exam
+Token_Fotos_Dennis_Bobby.text,All over the wall are endless photographs.
+Token_Portal_Romance.button1,Botón1
+UI_Continuar4.button1,Continue
+UI_Continuar6.button1,Botón1
+UI_Continuar7.button1,Botón1
+UI_Texto_Con_Bobby.uitext,"After waiting for Bobby to wake up, you gather your belongings and walk along a small trail through the forest. \n Bobby has proved himself to be by your side at all times \n and for this, you will always be grateful to him. \n\n After several hours of walking, you decide to set up camp inside a cave and light a small fire to keep out the cold. \n\n You feel so comforted by his side that you decide to confess your \n true feelings to Bobby, who responds \n with a warm gesture by the fire. \n\n <color=green><i> You've successfully won the game</i> </color> \n\n -THE END-"
+UI_Texto_Entierro_Dennis.uitext,"As you return to the Foster Hotel, you pick up one of the shovels and dig a hole large enough to hide the body of the man who was your escape guide a few days ago. \n After covering the body, you cut one of the large white roses that were hidden in the undergrowth and left it on the mound of earth you had just made. \n\n You had no tears left to cry. \n The shock has been so strong that you didn't even recognize yourself."
+UI_Texto_Final_Con_Dennis.uitext,"After waiting for Denise to wake up, you gather your belongings and walk along a small trail \n that leads into the forest. \n Denise has shown herself to be by your side at all times \n and for this, you will always be grateful to her. \n\n \n Holding her hands, you make her promise that she will never be separated from you and that she will always be with you, just as you will be with her. \n Denise nods in response with a warm embrace under the trees. \n\n <color=green><i> You've succeeded in winning the game</i> </color> \n\n -THE END-"
+UI_Texto_Romance.uitext,It was too late. Bobby and Denise had already opened a massive portal from which a mesmerizing, bright, hypnotic light was pouring through their eyes.
